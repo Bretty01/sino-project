@@ -1,4 +1,4 @@
-package com.example.sino.data.assets.armor
+package com.example.sino.data.armor
 
 import android.content.Context
 import androidx.room.Database

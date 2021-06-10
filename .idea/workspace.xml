@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidDataSourceStorage">
+    <data-sources>
+      <data-source>
+        <option name="deviceId" value="EMULATOR_Pixel_4_API_30" />
+        <option name="name" value="Android SQLite" />
+        <option name="comment" />
+        <option name="packageName" value="com.example.sino" />
+        <option name="databaseName" value="armor_support_skill" />
+        <classpath-elements>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.34.0/sqlite-jdbc-3.34.0.jar</url>
+        </classpath-elements>
+      </data-source>
+    </data-sources>
+  </component>
   <component name="AndroidGradleBuildConfiguration">
     <option name="SYNC_PROJECT_BEFORE_BUILD" value="true" />
   </component>
@@ -8,16 +22,33 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bab1024d-baa9-422a-abb9-449f9370bd0f" name="Default Changelist" comment="Fixed gradle, should be running again. Added assets to be used in database.">
-      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/assets/armor/Armor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/assets/armor/ArmorAccess.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/assets/armor/ArmorDao.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/assets/armor/ArmorDatabase.kt" afterDir="false" />
+    <list default="true" id="bab1024d-baa9-422a-abb9-449f9370bd0f" name="Default Changelist" comment="Slight adjustment to file/asset locations">
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/ListFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/res/drawable/ic_add.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/res/navigation/default_nav.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/Armor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/Armor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorAccess.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorAccess.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorDatabase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sino/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +58,7 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_4_API_30]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/sino/app">
       <ProjectState />
@@ -52,11 +83,17 @@
         <option value="Kotlin Worksheet" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
+        <option value="navigationResourceFile" />
         <option value="Kotlin Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -67,18 +104,18 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1sivWN3DO37o7cQTmkOdCnsJSAP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$" />
     <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="ResourceManagerPrefKey.ResourceType" value="NAVIGATION" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="jbr-11" />
@@ -92,7 +129,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="experimentalPlugin" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.sino.fragments" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -108,7 +150,7 @@
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ALL_USERS" value="false" />
+      <option name="ALL_USERS" value="true" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="specific_activity" />
@@ -188,6 +230,11 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Android App.MainActivity" />
+      <item itemvalue="Gradle.app [wrapper --gradle-version 4.1.1]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Android App.MainActivity" />
@@ -217,6 +264,14 @@
       <workItem from="1622611314379" duration="266000" />
       <workItem from="1623178075682" duration="2275000" />
       <workItem from="1623180387407" duration="5890000" />
+      <workItem from="1623193147501" duration="2828000" />
+      <workItem from="1623263329608" duration="1715000" />
+      <workItem from="1623265117776" duration="2615000" />
+      <workItem from="1623267776954" duration="206000" />
+      <workItem from="1623268007170" duration="13300000" />
+      <workItem from="1623295180763" duration="5791000" />
+      <workItem from="1623301011694" duration="220000" />
+      <workItem from="1623341914293" duration="879000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit. Added &quot;Project&quot; Word file.">
       <created>1621372234781</created>
@@ -239,7 +294,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623182345877</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Slight adjustment to file/asset locations">
+      <created>1623193263005</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623193263005</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Slight adjustment to file/asset locations">
+      <created>1623193551358</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623193551358</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +329,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test commit. Added &quot;Project&quot; Word file." />
     <MESSAGE value="Fixed gradle, should be running again. Added assets to be used in database." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed gradle, should be running again. Added assets to be used in database." />
+    <MESSAGE value="Slight adjustment to file/asset locations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Slight adjustment to file/asset locations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

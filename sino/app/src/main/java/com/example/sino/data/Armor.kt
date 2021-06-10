@@ -1,4 +1,4 @@
-package com.example.sino.data.assets.armor
+package com.example.sino.data.armor
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
