@@ -1,0 +1,152 @@
+weapon_id,name,type,element,cost,story_skill,colo_skill,support_skill
+1,Absolute Zero,7,2,14,37,41,30
+2,Accursed Gun,7,1,16,20,18,52
+3,Alternate Life,8,2,13,22,20,51
+4,Ancestral Double Axe,6,3,14,86,90,3
+5,Anchor Rod,5,3,14,82,86,13
+6,Ancient City Dream,6,1,19,30,33,4
+7,Ancient Elven Bow,7,1,13,127,130,47
+8,Ancient Violin,1,3,16,188,193,44
+9,Apprentice's Staff,4,1,10,176,181,5
+10,Arbalest of Brutality,7,1,18,53,27,31
+11,Artisan's Spear,8,3,16,44,47,52
+12,Assassin's Kit,6,1,8,76,80,7
+13,Assassin's Notes,2,3,18,181,186,33
+14,Astrologer's Manastone,3,1,16,125,128,46
+15,Astronomy Book,2,3,18,228,234,33
+16,Automaton Clock,3,1,17,125,128,6
+17,Axe of Fierce Battle,6,1,18,62,66,4
+18,Axe of Masochism,6,3,18,33,36,23
+19,Axe of Paranoia,6,2,14,73,78,24
+20,Axe of Punishment,6,2,18,94,97,4
+21,Axe of Ruin,6,3,18,33,36,25
+22,Axe of Shadows,6,3,18,114,117,4
+23,Axe of the Evil Eye,6,1,18,65,69,46
+24,Azure Blade,5,2,14,71,75,3
+25,Azure Wing Crossbow,7,3,14,23,21,51
+26,Banned Book of Resurrection,2,2,14,200,205,45
+27,Battle's Gospel,6,3,18,114,117,25
+28,Beast Axe,3,3,18,87,91,13
+29,Beast Puppet,3,2,17,122,125,34
+30,Beastcurse,8,3,17,44,47,4
+31,Beastlord,5,2,17,59,62,4
+32,Beggar's Secrets,2,2,17,137,140,33
+33,Beheaded General's Staff,4,2,18,166,171,6
+34,Bell Staff,4,1,17,158,162,29
+35,Beloved Blade of Bondage,5,3,17,104,107,28
+36,Big Bad Bow,7,2,13,118,121,31
+37,Big Talk,7,1,14,178,183,5
+38,Birdcall,6,3,18,114,117,4
+39,Black Axe of Brutality,6,1,19,101,104,45
+40,Black Bomb,3,3,14,133,136,36
+41,Black Harp of Misery,1,2,19,163,168,20
+42,Black Holy Grail,3,2,18,17,15,4
+43,Black Iron Antique,2,1,18,149,152,32
+44,Black Iron Book,2,3,18,229,235,32
+45,Black Iron Bow,7,3,18,4,2,31
+46,Black Iron Chariot Staff,4,1,18,158,162,1
+47,Black Iron Collection,2,2,18,201,26,18
+48,Black Iron Flute,1,3,18,190,195,40
+49,Black Iron Hammer,6,2,18,90,94,45
+50,Black Iron Harp,1,2,18,225,230,45
+51,Black Iron Spear,8,3,18,67,71,31
+52,Black Iron Staff,4,2,18,159,163,45
+53,Black Iron Sword,5,1,18,5,3,45
+54,Black Iron Sword Cane,4,3,18,179,184,5
+55,Black Iron Thorn Gun,7,1,18,63,67,45
+56,Black Iron Violin,1,1,18,161,165,36
+57,Black Iron Wheel,5,2,18,58,61,25
+58,Black Knight's Soul,3,1,18,232,238,4
+59,Black Spear of Bondage,8,2,19,108,111,45
+60,Black Staff of Languor,4,2,19,220,225,5
+61,Black Sword of Masochism,5,3,19,104,107,3
+62,Black Winged Scythe,8,2,14,121,124,30
+63,Blade of Depravity,5,3,16,16,14,28
+64,Blade of the Eye,5,1,15,80,84,3
+65,Blade of the Falls,5,2,18,6,4,28
+66,Blessed Crash,1,1,14,146,149,32
+67,Blessed Violin,1,2,9,191,196,32
+68,Blessing Staff,4,2,18,169,174,36
+69,Bludgeon of Curiosity,6,3,17,33,36,25
+70,Bludgeon of Flames,6,1,18,101,104,4
+71,Book of Air Currents,2,3,18,150,153,39
+72,Book of Brutality,2,1,16,152,155,28
+73,Book of Dark Rituals,2,2,14,136,139,32
+74,Book of Judgment,2,3,13,205,210,43
+75,Book of Justice,2,1,17,152,155,45
+76,Book of Kraken,2,2,14,197,202,33
+77,Book of Misery,2,2,19,152,155,33
+78,Book of Moral Instruction,2,2,18,198,203,26
+79,Book of Night,2,2,19,233,239,33
+80,Book of Nouveau Riche,2,2,18,181,186,33
+81,Book of Observation,2,3,18,172,177,1
+82,Book of Otherworldly Lights,2,1,18,150,153,33
+83,Book of Regret,2,1,13,196,201,13
+84,Book of Temporal Wisdom,2,1,19,206,211,33
+85,Book of the Flame Spirit,2,1,19,198,203,33
+86,Botany Taboo,2,3,18,180,185,33
+87,Bow of Bondage,7,1,18,53,56,52
+88,Bow of Friendship,7,1,18,41,44,31
+89,Bow of Rebirth,7,3,18,131,134,4
+90,Bow of Wilderness,7,3,18,148,151,48
+91,Breath of Rebirth,4,3,19,221,226,6
+92,Brutal Intent,6,1,18,1,24,28
+93,Brutality's Tool,6,1,18,78,82,24
+94,Bubble Crown,3,3,19,54,57,31
+95,Burned at the Throne,3,1,14,39,42,3
+96,Burning Satiation,1,2,13,187,192,32
+97,Calamitous Bow,7,1,8,126,129,11
+98,Cardinal Flute,1,1,14,187,192,45
+99,Castle Gate Notes,2,1,14,230,236,32
+100,Ceremonial Spear,8,1,16,39,42,52
+101,Changing of the Guard,6,2,14,74,78,45
+102,Chaotic Desire,2,1,9,208,213,32
+103,Chavalric Order's Violin,1,3,14,182,187,36
+104,Chords of Steel,1,1,18,216,221,40
+105,Clairvoyant Staff,4,1,14,177,183,5
+106,Clown's Box,3,1,18,19,17,55
+107,Club of Rotten Rope,6,3,19,116,119,4
+108,Coastal Rain,5,2,18,26,29,24
+109,Coax of the Cosmos,1,2,18,146,149,33
+110,Cold Brutality,5,3,17,84,88,23
+111,Commandment Violin,1,2,17,161,165,46
+112,Composer's Magnum Opus,1,2,14,192,197,32
+113,Conjuring Agreement,2,3,18,198,203,19
+114,Conqueror's Sword,5,1,14,31,34,22
+115,Cool Breeze,1,3,18,184,189,17
+116,Corpse Sounds,1,3,18,162,167,21
+117,Corpse Staff,4,2,18,170,175,46
+118,Count's Furniture Piece,8,3,18,67,71,12
+119,Counterwind,1,3,18,138,141,33
+120,Coward's Shield Blade,5,1,19,32,35,4
+121,Crescent Sickle,8,2,18,99,102,46
+122,Crimson Jewel,3,1,14,18,16,9
+123,Crossbow of Justice,7,2,17,105,108,3
+124,Cruel Arrogance,8,2,17,122,125,45
+125,Crusher of Gluttony,5,1,18,13,11,28
+126,Crystal Ball,3,2,10,120,123,11
+127,Cumbersome Staff,4,3,13,157,161,5
+128,Cursed Chains,3,3,13,133,136,32
+129,Cursed Ghost Song,1,3,14,146,149,32
+130,Cursed Hammer,6,2,18,2,106,28
+131,Dagger of Bonding,5,2,14,9,7,7
+132,Dagger of the Convenant,5,1,8,79,83,7
+133,Dancer's Fan,2,1,17,173,178,32
+134,Dark Puppet,3,1,13,124,127,47
+135,Dark Spider Crossbow,7,1,12,40,43,45
+136,Darkness Eluded Umbrella,3,1,18,125,128,4
+137,Daybreak's Notice,7,1,17,66,65,31
+138,Death God's Bow,7,2,16,17,15,48
+139,Death and Agony,6,2,13,89,93,51
+140,Death's Grandeur,7,2,13,118,121,3
+141,Death's Remains,6,3,13,14,12,51
+142,Death-Bringing Weather Vane,3,3,18,44,47,4
+143,Deceptive Eye,8,3,14,133,136,30
+144,Decimation Spear,8,2,11,120,123,7
+145,Deep Sea Bow,7,2,17,119,122,4
+146,Deep Sea Staff,4,1,17,158,162,6
+147,Deep Sea Sword,5,3,17,16,14,23
+148,Defiant Bird Spear,8,3,18,134,137,46
+149,Demon Spear,8,3,13,21,19,51
+150,Demonic Arm,2,1,16,150,153,28
+151,Demonic Coercion,7,1,18,128,131,31

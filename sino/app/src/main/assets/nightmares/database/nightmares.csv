@@ -1,0 +1,204 @@
+nightmare_id,name,summon_cost
+1,Absorbent Spider,1
+2,Ajatar,1
+3,Armored Giant,0
+4,Barbarian,0
+5,Belial,1
+6,Black Tuna,1
+7,"Blanc, the One-Winged Doll",0
+8,Blue Poppy,0
+9,Cake Spider,1
+10,Cactus Dodo,1
+11,"Cecilia, the Crimson Banisher",0
+12,Cetus,1
+13,Clock Rabbit,1
+14,"Coco, the Canine Claw",0
+15,Cog Golem,1
+16,Crab,1
+17,Crazed Dragon Levi,0
+18,Crimson Seabream,1
+19,Crooked Crow,0
+20,Crystal Wisp,1
+21,Dark Ash Azoo,0
+22,Diabolos,0
+23,"Diagitalis, the Undertaker",0
+24,Disembodied Emil,1
+25,Lizard (Fire)/Dragon (Fire),1
+26,Lizard (Water)/Dragon (Water),1
+27,Lizard (Wind)/Dragon (Wind),1
+28,Dragon Doll,1
+29,"Drizella, the Jealous Serpent",1
+30,"Dryas, Mistletoe Linchpin",0
+31,"Elza, the Ancient Priestess",0
+32,"Esse, the Investigator",1
+33,Fafnir,1
+34,"Fara, Inferiority's Echo",0
+35,"Fear, the Warden",1
+36,Female Orc with Makeup,1
+37,Fenrir,1
+38,"Fina, Dishonest Retainer",1
+39,Flippy Bird,0
+40,"Flon, Corpse Spear",0
+41,Fly Magician,1
+42,Freeze Golem,0
+43,Girl,1
+44,Gluttonous Eris,0
+45,Ghost (Fire)/Greater Ghost (Fire),1
+46,Ghost (Water)/Greater Ghost (Water),1
+47,Ghost (Wind)/Greater Ghost (Wind),1
+48,Golem (Fire)/Greater Golem (Fire),1
+49,Golem (Water)/Greater Golem (Water),1
+50,Golem (Wind)/Greater Golem (Wind),1
+51,Hound (Fire)/Greater Hound (Fire),1
+52,Hound (Water)/Greater Hound (Water),1
+53,Hound (Wind)/Greater Hound (Wind),1
+54,Orc (Fire)/Greater Orc (Fire),1
+55,Orc (Water)/Greater Orc (Water),1
+56,Orc (Wind)/Greater Orc (Wind),1
+57,Plant (Fire)/Greater Plant (Fire),1
+58,Plant (Water)/Greater Plant (Water),1
+59,Plant (Wind)/Greater Plant (Wind),1
+60,Snake (Fire)/Greater Snake (Fire),1
+61,Snake (Water)/Greater Snake (Water),1
+62,Snake (Wind)/Greater Snake (Wind),1
+63,Spider (Fire)/Greater Spider (Fire),1
+64,Spider (Water)/Greater Spider (Water),1
+65,Spider (Wind)/Greater Spider (Wind),1
+66,Gremlin,1
+67,Grieving Spider,1
+68,Griffon,0
+69,Guardian,1
+70,Bird (Fire)/Harpy (Fire),1
+71,Bird (Water)/Harpy (Water),1
+72,Bird (Wind)/Harpy (Wind),1
+73,Hateful Bird (Fire),1
+74,Hateful Bird (Water),1
+75,Hateful Bird (Wind),1
+76,Hateful Ghost (Fire),1
+77,Hateful Ghost (Water),1
+78,Hateful Ghost (Wind),1
+79,Hateful Golem (Fire),1
+80,Hateful Golem (Water),1
+81,Hateful Golem (Wind),1
+82,Hateful Hound (Fire),1
+83,Hateful Hound (Water),1
+84,Hateful Hound (Wind),1
+85,Hateful Lizard (Fire),1
+86,Hateful Lizard (Water),1
+87,Hateful Lizard (Wind),1
+88,Hateful Orc (Fire),1
+89,Hateful Orc (Water),1
+90,Hateful Orc (Wind),1
+91,Hateful Plant (Fire),1
+92,Hateful Plant (Water),1
+93,Hateful Plant (Wind),1
+94,Hateful Snake (Fire),1
+95,Hateful Snake (Water),1
+96,Hateful Snake (Wind),1
+97,Hateful Spider (Fire),1
+98,Hateful Spider (Water),1
+99,Hateful Spider (Wind),1
+100,High Werewolf,1
+101,Jabberwock,0
+102,Jörmungandr,1
+103,Kagami Mochi Ghost,1
+104,Karkinos,0
+105,Lammy,1
+106,Library Wisp,0
+107,Lindwyrm,0
+108,"Loiza, Bull of the Wiling Cape",0
+109,"Luge, Wings of Pathetic Greed",0
+110,Machine Lifeform,1
+111,Machine Lifeform (Gun),1
+112,Mau Archelon,1
+113,Mist Golem,1
+114,Mummy,0
+115,Nami's Fishing Rod,1
+116,New Year's Plant,1
+117,Nightmare (Bondage),1
+118,Nightmare (Brutality),1
+119,Nightmare (Delusion),1
+120,Nightmare (Dependance),1
+121,Nightmare (Depravity),1
+122,Nightmare (Justice),1
+123,Nightmare (Langour),1
+124,Nightmare (Masochism),1
+125,Nightmare (Misery),1
+126,"Noin, Sandstorm's Mandate",0
+127,"Nomia, Greed's Emissary",1
+128,Octopus,1
+129,"Odio, Song of the Black Lily",0
+130,Ogre,1
+131,Old Man's Fishing Rod,1
+132,Orc Doll,1
+133,Orkley,1
+134,Ouroboros,0
+135,Phoenix,1
+136,Puppet Dragon,1
+137,Raccoon,1
+138,Rafflesia,1
+139,Real Bird (Fire),1
+140,Real Bird (Water),1
+141,Real Bird (Wind),1
+142,Real Ghost (Fire),1
+143,Real Ghost (Water),1
+144,Real Ghost (Wind),1
+145,Real Golem (Fire),1
+146,Real Golem (Water),1
+147,Real Golem (Wind),1
+148,Real Hound (Fire),1
+149,Real Hound (Water),1
+150,Real Hound (Wind),1
+151,Real Lizard (Fire),1
+152,Real Lizard (Water),1
+153,Real Lizard (Wind),1
+154,Real Orc (Fire),1
+155,Real Orc (Water),1
+156,Real Orc (Wind),1
+157,Real Plant (Fire),1
+158,Real Plant (Water),1
+159,Real Plant (Wind),1
+160,Real Spider (Fire),1
+161,Real Spider (Water),1
+162,Real Spider (Wind),1
+163,Real Wisp (Fire),1
+164,Real Wisp (Water),1
+165,Real Wisp (Wind),1
+166,Red Rose,0
+167,"Rikone, Nine-tailed Rejection",0
+168,Rolling Thunder Rockfish,0
+169,Salesman (Fire),1
+170,Salesman (Water),1
+171,Salesman (Wind),1
+172,Santa,1
+173,Satan,1
+174,Scarlet,0
+175,School of Toto,0
+176,Sea Snail,1
+177,Shadowlord,1
+178,Shield Wisp (Fire),1
+179,Shield Wisp (Water),1
+180,Shield Wisp (Wind),1
+181,Silver Tiger,0
+182,Simone,1
+183,"Slade, Apostle of the Black Wings",1
+184,Snow Princess Magia,0
+185,Solitary Black Rabbit,1
+186,Squid,1
+187,Surtr,1
+188,Swift Soldier,1
+189,Swordfish,1
+190,The Nightmare Trio,1
+191,Tricky Wisp,1
+192,Tuna King,1
+193,Tuna Prince,1
+194,UFO,1
+195,Ugallu,0
+196,"Ulysses, Wings of Echantment",0
+197,Villager (Female),1
+198,Villager (Male),1
+199,Werewolf,1
+200,Wind Golem,0
+201,Wolgarm,1
+202,"Yuno, The Dark Loner",0
+203,Ziz,1

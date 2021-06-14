@@ -1,0 +1,141 @@
+skill_id,name,description,preparation,duration
+1,Aqueous Blessing (I),Moderately increases the effectiveness of Water skills for all allies.,100,100
+2,Aqueous Blessing (II),Greatly increases the effectiveness of Water skills for all allies.,90,110
+3,Aqueous Blessing (III),Massively increases the effectiveness of Water skills for all allies.,80,120
+4,Aqueous Blessing (III),Massively increases the effectiveness of Water skills for all allies.,120,120
+5,Armor of Lamentation (I),Moderately lower defense (physical and magical) for all enemies.,70,0
+6,Armor of Lamentation (II),Greatly lower defense (physical and magical) for all enemies.,60,0
+7,Armor of Lamentation (III),Massively lower defense (physical and magical) for all enemies.,50,0
+8,Armor of Lamentation (III),Massively lower defense (physical and magical) for all enemies.,75,0
+9,Begrudging Blade (I),Moderately lower attack (physical and magical) for all enemies.,70,0
+10,Begrudging Blade (II),Greatly lower attack (physical and magical) for all enemies.,60,0
+11,Begrudging Blade (III),Massively lower attack (physical and magical) for all enemies.,60,0
+12,Begrudging Blade (III),Massively lower attack (physical and magical) for all enemies.,75,0
+13,Begrudging Sword (II),Greatly lower attack (physical and magical) for all enemies. Greater effect with higher enemy stacks.,60,60
+14,Begrudging Sword (III),Massively lower attack (physical and magical) for all enemies. Greater effect with higher enemy stacks.,50,50
+15,Blessed Armor (I),Moderately raise defense (physical and magical) for all surviving allies.,70,0
+16,Blessed Armor (II),Greatly raise defense (physical and magical) for all surviving allies.,60,0
+17,Blessed Armor (III),Massively raise defense (physical and magical) for all surviving allies.,60,0
+18,Blessed Armor (III),Massively raise defense (physical and magical) for all surviving allies.,75,0
+19,Combustive Blessing (I),Moderately increases the effectiveness of Fire skills for all allies.,100,100
+20,Combustive Blessing (II),Greatly increases the effectiveness of Fire skills for all allies.,90,110
+21,Combustive Blessing (III),Massively increases the effectiveness of Fire skills for all allies.,80,120
+22,Combustive Blessing (III),Massively increases the effectiveness of Fire skills for all allies.,120,120
+23,Cry of the Damned (I),Moderately reduce the effectiveness of enemy Water attack skills. Effect ends when lifeforce is 1/2 or lower than enemy's lifeforce.,70,80
+24,Cry of the Damned (II),Greatly reduce the effectiveness of enemy Water attack skills. Effect ends when lifeforce is 1/2 or lower than enemy's lifeforce.,60,90
+25,Cry of the Damned (III),Massively reduce the effectiveness of enemy Water attack skills. Effect ends when lifeforce is 1/2 or lower than enemy's lifeforce.,50,100
+26,Defiant Roar (I),Moderately increases the effect of attack skills for all front-line allies when at a disadvantage and when comboing.,80,100
+27,Defiant Roar (II),Greatly increases the effect of attack skills for all front-line allies when at a disadvantage and when comboing.,70,110
+28,Defiant Roar (III),Massively increases the effect of attack skills for all front-line allies when at a disadvantage and when comboing.,60,120
+29,Defiant Roar (III),Massively increases the effect of attack skills for all front-line allies when at a disadvantage and when comboing.,90,120
+30,Destruction of Truth (I),Moderately lower magical defense for all enemies.,90,0
+31,Destruction of Truth (II),Greatly lower magical defense for all enemies.,80,0
+32,Destruction of Truth (III),Massively lower magical defense for all enemies.,70,0
+33,Enchanted Armor (I),Moderately raise defense (physical and magical) for all surviving allies.,60,0
+34,Enchanted Armor (II),Greatly raise defense (physical and magical) for all surviving allies.,50,0
+35,Engulfing Shout (I),Moderately reduce the effectiveness of enemy Fire attack skills. Effect ends when lifeforce is 1/2 or lower than enemy's lifeforce.,70,80
+36,Engulfing Shout (II),Greatly reduce the effectiveness of enemy Fire attack skills. Effect ends when lifeforce is 1/2 or lower than enemy's lifeforce.,60,90
+37,Engulfing Shout (III),Massively reduce the effectiveness of enemy Fire attack skills. Effect ends when lifeforce is 1/2 or lower than enemy's lifeforce.,50,100
+38,Fairy King Magic (I),Moderately reduce the SP cost of all skills for all allies.,80,100
+39,Fairy King Magic (II),Greatly reduce the SP cost of all skills for all allies.,70,110
+40,Fairy King Magic (III),Massively reduce the SP cost of all skills for all allies.,60,120
+41,False Blade (I),Moderately raise physical attack for all surviving allies.,90,0
+42,False Blade (II),Greatly raise physical attack for all surviving allies.,80,0
+43,False Blade (III),Massively raise physical attack for all surviving allies.,70,0
+44,False Destruction (I),Moderately lower physical defense for all enemies,90,0
+45,False Robustness (II),Greatly raise physical defense for all surviving allies.,80,0
+46,False Robustness (III),Massively raise physical defense for all surviving allies.,70,0
+47,For Whom The Bell Splashes (I),"Moderately increases the effect of Water skills, while increasing the Wind damage inflicted by enemies.",70,80
+48,For Whom The Bell Splashes (II),"Greatly increases the effect of Water skills, while increasing the Wind damage inflicted by enemies.",60,90
+49,For Whom The Bell Splashes (III),"Massively increases the effect of Water skills, while increasing the Wind damage inflicted by enemies.",50,100
+50,Fort of Lamentation (I),Moderately lower defense (physical and magical) for all enemies. Greater effect with higher enemy stacks.,70,0
+51,Fort of Lamentation (II),Greatly lower defense (physical and magical) for all enemies. Greater effect with higher enemy stacks.,60,0
+52,Fort of Lamentation (III),Massively lower defense (physical and magical) for all enemies. Greater effect with higher enemy stacks.,50,0
+53,Gale Blessing (I),Moderately increases the effectiveness of Wind skills for all allies.,100,100
+54,Gale Blessing (II),Greatly increases the effectiveness of Wind skills for all allies.,90,110
+55,Gale Blessing (III),Massively increases the effectiveness of Wind skills for all allies.,80,120
+56,Gale Blessing (III),Massively increases the effectiveness of Wind skills for all allies.,120,120
+57,Infernal Fairy Magic (I),Moderately reduce the SP cost of Fire skills for all allies.,80,80
+58,Infernal Fairy Magic (II),Greatly reduce the SP cost of Fire skills for all allies.,70,90
+59,Infernal Fairy Magic (III),Massively reduce the SP cost of Fire skills for all allies.,60,100
+60,Infernal Fairy Magic (III),Massively reduce the SP cost of Fire skills for all allies.,90,100
+61,Infernal Fairy Master (I),Moderately reduce the SP cost of Fire skills for all allies.,60,60
+62,Infernal Fairy Master (II),Greatly reduce the SP cost of Fire skills for all allies.,50,70
+63,Infernal Fairy Master (III),Massively reduce the SP cost of Fire skills for all allies.,40,80
+64,Magic Order (II),Restore 25% of max SP for all allies with vanguard/attack jobs.,50,0
+65,Magic Order (III),Restore 35% of max SP for all allies with vanguard/attack jobs.,40,0
+66,Magical Torrent (I),Restore 5% SP to Everyone.,60,0
+67,Magical Torrent (II),Restore 15% SP to Everyone.,50,0
+68,Negating Truth (I),Moderately lower magical attack for all enemies.,90,0
+69,Negating Truth (II),Greatly lower magical attack for all enemies.,80,0
+70,Negating Truth (III),Massively lower magical attack for all enemies.,70,0
+71,Rejecting the Charge (I),Moderately reduce the effectiveness of enemy Ranged and Polearm skills.,80,80
+72,Rejecting the Charge (II),Greatly reduce the effectiveness of enemy Ranged and Polearm skills.,70,90
+73,Rejecting the Charge (III),Massively reduce the effectiveness of enemy Ranged and Polearm skills.,60,100
+74,Rejecting the Slash (I),Moderately reduce the effectiveness of enemy Blade and Hammer skills.,80,80
+75,Rejecting the Slash (II),Greatly reduce the effectiveness of enemy Blade and Hammer skills.,70,90
+76,Rejecting the Slash (III),Massively reduce the effectiveness of enemy Blade and Hammer skills.,60,100
+77,Reversal Magic (I),Restore 15% of max SP for all allies with backline/support jobs.,60,0
+78,Reversal Magic (II),Restore 25% of max SP for all allies with backline/support jobs.,50,0
+79,Roar of Mabeat's Gorge (II),Greatly reduce the effectiveness of enemy Blade and Hammer skills.,70,90
+80,Roar of Mabeat's Gorge (III),Massively reduce the effectiveness of enemy Blade and Hammer skills.,60,100
+81,Sacrifice of Truth (I),Moderately raise magical attack for all surviving allies.,90,0
+82,Sacrifice of Truth (II),Greatly raise magical attack for all surviving front-line allies.,80,0
+83,Sacrifice of Truth (III),Massively raise magical attack for all surviving front-line allies.,70,0
+84,Smash the Fake Weapon (I),Moderately lower physical attack for all enemies.,90,0
+85,Smash the Fake Weapon (II),Greatly lower physical attack for all enemies.,80,0
+86,Smash the Fake Weapon (III),Massively lower physical attack for all enemies.,70,0
+87,Smoke Signal Rechallenge (II),Resets the number of times Sets can be changed.,70,0
+88,Smoke Signal Rechallenge (III),Resets the number of times Sets can be changed.,60,0
+89,Song of Betrayal (I),Moderately raise attack (physical and magical) for all surviving allies. Greater effect with lower allies stacks.,70,0
+90,Song of Betrayal (II),Greatly raise attack (physical and magical) for all surviving allies. Greater effect with lower allies stacks.,60,0
+91,Song of Betrayal (III),Massively raise attack (physical and magical) for all surviving allies. Greater effect with lower allies stacks.,50,0
+92,Song of Camaraderie (I),Moderately raise attack (physical and magical) for all surviving allies,60,0
+93,Song of Camaraderie (II),Greatly raise attack (physical and magical) for all surviving allies,50,0
+94,Soothing Command (I),Moderately reduce the effectiveness of enemy Wind attack skills,70,80
+95,Soothing Command (II),Greatly reduce the effectiveness of enemy Wind attack skills,60,90
+96,Soothing Command (III),Massively reduce the effectiveness of enemy Wind attack skills,50,100
+97,Spritual Reverse (II),"If the Enemy team is using a Nighmare with an Active Countdown Timer, rewind it to it's Standby State",50,0
+98,Spritual Reverse (II),"If the Enemy team is using a Nighmare with an Active Countdown Timer, rewind it to it's Standby State",40,0
+99,The Bell Sounds a Storm (I),"Moderately increases the effect of Wind skills, while increasing the Fire damage inflicted by enemies.",70,80
+100,The Bell Sounds a Storm (II),"Greatly increases the effect of Wind skills, while increasing the Fire damage inflicted by enemies.",60,90
+101,The Bell Sounds a Storm (III),"Massively increases the effect of Wind skills, while increasing the Fire damage inflicted by enemies.",50,100
+102,The Bell Sounds a Wildfire (I),"Moderately increases the effect of Fire skills, while increasing the Water damage inflicted by enemies",70,80
+103,The Bell Sounds a Wildfire (II),"Greatly increases the effect of Fire skills, while increasing the Water damage inflicted by enemies",60,90
+104,The Bell Sounds a Wildfire (III),"Massively increases the effect of Fire skills, while increasing the Water damage inflicted by enemies",50,100
+105,Tidal Fairy Magic (I),Moderately reduce the SP cost of Water skills for all allies.,80,80
+106,Tidal Fairy Magic (II),Greatly reduce the SP cost of Water skills for all allies.,70,90
+107,Tidal Fairy Magic (III),Massively reduce the SP cost of Water skills for all allies.,60,100
+108,Tidal Fairy Magic (III),Massively reduce the SP cost of Water skills for all allies.,90,100
+109,Tidal Fairy Master (I),Moderately reduce the SP cost of Water skills for all allies.,60,60
+110,Tidal Fairy Master (II),Greatly reduce the SP cost of Water skills for all allies.,50,70
+111,Tidal Fairy Master (III),Massively reduce the SP cost of Water skills for all allies.,40,80
+112,Uplifting Chant (I),Moderately increases the hit rate of Colosseum Aid skills for all allies.,100,100
+113,Uplifting Chant (II),Greatly increases the hit rate of Colosseum Aid skills for all allies.,90,110
+114,Uplifting Chant (III),Massively increases the hit rate of Colosseum Aid skills for all allies.,80,120
+115,Victorious Melody (I),Moderately raise attack (physical and magical) for all surviving allies.,70,0
+116,Victorious Melody (II),Greatly raise attack (physical and magical) for all surviving allies.,60,0
+117,Victorious Melody (III),Massively raise attack (physical and magical) for all surviving allies.,50,0
+118,Victorious Melody (III),Massively raise attack (physical and magical) for all surviving allies.,75,0
+119,Wall Sacrifice (I),Moderately raise magical defense for all surviving allies.,90,0
+120,Wall Sacrifice (II),Greatly raise magical defense for all surviving allies.,80,0
+121,Wall Sacrifice (III),Massively raise magical defense for all surviving allies.,70,0
+122,World of Ignorance (I),Moderately reduce the effectiveness of enemy Tome skills.,80,80
+123,World of Ignorance (II),Greatly reduce the effectiveness of enemy Tome skills.,70,90
+124,World of Ignorance (III),Massively reduce the effectiveness of enemy Tome skills.,60,100
+125,World of Order (I),Moderately reduce the effectiveness of enemy Staff skills.,80,80
+126,World of Order (II),Greatly reduce the effectiveness of enemy Staff skills.,70,90
+127,World of Order (III),Massively reduce the effectiveness of enemy Staff skills.,60,100
+128,World of Silence (I),Moderately reduce the effectiveness of enemy Instrument skills.,80,80
+129,World of Silence (II),Greatly reduce the effectiveness of enemy Instrument skills.,70,90
+130,World of Silence (III),Massively reduce the effectiveness of enemy Instrument skills.,60,100
+131,Zephyr Fairy Magic (I),Moderately reduce the SP cost of Wind skills for all allies.,80,80
+132,Zephyr Fairy Magic (II),Greatly reduce the SP cost of Wind skills for all allies.,70,90
+133,Zephyr Fairy Magic (III),Massively reduce the SP cost of Wind skills for all allies.,60,100
+134,Zephyr Fairy Magic (III),Massively reduce the SP cost of Wind skills for all allies.,90,100
+135,Zephyr Fairy Master (I),Moderately reduce the SP cost of Wind skills for all allies.,60,60
+136,Zephyr Fairy Master (II),Greatly reduce the SP cost of Wind skills for all allies.,50,70
+137,Zephyr Fairy Master (III),Massively reduce the SP cost of Wind skills for all allies.,40,80
+138,Hindering Wail (I),Moderately decreases the hit rate of Colosseum Aid skills for all enemies. Effect ends early if two minutes or less remining for Colosseum,70,80
+139,Hindering Wail (II),Greatly decreases the hit rate of Colosseum Aid skills for all enemies. Effect ends early if two minutes or less remining for Colosseum,60,90
+140,Hindering Wail (III),Massively decreases the hit rate of Colosseum Aid skills for all enemies. Effect ends early if two minutes or less remining for Colosseum,50,100

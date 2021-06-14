@@ -1,0 +1,9 @@
+weapon_id,name,icon
+1,Instrument,icon_001.png
+2,Tome,icon_002.png
+3,Artifact,icon_003.png
+4,Staff,icon_004.png
+5,Blade,icon_005.png
+6,Heavy,icon_006.png
+7,Projectile,icon_007.png
+8,Polearm,icon_008.png

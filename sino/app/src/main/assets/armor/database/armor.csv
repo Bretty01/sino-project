@@ -1,0 +1,94 @@
+armor_id,name,type,story_skill,set_skill
+1,2B's Combat Uniform (Polearm),2,22,1
+2,2B's Combat Uniform (Projectile),2,19,1
+3,2B's Combat Uniform (Tome),2,18,1
+4,2B's Combat Uniform (Artifact),2,24,1
+5,2B's Combat Uniform (Blade),2,20,1
+6,2B's Combat Uniform (Instrument),2,17,1
+7,2B's Combat Uniform (Staff),2,23,1
+8,2B's Combat Uniform (Heavy),2,21,1
+9,2B's Goggles (Artifact),1,24,1
+10,2B's Goggles (Blade),1,20,1
+11,2B's Goggles (Heavy),1,21,1
+12,2B's Goggles (Instrument),1,17,1
+13,2B's Goggles (Polearm),1,22,1
+14,2B's Goggles (Projectile),1,19,1
+15,2B's Goggles (Staff),1,23,1
+16,2B's Goggles (Tome),1,18,1
+17,2B's Boots (Artifact),3,24,1
+18,2B's Boots (Blade),3,20,1
+19,2B's Boots (Heavy),3,21,1
+20,2B's Boots (Instrument),3,17,1
+21,2B's Boots (Polearm),3,22,1
+22,2B's Boots (Projectile),3,19,1
+23,2B's Boots (Staff),3,23,1
+24,2B's Boots (Tome),3,18,1
+25,2B's Gloves (Artifact),4,24,1
+26,2B's Gloves (Blade),4,20,1
+27,2B's Gloves (Heavy),4,21,1
+28,2B's Gloves (Instrument),4,17,1
+29,2B's Gloves (Polearm),4,22,1
+30,2B's Gloves (Projectile),4,19,1
+31,2B's Gloves (Staff),4,23,1
+32,2B's Gloves (Tome),4,18,1
+33,Bracelet of Misery (Polearm),4,6,11
+34,Deep Sea Barette (Blade),1,20,9
+35,Deep Sea Barette (Heavy),1,21,9
+36,Deep Sea Barette (Instrument),1,17,9
+37,Deep Sea Barette (Polearm),1,22,9
+38,Deep Sea Barette (Staff),1,23,9
+39,Deep Sea Barette (Tome),1,18,9
+40,Deep Sea Dress (Blade),2,20,9
+41,Deep Sea Dress (Heavy),2,21,9
+42,Deep Sea Dress (Instrument),2,17,9
+43,Deep Sea Dress (Polearm),2,22,9
+44,Deep Sea Dress (Staff),2,23,9
+45,Deep Sea Dress (Tome),2,18,9
+46,Deep Sea Heels (Blade),3,20,9
+47,Deep Sea Heels (Heavy),3,21,9
+48,Deep Sea Heels (Instrument),3,17,9
+49,Deep Sea Heels (Polearm),3,22,9
+50,Deep Sea Heels (Staff),3,23,9
+51,Deep Sea Heels (Tome),3,18,9
+52,Deep Sea Gloves (Blade),4,20,9
+53,Deep Sea Gloves (Heavy),4,21,9
+54,Deep Sea Gloves (Instrument),4,17,9
+55,Deep Sea Gloves (Polearm),4,22,9
+56,Deep Sea Gloves (Staff),4,23,9
+57,Deep Sea Gloves (Tome),4,18,9
+58,Ebony Hood (Artifact),1,16,8
+59,Ebony Hood (Polearm),1,14,8
+60,Ebony Hood (Projectile),1,11,8
+61,Ebony Hood (Tome),1,10,8
+62,Ebony Straightjacket (Artifact),2,16,8
+63,Ebony Straightjacket (Polearm),2,14,8
+64,Ebony Straightjacket (Projectile),2,11,8
+65,Ebony Straightjacket (Tome),2,10,8
+66,Ebony Boots (Artifact),3,16,8
+67,Ebony Boots (Polearm),3,14,8
+68,Ebony Boots (Projectile),3,11,8
+69,Ebony Boots (Tome),3,10,8
+70,Ebony Gloves (Artifact),4,16,8
+71,Ebony Gloves (Polearm),4,14,8
+72,Ebony Gloves (Projectile),4,11,8
+73,Ebony Gloves (Tome),4,10,8
+74,Girl's Bracelet (Staff),4,23,12
+75,Girl's Frock (Tome),2,18,12
+76,Girl's Hairband (Instrument),1,17,12
+77,Girl's Pumps (Artifact),3,24,12
+78,Golden Helmet (Heavy),1,13,13
+79,Golden Helmet (Projectile),1,11,13
+80,Golden Helmet (Staff),1,15,13
+81,Golden Helmet (Tome),1,10,13
+82,Golden Armor (Heavy),2,13,13
+83,Golden Armor (Projectile),2,11,13
+84,Golden Armor (Staff),2,15,13
+85,Golden Armor (Tome),2,10,13
+86,Golden Greaves (Heavy),3,13,13
+87,Golden Greaves (Projectile),3,11,13
+88,Golden Greaves (Staff),3,15,13
+89,Golden Greaves (Tome),3,10,13
+90,Golden Gauntlets (Heavy),4,13,13
+91,Golden Gauntlets (Projectile),4,11,13
+92,Golden Gauntlets (Staff),4,15,13
+93,Golden Gauntlets (Tome),4,10,13

@@ -1,0 +1,234 @@
+skill_id,name,description,sp_cost
+1,Massacrist's Banishment (Fire),"Deal great physical damage to 1-2 enemies, 1.5x effect to Human enemies.",22
+2,Massacrist's Banishment (Water),"Deal great physical damage to 1-2 enemies, 1.5x effect to Human enemies.",22
+3,Fifth Form (Wicked Ice),Deal massive physical damage to 1 enemy. Increase own physical ATK and physical DEF by a small amountand Increase Combo Count by +5 when comboing.,20
+4,Type 3 (Emerald Lightning),"Deal great magical damage to 1 enemy, and increase own magical ATK and magical DEF by a small amount.",19
+5,Type 3 (Catastrophpic Flame),"Deal great physical damage to 1 enemy, and increase own physical ATK and physical DEF by a small amount.",19
+6,Type 3 (Wicked Ice),"Deal great physical damage to 1 enemy, and increase own physical ATK and physical DEF by a small amount.",19
+7,Water Technique of the Twin Songs (III),Deal great magical damage to 1 enemy. Increase Combo Count by +5 when comboing.,20
+8,Flame Technique of the Twin Songs (III),Deal great magical damage to 1-2 enemies. Increase Combo Count by +5 when comboing.,23
+9,Icicle of Leeching (II),"Deal moderate physical damage to 1 enemy, and recover a small amount of own HP.",17
+10,Icicle of Leeching (III),"Deal great physical damage to 1 enemy, and recover a small amount of own HP.",19
+11,Inferno of Leeching (I),"Deal small physical damage to 1-2 enemies, and recover a small amount of own HP.",20
+12,Inferno of Leeching (III),"Deal great physical damage to 1-2 enemies, and recover a small amount of own HP.",22
+13,Flames of Leeching (III),"Deal great physical damage to 1 enemy, and recover a small amount of own HP.",19
+14,Lightning of Leeching (I),"Deal small physical damage to 1-2 enemies, and recover a small amount of own HP.",20
+15,Tornado of Leeching (II),"Deal moderate physical damage to 1 enemy, and recover a small amount of own HP.",17
+16,Tornado of Leeching (III),"Deal great physical damage to 1 enemy, and recover a small amount of own HP.",19
+17,Evil Hail of Leeching (III),"Deal great magical damage to 1 enemy, and recover a small amount of own HP.",19
+18,Evil Blaze of Leeching (I),"Deal small magical damage to 1-2 enemies, and recover a small amount of own HP.",20
+19,Evil Blaze of Leeching (III),"Deal great magical damage to 1-2 enemies, and recover a small amount of own HP.",22
+20,Evil Ember of Leeching (III),"Deal great magical damage to 1 enemy, and recover a small amount of own HP.",19
+21,Evil Thunder of Leeching (I),"Deal small magical damage to 1-2 enemies, and recover a small amount of own HP.",20
+22,Evil Hail of Leeching (I),"Deal small magical damage to 1-2 enemies, and recover a small amount of own HP.",20
+23,Evil Gust of Leeching (II),"Deal moderate magical damage to 1 enemy, and recover a small amount of own HP.",17
+24,Evil Gust of Leeching (III),"Deal great magical damage to 1 enemy, and recover a small amount of own HP.",19
+25,Vampiric Scar (III),"Deal great magical damage to 1 enemy, and recover 10 SP.",20
+26,Icicle of Assault (III),"Deal great physical damage to 1 enemy, and increase own physical ATK by a small amount.",19
+27,Icicle of Assault (IV),"Deal massive physical damage to 1 enemy, and increase own physical ATK by a small amount.",20
+28,Inferno of Assault (I),"Deal small physical damage to 1-2 enemies, and increase own physical ATK by a small amount.",20
+29,Inferno of Assault (II),"Deal moderate physical damage to 1-2 enemies, and increase own physical ATK by a small amount.",20
+30,Inferno of Assault (III),"Deal moderate physical damage to 1-2 enemies, and increase own physical ATK by a small amount.",22
+31,Flames of Assault (III),"Deal great physical damage to 1 enemy, and increase own physical ATK by a small amount.",17
+32,Flames of Assault (III),"Deal great physical damage to 1 enemy, and increase own physical ATK by a small amount.",19
+33,Lightning of Assault (III),"Deal great physical damage to 1-2 enemies, and increase own physical ATK by a small amount.",22
+34,Hailstorm of Assault (III),"Deal great physical damage to 1-2 enemies, and increase own physical ATK by a small amount.",22
+35,Gale of Assault (II),"Deal moderate physical damage to 1 enemy, and increase own physical ATK by a small amount.",17
+36,Gale of Assault (III),"Deal great physical damage to 1 enemy, and increase own physical ATK by a small amount.",19
+37,Evil Hail of Assault (II),"Deal moderate magical damage to 1 enemy, and increase own magical ATK by a small amount.",19
+38,Evil Hail of Assault (III),"Deal great magical damage to 1 enemy, and increase own magical ATK by a small amount.",19
+39,Evil Blaze of Assault (III),"Deal great magical damage to 1-2 enemies, and increase own magical ATK by a small amount.",22
+40,Evil Ember of Assault (II),"Deal moderate magical damage to 1 enemy, and increase own magical ATK by a small amount.",19
+41,Evil Ember of Assault (III),"Deal great magical damage to 1 enemy, and increase own magical ATK by a small amount.",19
+42,Evil Thunder of Assault (I),"Deal small magical damage to 1-2 enemies, and increase own magical ATK by a small amount.",20
+43,Evil Thunder of Assault (II),"Deal moderate magical damage to 1-2 enemies, and increase own magical ATK by a small amount.",20
+44,Evil Thunder of Assault (III),"Deal great magical damage to 1-2 enemies, and increase own magical ATK by a small amount.",22
+45,Evil Hail of Assault (I),"Deal small magical damage to 1-2 enemies, and increase own magical ATK by a small amount.",20
+46,Evil Hail of Assault (III),"Deal great magical damage to 1-2 enemies, and increase own magical ATK by a small amount.",22
+47,Icicle of Onslaught (III),"Deal great physical damage to 1 enemy, and decrease their physical ATK by a small amount.",19
+48,Inferno Onslaught (III),"Deal great physical damage to 1-2 enemies, and decrease their physical ATK by a small amount.",22
+49,Blazing Onslaught (III),"Deal great physical damage to 1 enemy, and decrease their physical ATK by a small amount.",19
+50,Lightning of Onslaught (III),"Deal great physical damage to 1-2 enemies, and decrease their physical ATK by a small amount.",22
+51,Hailstorm of Onslaught (III),"Deal great physical damage to 1-2 enemies, and decrease their physical ATK by a small amount.",22
+52,Gale of Onslaught (III),"Deal great physical damage to 1 enemy, and decrease their physical ATK by a small amount.",19
+53,Evil Ember of Onslaught (III),"Deal great magical damage to 1 enemy, and decrease their magical ATK by a small amount.",19
+54,Evil Thunder of Onslaught (III),"Deal great magical damage to 1-2 enemies, and decrease their magical ATK by a small amount.",22
+55,Evil Hail Onslaught (III),"Deal great magical damage to 1-2 enemies, and decrease their magical ATK by a small amount.",22
+56,Evil Gust of Onslaught (III),"Deal great magical damage to 1 enemy, and decrease their magical ATK by a small amount.",19
+57,Hells of Sorcery (III),"Deal great magical damage to 1-2 enemies, and increase Power when Allies Nightmare [The Bell Sounds a Wildfire] is active.",24
+58,Water God's Authority (III),"Deal great physical damage to 1 enemy, and decrease their physical ATK and magical ATK by a small amount.",19
+59,Water God's Prestige (III),"Deal great physical damage to 1-2 enemies, and decrease their physical ATK and magical ATK by a small amount.",22
+60,Water Demon's Authority (III),"Deal great magical damage to 1 enemy, and decrease their physical ATK and magical ATK by a small amount.",19
+61,Mist of Sorcery (III),"Deal great magical damage to 1-2 enemies, and increase Power when Allies Nightmare [For Whom The Bell Splashes] is active.",24
+62,Flame God's Force (III),"Deal great physical damage to 1-2 enemies, and decrease their physical ATK and magical ATK by a small amount.",22
+63,Flame Demon's Authority (III),"Deal great magical damage to 1 enemy, and decrease their physical ATK and magical ATK by a small amount.",19
+64,Flaming Pursuit (III),Deal great physical damage to 1 enemy. Increase Combo Count by +5 when comboing.,20
+65,Pounding Inferno (III),Deal great physical damage to 1-2 enemies. Increase Combo Count by +5 when comboing.,23
+66,Beast Hunter's Surge (Fire),"Deal great magical damage to 1 enemy, 1.5x effect to Beast enemies.",22
+67,Sand Boundary (III),"Deal great magical damage to 1-2 enemies, and increase own physical DEF and magical DEF by a small amount.",22
+68,Roaring Sandstorm Barrier (III),"Deal great physical damage to 1-2 enemies, and increase own physical DEF and magical DEF by a small amount.",22
+69,Sand Barricade (III),"Deal great physical damage to 1 enemy, and increase own physical DEF and magical DEF by a small amount.",19
+70,Wave of Destruction (II),Deal moderate physical damage to 1 enemy.,14
+71,Wave of Destruction (III),Deal great physical damage to 1 enemy.,16
+72,Wave of Destruction (IV),Deal massive physical damage to 1 enemy.,18
+73,Torrent of Destruction (I),Deal small physical damage to 1-2 enemies.,17
+74,Torrent of Destruction (II),Deal moderate physical damage to 1-2 enemies.,19
+75,Torrent of Destruction (III),Deal great physical damage to 1-w enemies.,21
+76,Inferno of Destruction (I),Deal small physical damage to 1-2 enemies.,17
+77,Inferno of Destruction (II),Deal moderate physical damage to 1-2 enemies.,19
+78,Inferno of Destruction (III),Deal great physical damage to 1-2 enemies.,21
+79,Torch of Destruction (II),Deal moderate physical damage to 1 enemy.,14
+80,Torch of Destruction (III),Deal great physical damage to 1 enemy.,16
+81,Torch of Destruction (IV),Deal massive physical damage to 1 enemy.,18
+82,Gale of Destruction (II),Deal moderate physical damage to 1 enemy.,14
+83,Gale of Destruction (III),Deal great physical damage to 1 enemy.,16
+84,Gale of Destruction (IV),Deal massive physical damage to 1 enemy.,18
+85,Gale of Destruction (I),Deal small physical damage to 1-2 enemies.,17
+86,Gale of Destruction (II),Deal moderate physical damage to 1-2 enemies.,19
+87,Gale of Destruction (III),Deal great physical damage to 1-2 enemies.,21
+88,Fourth Form (Wicked Ice),"Deal massive physical damage to 1 enemy, and increase own physical ATK and physical DEF by a small amount.",22
+89,Rampart of Black Ice (I),"Deal small physical damage to 1-2 enemies, and increase own physical DEF and magical DEF by a small amount.",20
+90,Rampart of Black Ice (III),"Deal great physical damage to 1-2 enemies, and increase own physical DEF and magical DEF by a small amount.",22
+91,Spider Surge (Water),"Deal great magical damage to 1-2 enemies, 1.5x effect to Spider enemies.",22
+92,Inferno of Protection (III),"Deal great physical damage to 1-2 enemies, and increase own physical DEF by a small amount.",22
+93,Lightning of Protection (III),"Deal great physical damage to 1-2 enemies, and increase own physical DEF by a small amount.",22
+94,Hailstorm of Protection (III),"Deal great physical damage to 1-2 enemies, and increase own physical DEF by a small amount.",22
+95,Evil Blaze of Protection (I),"Deal small magical damage to 1-2 enemies, and increase own magical DEF by a small amount.",20
+96,Evil Blaze of Protection (III),"Deal great magical damage to 1-2 enemies, and increase own magical DEF by a small amount.",22
+97,Evil Ember of Protection (III),"Deal great magical damage to 1 enemy, and increase own magical DEF by a small amount.",19
+98,Evil Roar of Protection (III),"Deal great magical damage to 1-2 enemies, and increase own magical DEF by a small amount.",22
+99,Evil Hail of Protection (III),"Deal great magical damage to 1-2 enemies, and increase own magical DEF by a small amount.",22
+100,Magical Gust of Protection (IV),"Deal massive magical damage to 1 enemy, and increase own magical DEF by a small amount.",20
+101,Inferno of Defence (III),"Deal great physical damage to 1-2 enemies, and decrease their physical DEF by a small amount.",22
+102,Lightning of Defence (III),"Deal great physical damage to 1-2 enemies, and decrease their physical DEF by a small amount.",22
+103,Hailstorm of Defence (III),"Deal great physical damage to 1-2 enemies, and decrease their physical DEF by a small amount.",22
+104,Gale of Defense (III),"Deal great physical damage to 1 enemy, and decrease their physical DEF by a small amount.",19
+105,Evil Ice of Defense (III),"Deal great magical damage to 1 enemy, and decrease their magical DEF by a small amount.",19
+106,Evil Ember of Defense (III),"Deal great magical damage to 1 enemy, and decrease their magical DEF by a small amount.",19
+107,Evil Thunder of Defense (III),"Deal great magical damage to 1-2 enemies, and decrease their magical DEF by a small amount.",22
+108,Evil Hail of Defense (III),"Deal great magical damage to 1-2 enemies, and decrease their magical DEF by a small amount.",22
+109,Evil Gale of Defense (III),"Deal great magical damage to 1 enemy, and decrease their magical DEF by a small amount.",19
+110,Storm Fang (III),"Deal great physical damage to 1-2 enemies, and increase Power when Allies Nightmare [The Bell Sounds a Storm] is active.",24
+111,Rampart of Heat (I),"Deal small physical damage to 1-2 enemies, and increase own physical DEF and magical DEF by a small amount.",20
+112,Rampart of Heat (III),"Deal great physical damage to 1-2 enemies, and increase own physical DEF and magical DEF by a small amount.",22
+113,Barricade of Heat (III),"Deal great physical damage to 1 enemy, and increase own physical DEF and magical DEF by a small amount.",19
+114,Pounding Wind Blade (III),Deal great physical damage to 1-2 enemies. Increase Combo Count by +5 when comboing.,23
+115,Wind God's Authority (III),"Deal great physical damage to 1 enemy, and decrease their physical ATK and magical ATK by a small amount.",19
+116,Wind God's Force (III),"Deal great physical damage to 1-2 enemies, and decrease their physical ATK and magical ATK by a small amount.",22
+117,Wave of Exorcism (II),Deal moderate magical damage to 1 enemy.,14
+118,Wave of Exorcism (III),Deal great magical damage to 1 enemy.,16
+119,Wave of Exorcism (IV),Deal massive magical damage to 1 enemy.,18
+120,Torrent of Exorcism (I),Deal small magical damage to 1 enemy.,17
+121,Torrent of Exorcism (II),Deal moderate magical damage to 1 enemy.,19
+122,Torrent of Exorcism (III),Deal great magical damage to 1 enemy.,21
+123,Inferno of Exorcism (I),Deal small magical damage to 1 enemy.,17
+124,Inferno of Exorcism (II),Deal moderate magical damage to 1 enemy.,19
+125,Inferno of Exorcism (III),Deal great magical damage to 1 enemy.,21
+126,Torch of Exorcism (II),Deal moderate magical damage to 1 enemy.,14
+127,Torch of Exorcism (III),Deal great magical damage to 1 enemy.,16
+128,Torch of Exorcism (IV),Deal massive magical damage to 1 enemy.,18
+129,Gale of Exorcism (II),Deal moderate magical damage to 1 enemy.,14
+130,Gale of Exorcism (III),Deal great magical damage to 1 enemy.,16
+131,Gale of Exorcism (IV),Deal massive magical damage to 1 enemy.,18
+132,Gale of Exorcism (I),Deal small magical damage to 1 enemy.,17
+133,Gale of Exorcism (II),Deal moderate magical damage to 1 enemy.,19
+134,Gale of Exorcism (III),Deal great magical damage to 1 enemy.,21
+135,Incantation of Rust (III),Reduce the physical ATK of 1-2 enemies by a great amount.,21
+136,Curse of Rust (III),Reduce the physical ATK of 1 enemy by a great amount.,16
+137,Curse of Rust (IV),Reduce the physical ATK of 1 enemy by a massive amount.,18
+138,The Passion of the Gladiator (III),Increase the physical ATK and magical DEF of 1-2 allies by a great amount.,22
+139,Hero's Harmony (I),Increase the physical ATK and magical ATK of 2 allies by a small amount.,22
+140,Hero's Harmony (I),Increase the physical ATK and magical ATK of 2 allies by a small amount.,23
+141,Hero's Harmony (I),Increase the physical ATK and magical ATK of 2 allies by a small amount.,24
+142,Hero's Harmony (II),Increase the physical ATK and magical ATK of 2 allies by a moderate amount.,26
+143,Hero's Harmony (III),Increase the physical ATK and magical ATK of 1-2 allies by a great amount.,21
+144,Hero's Harmony (III),Increase the physical ATK and magical ATK of 1-2 allies by a great amount.,23
+145,Hero's Rhapsody (I),Increase the physical ATK and magical ATK of 1 ally by a small amount.,15
+146,Hero's Rhapsody (III),Increase the physical ATK and magical ATK of 1 ally by a great amount.,17
+147,Hero's Rhapsody (III),Increase the physical ATK and magical ATK of 1 ally by a great amount.,18
+148,Wind Technique of the Twin Songs (III),Deal great magical damage to 1 enemy. Increase Combo Count by +5 when comboing.,20
+149,Incantation of Demolition (II),Reduce the physical DEF of 2 enemies by a moderate amount.,25
+150,Incantation of Demolition (III),Reduce the physical DEF of 1-2 enemies by a great amount.,21
+151,Curse of Demolition (III),Reduce the physical DEF of 1 enemy by a great amount.,16
+152,Curse of Demolition (IV),Reduce the physical DEF of 1 enemy by a massive amount.,18
+153,Angel's Sigh (III),"Heal 1 ally by a great amount of HP, and recover their SP by 20.",20
+154,Angel's Breath (III),"Heal 1-2 allies by a great amount of HP, and recover their SP by 20.",23
+155,Blessed Gospel (I),Heal 1-2 allies by a small amount of HP.,17
+156,Blessed Gospel (I),Heal 2 allies by a small amount of HP.,23
+157,Blessed Gospel (II),Heal 1-2 allies by a small moderate of HP.,19
+158,Blessed Gospel (III),Heal 1-2 allies by a small great of HP.,21
+159,Blessed Gospel (III),Heal 2 allies by a small great of HP.,25
+160,Warrior's Waltz (III),Increase the physical ATK of 1 ally by a great amount.,16
+161,Warrior's Waltz (IV),Increase the physical ATK of 1 ally by a massive amount.,18
+162,Warrior's Rondo (II),Increase the physical ATK of 2 allies by a moderate amount.,25
+163,Warrior's Rondo (III),Increase the physical ATK of 1-2 allies by a great amount.,21
+164,Breath of Assault (III) ,"Heal 1 ally by a great amount of HP, and increase their physical ATK by a small amount.",19
+165,Breath of Assault (II) ,"Heal 2 allies by a moderate amount of HP, and increase their physical ATK by a small amount.",26
+166,Breath of Assault (III) ,"Heal 1-2 allies by a great amount of HP, and increase their physical ATK by a small amount.",22
+167,Prayer of Assault (II),"Heal 1 ally by a moderate amount of HP, and increase their magical ATK by a small amount.",17
+168,Prayer of Assault (III),"Heal 1 ally by a great amount of HP, and increase their magical ATK by a small amount.",19
+169,Staff of Assault (II),"Heal 2 allies by a moderate amount of HP, and increase their magical ATK by a small amount.",26
+170,Staff of Assault (III),"Heal 1-2 allies by a great amount of HP, and increase their magical ATK by a small amount.",22
+171,Gospel of Charity (III),Heal 1-3 allies by a great amount of HP.,25
+172,Incantation of Shackles (III),Reduce the physical ATK and physical DEF of 1-2 enemies by a great amount.,22
+173,Shackle Curse (III),Reduce the physical ATK and physical DEF of 1 enemy by a great amount.,19
+174,Gospel of War (Verse 4),"Heal 1 ally by a massive amount of HP, and increase their physical ATK and physical DEF by a small amount.",22
+175,Gospel of War (Verse 5),"Heal 1-3 allies by a massive amount of HP, and increase their physical ATK and physical DEF by a small amount.",21
+176,Healing Light (II),Heal 1 ally by a moderate amount of HP.,14
+177,Healing Light (III),Heal 1 ally by a great amount of HP.,16
+178,Healing Light (III),Heal 1 ally by a great amount of HP.,18
+179,Healing Light (IV),Heal 1 ally by a massive amount of HP.,18
+180,Incantation of Breaking (III),Reduce the physical ATK and magical DEF of 1-2 enemies by a great amount.,22
+181,Exorcist's Incantation (III),Reduce the magical ATK and magical DEF of 1-2 enemies by a great amount.,22
+182,Barrier Master's Nocturne (II),Increase the magical DEF of 1-2 allies by a moderate amount.,19
+183,Barrier Master's Nocturne (II),Increase the magical DEF of 2 allies by a moderate amount.,25
+184,Barrier Master's Nocturne (III),Increase the magical DEF of 1-2 allies by a great amount.,21
+185,Barrier Master's Serenade (IV),Increase the magical DEF of 1 ally by a massive amount.,18
+186,Holy Knight's Gospel (I),Increase the physical DEF and magical DEF of 2 allies by a small amount.,22
+187,Holy Knight's Gospel (I),Increase the physical DEF and magical DEF of 2 allies by a small amount.,23
+188,Holy Knight's Gospel (II),Increase the physical DEF and magical DEF of 2 allies by a moderate amount.,25
+189,Holy Knight's Gospel (II),Increase the physical DEF and magical DEF of 2 allies by a moderate amount.,26
+190,Holy Knight's Gospel (III),Increase the physical DEF and magical DEF of 1-2 allies by a great amount.,22
+191,Holy Knight's Hymn (I),Increase the physical DEF and magical DEF of 1 ally by a small amount.,15
+192,Holy Knight's Hymn (III),Increase the physical DEF and magical DEF of 1 ally by a great amount.,17
+193,Holy Knight's Hymn (III),Increase the physical DEF and magical DEF of 1 ally by a great amount.,18
+194,Holy Knight's Hymn (III),Increase the physical DEF and magical DEF of 1 ally by a great amount.,19
+195,Incantation of Corrosion (I),Reduce the physical ATK and magical ATK of 2 enemies by a small amount.,22
+196,Incantation of Corrosion (I),Reduce the physical ATK and magical ATK of 2 enemies by a small amount.,23
+197,Incantation of Corrosion (II),Reduce the physical ATK and magical ATK of 2 enemies by a moderate amount.,26
+198,Incantation of Corrosion (III),Reduce the physical ATK and magical ATK of 1-2 enemies by a great amount.,22
+199,Curse of Corrosion (I),Reduce the physical ATK and magical ATK of 1 enemy by a small amount.,15
+200,Curse of Corrosion (III),Reduce the physical ATK and magical ATK of 1 enemy by a great amount.,17
+201,Curse of Corrosion (III),Reduce the physical ATK and magical ATK of 1 enemy by a great amount.,19
+202,Champion's Harmony (II),Increase the physical ATK and physical DEF of 2 allies by a moderate amount.,26
+203,Champion's Harmony (III),Increase the physical ATK and physical DEF of 1-2 allies by a great amount.,22
+204,Incantation of Submission (I),Reduce the physical DEF and magical DEF of 2 enemies by a small amount.,22
+205,Incantation of Submission (I),Reduce the physical DEF and magical DEF of 2 enemies by a small amount.,23
+206,Incantation of Submission (II),Reduce the physical DEF and magical DEF of 2 enemies by a moderate amount.,25
+207,Incantation of Submission (III),Reduce the physical DEF and magical DEF of 1-2 enemies by a great amount.,22
+208,Curse of Submission (I),Reduce the physical DEF and magical DEF of 1 enemy by a small amount.,15
+209,Curse of Submission (II),Reduce the physical DEF and magical DEF of 1 enemy by a moderate amount.,17
+210,Curse of Submission (III),Reduce the physical DEF and magical DEF of 1 enemy by a great amount.,19
+211,Curse of Submission (IV),Reduce the physical DEF and magical DEF of 1 enemy by a massive amount.,20
+212,Incantation of Debilitation (II),Reduce the magical ATK of 2 enemies by a moderate amount.,25
+213,Incantation of Debilitation (III),Reduce the magical ATK of 1-2 enemies by a great amount.,21
+214,Curse of Disenchantment (IV),Reduce the magical DEF of 1 enemy by a massive amount.,18
+215,Sage's Gospel (II),Increase the magical ATK and magical DEF of 2 allies by a moderate amount.,26
+216,Sage's Gospel (III),Increase the magical ATK and magical DEF of 1-2 allies by a great amount.,22
+217,Breath of Protection (III),"Heal 1 ally by a great amount of HP, and increase their physical DEF by a small amount.",19
+218,Breath of Protection (III),"Heal 1-2 allies by a great amount of HP, and increase their physical DEF by a small amount.",22
+219,Breath of Protection (IV),"Heal 1 ally by a massive amount of HP, and increase their physical DEF by a small amount.",20
+220,Prayer of Protection (III),"Heal 1 ally by a great amount of HP, and increase their magical DEF by a small amount.",19
+221,Staff of Protection (II),"Heal 2 allies by a moderate amount of HP, and increase their magical DEF by a small amount.",26
+222,Staff of Protection (III),"Heal 1-2 allies by a great amount of HP, and increase their magical DEF by a small amount.",22
+223,Knight's Nocturne (II),Increase the physical DEF of 1-2 allies by a moderate amount.,19
+224,Knight's Nocturne (III),Increase the physical DEF of 1-2 allies by a great amount.,21
+225,Sorcerer's Waltz (IV),Increase the magical ATK of 1 ally by a massive amount.,18
+226,Sorcerer's Rondo (II),Increase the magical ATK of 2 allies by a moderate amount.,25
+227,Sorcerer's Rondo (III),Increase the magical ATK of 1-2 allies by a great amount.,21
+228,Incantation of Disenchantment (II),Reduce the magical DEF of 2 enemies by a moderate amount.,25
+229,Incantation of Disenchantment (III),Reduce the magical DEF of 1-2 enemies by a great amount.,21
+230,Curse of Debilitation (III),Reduce the magical ATK of 1 enemy by a great amount.,16
+231,Curse of Debilitation (IV),Reduce the magical ATK of 1 enemy by a massive amount.,18
+232,Evil Blaze Onslaught (III),"Deal great magical damage to 1-2 enemies, and decrease their magical ATK by a small amount.",22
+233,Incantation of Shackles (II),Reduce the physical ATK and physical DEF of 2 enemies by a moderate amount.,26

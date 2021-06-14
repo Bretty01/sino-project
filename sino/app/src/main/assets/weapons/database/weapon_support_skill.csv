@@ -1,0 +1,56 @@
+skill_id,name,description
+1,Blade Deployment (I),Fixed chance to increase physical ATK of one member of the vanguard by a small amount while executing commands.
+2,Blade Deployment (II),Fixed chance to increase physical ATK of one member of the vanguard by a great amount while executing commands.
+3,Dauntless Courage (I),Fixed chance to slightly increase damage while attacking.
+4,Dauntless Courage (II),Fixed chance to moderately increase damage while attacking.
+5,Recovery Support (I),Fixed chance to slightly increase HP recovered while healing.
+6,Recovery Support (II),Fixed chance to moderately increase HP recovered while healing.
+7,Anti-P.DMG Barrier (I),Fixed chance to slightly increase own physical DEF while attacking.
+8,Anti-P.DMG Barrier (II),Fixed chance to moderately increase own physical DEF while attacking.
+9,Defensive Barrier (I),Fixed chance to slightly increase own physical DEF and magical DEF while attacking.
+10,Defensive Barrier (II),Fixed chance to moderately increase own physical DEF and magical DEF while attacking.
+11,Anti-M.DMG Barrier (I),Fixed chance to slightly increase own magical DEF while attacking.
+12,Anti-M.DMG Barrier (II),Fixed chance to moderately increase own magical DEF while attacking.
+13,ATK Debuff (I),Fixed chance to slightly reduce enemy's physical ATK and magical ATK while attacking.
+14,ATK Debuff (II),Fixed chance to moderately reduce enemy's physical ATK and magical ATK while attacking.
+15,ATK Support (I),Fixed chance to slightly increase own physical ATK and magical ATK while attacking.
+16,Deploy Square Formation (I),Fixed chance to increase magical ATK of one member of the vanguard by a small amount while executing commands.
+17,Deploy Square Formation (II),Fixed chance to increase magical ATK of one member of the vanguard by a great amount while executing commands.
+18,Destroy Weapon(I),Fixed chance to slightly reduce enemy's physical ATK and magical ATK while providing backup.
+19,Destroy Weapon(II),Fixed chance to moderately reduce enemy's physical ATK and magical ATK while providing backup.
+20,Weapon Repair (I),Fixed chance to slightly increase one vanguard member's physical ATK and magical ATK while providing backup.
+21,Weapon Repair (II),Fixed chance to moderately increase one vanguard member's physical ATK and magical ATK while providing backup.
+22,P.ATK Debuff (I),Fixed chance to slightly reduce enemy's physical ATK while attacking.
+23,P.ATK Debuff (II),Fixed chance to moderately reduce enemy's physical ATK while attacking.
+24,P.ATK Support (I),Fixed chance to slightly increase own physical ATK while attacking.
+25,P.ATK Support (II),Fixed chance to moderately increase own physical ATK while attacking.
+26,Recover P.ATK (II),Fixed chance to Increase the physical ATK of 1 ally in the vanguard by a moderate amount while healing.
+27,P.DEF Debuff (I),Fixed chance to slightly reduce enemy's physical DEF while attacking.
+28,P.DEF Debuff (II),Fixed chance to moderately reduce enemy's physical DEF while attacking.
+29,P.DEF Recovery(I),Fixed chance to Increase the physical DEF of 1 ally in the vanguard by a slight amount while healing.
+30,Mental Focus (I),Fixed chance to slightly increase own magical ATK while attacking.
+31,Mental Focus (II),Fixed chance to moderately increase own magical ATK while attacking.
+32,Support Boon (I),Fixed chance to slightly increase support effects while providing backup.
+33,Support Boon (II),Fixed chance to moderately increase support effects while providing backup.
+34,Support Boon (III),Fixed chance to greatly increase support effects while providing backup.
+35,Resurrection (II),Fixed chance to moderately increase support effects while providing backup. Increased effect when at a disadvantage.
+36,Iron Shield Deployment (I),Fixed chance to increase physical DEF of one member of the vanguard by a small amount while executing commands.
+37,Iron Shield Deployment (II),Fixed chance to increase physical DEF of one member of the vanguard by a great amount while executing commands.
+38,Destroy Armor (I),Fixed chance to slightly reduce enemy's physical DEF and magical DEF while providing backup.
+39,Destroy Armor (II),Fixed chance to moderately reduce enemy's physical DEF and magical DEF while providing backup.
+40,Armor Repair (I),Fixed chance to slightly increase one vanguard member's physical DEF and magical DEF while providing backup.
+41,Armor Repair (II),Fixed chance to moderately increase one vanguard member's physical DEF and magical DEF while providing backup.
+42,Barrier Deployment (II),Fixed chance to increase magical DEF of one member of the vanguard by a great amount while executing commands.
+43,Barrier Break (I),Fixed chance to slightly reduce enemy's physical DEF and magical DEF while attacking.
+44,Barrier Break (II),Fixed chance to moderately reduce enemy's physical DEF and magical DEF while attacking.
+45,Replenish Magic (I),Fixed chance to slightly reduce SP consumption while executing commands.
+46,Replenish Magic (II),Fixed chance to moderately reduce SP consumption while executing commands.
+47,M.ATK Debuff (I),Fixed chance to slightly reduce enemy's magical ATK while attacking.
+48,M.ATK Debuff (II),Fixed chance to moderately reduce enemy's magical ATK while attacking.
+49,Recover M.ATK (I),Fixed chance to Increase the magical ATK of 1 ally in the vanguard by a slight amount while healing.
+50,Recover M.ATK (II),Fixed chance to Increase the magical ATK of 1 ally in the vanguard by a moderate amount while healing.
+51,M.DEF Debuff (I),Fixed chance to slightly reduce enemy's magical DEF while attacking.
+52,M.DEF Debuff (II),Fixed chance to moderately reduce enemy's magical DEF while attacking.
+53,Recover M.DEF (I),Fixed chance to Increase the magical DEF of 1 ally in the vanguard by a slight amount while healing.
+54,Recover M.DEF (II),Fixed chance to Increase the magical DEF of 1 ally in the vanguard by a moderate amount while healing.
+55,Recovery Support (III),Fixed chance to greatly increase HP recovered while healing.
