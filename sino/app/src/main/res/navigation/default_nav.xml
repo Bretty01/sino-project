@@ -5,7 +5,13 @@
             android:id="@+id/default_nav"
             app:startDestination="@id/listFragment">
     <fragment android:id="@+id/listFragment"
-              android:name="com.example.sino.fragments.ListFragment"
+              android:name="com.example.sino.fragments.armor.ArmorListFragment"
               android:label="List"
-              tools:layout="@layout/fragment_list"/>
+              tools:layout="@layout/fragment_list">
+        <action android:id="@+id/action_listFragment_to_armorInfo" app:destination="@id/armorInfo"/>
+    </fragment>
+    <fragment android:id="@+id/armorInfo"
+              android:name="com.example.sino.fragments.armor.ArmorInfo"
+              android:label="fragment_armor_info"
+              tools:layout="@layout/fragment_armor_info"/>
 </navigation>

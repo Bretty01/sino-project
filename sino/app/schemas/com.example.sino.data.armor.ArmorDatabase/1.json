@@ -1,0 +1,263 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "8e9188ebaa174c267458b4ff2d5b7699",
+    "entities": [
+      {
+        "tableName": "armor_support_skill",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`skill_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `description` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "skill_id",
+            "columnName": "skill_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "skill_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "armor_type",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`type_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `icon` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "type_id",
+            "columnName": "type_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "icon",
+            "columnName": "icon",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "type_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "armor_set",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`set_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `description` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "set_id",
+            "columnName": "set_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "set_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "armor",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`armor_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `type` INTEGER NOT NULL, `story_skill` INTEGER NOT NULL, `set_skill` INTEGER NOT NULL, FOREIGN KEY(`type`) REFERENCES `armor_type`(`type_id`) ON UPDATE NO ACTION ON DELETE NO ACTION , FOREIGN KEY(`set_skill`) REFERENCES `armor_set`(`set_id`) ON UPDATE NO ACTION ON DELETE NO ACTION , FOREIGN KEY(`story_skill`) REFERENCES `armor_support_skill`(`skill_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "armor_id",
+            "columnName": "armor_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "story_skill",
+            "columnName": "story_skill",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "set_skill",
+            "columnName": "set_skill",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "armor_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "armor_type",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "type"
+            ],
+            "referencedColumns": [
+              "type_id"
+            ]
+          },
+          {
+            "table": "armor_set",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "set_skill"
+            ],
+            "referencedColumns": [
+              "set_id"
+            ]
+          },
+          {
+            "table": "armor_support_skill",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "story_skill"
+            ],
+            "referencedColumns": [
+              "skill_id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "armor_stats",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`rank_id` INTEGER NOT NULL, `armor_id` INTEGER NOT NULL, `rank` TEXT NOT NULL, `icon` TEXT NOT NULL, `min_pdef` INTEGER NOT NULL, `min_mdef` INTEGER NOT NULL, `max_pdef` INTEGER NOT NULL, `max_mdef` INTEGER NOT NULL, PRIMARY KEY(`rank_id`, `armor_id`), FOREIGN KEY(`armor_id`) REFERENCES `armor`(`armor_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "rank_id",
+            "columnName": "rank_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "armor_id",
+            "columnName": "armor_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rank",
+            "columnName": "rank",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "icon",
+            "columnName": "icon",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "min_pdef",
+            "columnName": "min_pdef",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "min_mdef",
+            "columnName": "min_mdef",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "max_pdef",
+            "columnName": "max_pdef",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "max_mdef",
+            "columnName": "max_mdef",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "rank_id",
+            "armor_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "armor",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "armor_id"
+            ],
+            "referencedColumns": [
+              "armor_id"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8e9188ebaa174c267458b4ff2d5b7699')"
+    ]
+  }
+}

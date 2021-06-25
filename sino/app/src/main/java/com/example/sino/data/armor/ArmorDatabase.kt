@@ -5,7 +5,8 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [ArmorSupportSkill::class], version = 1, exportSchema = true)
+@Database(entities = [ArmorSupportSkill::class, ArmorType::class, ArmorSet::class,
+    Armor::class, ArmorStats::class], version = 1, exportSchema = true)
 abstract class ArmorDatabase: RoomDatabase()
 {
     abstract fun armorDao(): ArmorDao
@@ -15,7 +16,7 @@ abstract class ArmorDatabase: RoomDatabase()
         @Volatile
         private var INSTANCE: ArmorDatabase? = null
 
-        fun getSupportDatabase(context: Context): ArmorDatabase
+        fun getArmorDatabase(context: Context): ArmorDatabase
         {
             //Variable to check if the database exists
             //If the database exists, return it
@@ -29,8 +30,9 @@ abstract class ArmorDatabase: RoomDatabase()
             {
                val instance = Room.databaseBuilder(
                    context.applicationContext, ArmorDatabase::class.java,
-                   "armor_support_skill"
-               ).build()
+                   "armor.db")
+                   .createFromAsset("armor/database/armor.db")
+                   .build()
                 INSTANCE = instance
                 return instance
             }
