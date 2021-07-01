@@ -7,7 +7,8 @@ data class ArmorSupportSkill(
     @PrimaryKey(autoGenerate = true)
     val skill_id: Int,
     val name: String,
-    val description: String
+    val description: String,
+    val element: Int
 )
 
 @Entity(tableName = "armor_type")
@@ -53,9 +54,17 @@ data class ArmorStats(
     val min_pdef: Int,
     val min_mdef: Int,
     val max_pdef: Int,
-    val max_mdef: Int,
+    val max_mdef: Int
 )
-
+/**
+@Entity(tableName = "armor_element")
+data class ArmorElement(
+    @PrimaryKey(autoGenerate = true)
+    val element_id: Int,
+    val name: String,
+    val icon: String
+)
+*/
 data class TypeRelation(
     @Embedded val armor: Armor,
     @Relation(

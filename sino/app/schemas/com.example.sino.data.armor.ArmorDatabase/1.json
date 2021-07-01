@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "8e9188ebaa174c267458b4ff2d5b7699",
+    "identityHash": "3f1645ca43cb54ff20b4a8b1bf3b55a3",
     "entities": [
       {
         "tableName": "armor_support_skill",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`skill_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `description` TEXT NOT NULL)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`skill_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `description` TEXT NOT NULL, `element` INTEGER NOT NULL)",
         "fields": [
           {
             "fieldPath": "skill_id",
@@ -24,6 +24,12 @@
             "fieldPath": "description",
             "columnName": "description",
             "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "element",
+            "columnName": "element",
+            "affinity": "INTEGER",
             "notNull": true
           }
         ],
@@ -257,7 +263,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8e9188ebaa174c267458b4ff2d5b7699')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '3f1645ca43cb54ff20b4a8b1bf3b55a3')"
     ]
   }
 }

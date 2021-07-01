@@ -48,38 +48,53 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bab1024d-baa9-422a-abb9-449f9370bd0f" name="Default Changelist" comment="Created test databases and added CSVs for reference.">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e3301c3c-693a-405c-9987-b45960773d40.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sino-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sino/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sino/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sino/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/armor/ArmorInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/armor/ArmorListAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_armor_info.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/list_row.xml" afterDir="false" />
+    <list default="true" id="bab1024d-baa9-422a-abb9-449f9370bd0f" name="Default Changelist" comment="Armor database and pages implemented.">
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/nightmare/Nightmare.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/nightmare/NightmareAccess.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/nightmare/NightmareDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/nightmare/NightmareDatabase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/nightmare/NightmareViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/weapon/Weapon.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/weapon/WeaponAccess.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/weapon/WeaponDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/weapon/WeaponDatabase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/weapon/WeaponViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/nightmare/NightmareInfoFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/nightmare/NightmareListAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/nightmare/NightmareListFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/weapon/WeaponInfoFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/weapon/WeaponListAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/weapon/WeaponListFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_nightmare_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_nightmare_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_weapon_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_weapon_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_list_row.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_list_row.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc7e44e9-cecf-4571-a6a3-edbc8ce3cfd2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e3301c3c-693a-405c-9987-b45960773d40.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/schemas/com.example.sino.data.armor.ArmorDatabase/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/schemas/com.example.sino.data.armor.ArmorDatabase/1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/assets/armor/database/armor.db" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/assets/armor/database/armor.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/assets/nightmares/database/nightmare.db" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/assets/nightmares/database/nightmare.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/assets/weapons/database/weapon.db" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/assets/weapons/database/weapon.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/Armor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/Armor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/ArmorAccess.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorAccess.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/ArmorDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/ArmorDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorDatabase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/ArmorViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/ListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/armor/ArmorListFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/Armor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/Armor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorDatabase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/armor/ArmorViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/armor/ArmorInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/armor/ArmorInfoFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/armor/ArmorListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/armor/ArmorListAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/armor/ArmorListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/fragments/armor/ArmorListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_armor_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_armor_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_armor_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/list_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/armor_list_row.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/navigation/default_nav.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/navigation/default_nav.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,11 +136,13 @@
         <option value="Kotlin Script" />
         <option value="Kotlin Worksheet" />
         <option value="Kotlin Data Class" />
-        <option value="Kotlin Interface" />
         <option value="navigationResourceFile" />
-        <option value="layoutResourceFile" />
+        <option value="FxmlFile" />
+        <option value="Kotlin File" />
         <option value="Class" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -160,23 +177,26 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android-custom-viewC:/Users/Brett/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
+    <property name="android-custom-viewE:/Android/sources/android-30/android/view/View.java_SELECTED" value="View" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="jbr-11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sino" />
     <property name="multi-representation-previewC:/Users/Brett/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewE:/Android/sources/android-30/android/view/View.java_selected" value="Custom views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="experimentalPlugin" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Brett\IdeaProjects\sino-project\sino\app\src\main\res\layout\armor" />
       <recent name="C:\Users\Brett\IdeaProjects\sino-project\sino\app\src\main\java\com\example\sino\data\armor" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
@@ -351,7 +371,15 @@
       <workItem from="1624561718569" duration="23657000" />
       <workItem from="1624585513523" duration="6334000" />
       <workItem from="1624592930739" duration="6484000" />
-      <workItem from="1624649387598" duration="8314000" />
+      <workItem from="1624649387598" duration="12900000" />
+      <workItem from="1624677940461" duration="8560000" />
+      <workItem from="1624736324738" duration="12830000" />
+      <workItem from="1624845142168" duration="3023000" />
+      <workItem from="1624891977749" duration="2369000" />
+      <workItem from="1625002146202" duration="72000" />
+      <workItem from="1625002290758" duration="15998000" />
+      <workItem from="1625075814891" duration="285000" />
+      <workItem from="1625076129177" duration="24231000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit. Added &quot;Project&quot; Word file.">
       <created>1621372234781</created>
@@ -402,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623700052366</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Armor database and pages implemented.">
+      <created>1624658069425</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1624658069425</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +454,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="Database" />
                       </list>
                     </value>
                   </entry>
@@ -438,13 +473,24 @@
     <MESSAGE value="Slight adjustment to file/asset locations" />
     <MESSAGE value="Relocation of assets. Adjustments to emulator" />
     <MESSAGE value="Created test databases and added CSVs for reference." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created test databases and added CSVs for reference." />
+    <MESSAGE value="Armor database and pages implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Armor database and pages implemented." />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/sino/app/src/main/java/com/example/sino/data/nightmare/NightmareAccess.kt</url>
+          <line>8</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="MainActivity">
         <watch expression="((ArmorViewModel)this).readAllData" custom="com.example.sino.data.armor.ArmorViewModel" />
         <watch expression="((RoomTrackingLiveData)((ArmorViewModel)((ArmorInfo)this).mArmorViewModel).armorData).mData" custom="com.example.sino.fragments.armor.ArmorInfo,androidx.room.RoomTrackingLiveData,com.example.sino.data.armor.ArmorViewModel" />
+        <watch expression="$currentItem" />
       </configuration>
     </watches-manager>
   </component>

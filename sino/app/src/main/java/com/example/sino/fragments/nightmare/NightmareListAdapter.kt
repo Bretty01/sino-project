@@ -1,4 +1,4 @@
-package com.example.sino.fragments.armor
+package com.example.sino.fragments.nightmare
 
 import android.content.Context
 import android.content.res.AssetManager
@@ -11,21 +11,17 @@ import android.widget.ImageView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sino.R
-import com.example.sino.data.armor.ArmorViewModel
-import com.example.sino.data.armor.StatsRelation
-import com.example.sino.databinding.ArmorListRowBinding
+import com.example.sino.data.nightmare.NightmareRelation
+import com.example.sino.data.nightmare.NightmareViewModel
+import com.example.sino.databinding.NightmareListRowBinding
 import java.io.IOException
 import java.io.InputStream
 
-/**
- * Class: ArmorListAdapter
- * Purpose: To create the adapters that contain general armor information and display it on the recyclerView.
- */
-class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
-    //Stores all the armor information to be put on the adapters.
-    private var armorList = emptyList<StatsRelation>()
+class NightmareListAdapter : RecyclerView.Adapter<NightmareListAdapter.MyViewHolder>() {
+    //Stores all the weapon information to be put on the adapters.
+    private var nightmareList = emptyList<NightmareRelation>()
     //The viewModel for the fragment. Used to store the position on the adapter that was clicked.
-    private lateinit var mArmorViewModel: ArmorViewModel
+    private lateinit var mNightmareViewModel: NightmareViewModel
 
     /**
      * Function: onCreateViewHolder
@@ -33,22 +29,22 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
      * @return Returns the adapter and binds the adapter.
      */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val itemBinding = ArmorListRowBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val itemBinding = NightmareListRowBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return MyViewHolder(itemBinding, parent.context)
     }
 
     /**
      * Function: onBindViewHolder
-     * Purpose: Sets all the armor information on to the adapter.
+     * Purpose: Sets all the weapon information on to the adapter.
      */
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        //Gets the armor information based on the adapter position
-        val currentItem = armorList[position]
+        //Gets the weapon information based on the adapter position
+        val currentItem = nightmareList[position]
 
         //Adds an onClick listener to the specific position in the adapter
         holder.itemView.setOnClickListener {
-            mArmorViewModel.armorLocation.value = currentItem.armorStats.armor_id
-            holder.itemView.findNavController().navigate(R.id.armorInfo)
+            mNightmareViewModel.nightmareLocation.value = currentItem.nightmare_id
+            holder.itemView.findNavController().navigate(R.id.nightmareInfoFragment)
         }
         holder.bind(currentItem)
     }
@@ -59,16 +55,16 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
      * @return Total number of adapter items.
      */
     override fun getItemCount(): Int {
-        return armorList.size
+        return nightmareList.size
     }
 
     /**
      * Function: setData
-     * Purpose: Sets all the armor items from the query to be listed on the adapter.
-     * @param armor A list of all the armor items.
+     * Purpose: Sets all the weapon items from the query to be listed on the adapter.
+     * @param weapon A list of all the weapon items.
      */
-    fun setData(armor: List<StatsRelation>) {
-        this.armorList = armor
+    fun setData(weapon: List<NightmareRelation>) {
+        this.nightmareList = weapon
         notifyDataSetChanged()
     }
 
@@ -77,9 +73,9 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
      * Purpose: To grab the viewModel from the fragment to be used on the adapter.
      * @param model A reference to the viewModel.
      */
-    fun setViewModel(model: ArmorViewModel)
+    fun setViewModel(model: NightmareViewModel)
     {
-        mArmorViewModel = model
+        mNightmareViewModel = model
     }
 
     /**
@@ -88,20 +84,23 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
      * @param itemBinding The view for a specific row in the adapter.
      * @param context The current state of the fragment.
      */
-    class MyViewHolder(private val itemBinding: ArmorListRowBinding,
-                       private val context: Context) : RecyclerView.ViewHolder(itemBinding.root) {
+    class MyViewHolder(private val itemBinding: NightmareListRowBinding,
+                       private val context: Context
+    ) : RecyclerView.ViewHolder(itemBinding.root) {
         /**
          * Function: bind
          * Purpose: Attaches all the proper information to an individual row in the adapter.
          * @param currentItem A list of information to be displayed.
          */
-        fun bind(currentItem: StatsRelation) {
+        fun bind(currentItem: NightmareRelation) {
             //Set all the textViews to their respective information
-            itemBinding.nameText.text = currentItem.armor[0].name
-            itemBinding.pdefText.text = "PDEF:" + currentItem.armorStats.max_pdef
-            itemBinding.mdefText.text = "MDEF:" + currentItem.armorStats.max_mdef
+            itemBinding.nameText.text = currentItem.name
+            itemBinding.patkText.text = "PATK: " + currentItem.mlb_patk
+            itemBinding.matkText.text = "MATK: " + currentItem.mlb_matk
+            itemBinding.pdefText.text = "PDEF:" + currentItem.mlb_pdef
+            itemBinding.mdefText.text = "MDEF:" + currentItem.mlb_mdef
             //Set the icon to be displayed
-            loadImage(currentItem.armorStats.icon, itemBinding.imageView, context)
+            loadImage(currentItem.stats_icon, itemBinding.imageView, context)
         }
 
         /**
@@ -111,7 +110,7 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
          *  @param imageHolder The imageView to bind the image to
          *  @param context The current state of the fragment
          */
-        private fun loadImage(iconLocation: String, imageHolder:ImageView, context:Context) {
+        private fun loadImage(iconLocation: String, imageHolder: ImageView, context: Context) {
             //Manage the assets in the assets directory
             val am : AssetManager = context.assets
             //Holds the image to be decoded
@@ -121,7 +120,7 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
 
             try {
                 //Attempt to grab the image from the directory
-                input = am.open("armor/images/$iconLocation")
+                input = am.open("nightmares/images/$iconLocation")
                 //Convert the image if the image is successfully grabbed
                 bitmap = BitmapFactory.decodeStream(input)
             }

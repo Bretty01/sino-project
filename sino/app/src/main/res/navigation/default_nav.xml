@@ -3,15 +3,29 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/default_nav"
-            app:startDestination="@id/listFragment">
+            app:startDestination="@id/nightmareListFragment">
     <fragment android:id="@+id/listFragment"
               android:name="com.example.sino.fragments.armor.ArmorListFragment"
               android:label="List"
-              tools:layout="@layout/fragment_list">
+              tools:layout="@layout/fragment_armor_list">
         <action android:id="@+id/action_listFragment_to_armorInfo" app:destination="@id/armorInfo"/>
     </fragment>
     <fragment android:id="@+id/armorInfo"
-              android:name="com.example.sino.fragments.armor.ArmorInfo"
+              android:name="com.example.sino.fragments.armor.ArmorInfoFragment"
               android:label="fragment_armor_info"
               tools:layout="@layout/fragment_armor_info"/>
+    <fragment android:id="@+id/weaponListFragment" android:name="com.example.sino.fragments.weapon.WeaponListFragment"
+              android:label="fragment_weapon_list" tools:layout="@layout/fragment_weapon_list">
+        <action android:id="@+id/action_weaponListFragment_to_weaponInfoFragment"
+                app:destination="@id/weaponInfoFragment"/>
+    </fragment>
+    <fragment android:id="@+id/weaponInfoFragment" android:name="com.example.sino.fragments.weapon.WeaponInfoFragment"
+              android:label="fragment_weapon_info" tools:layout="@layout/fragment_weapon_info"/>
+    <fragment android:id="@+id/nightmareListFragment" android:name="com.example.sino.fragments.nightmare.NightmareListFragment"
+              android:label="fragment_nightmare_list" tools:layout="@layout/fragment_nightmare_list">
+        <action android:id="@+id/action_nightmareListFragment_to_nightmareInfoFragment"
+                app:destination="@id/nightmareInfoFragment"/>
+    </fragment>
+    <fragment android:id="@+id/nightmareInfoFragment" android:name="com.example.sino.fragments.nightmare.NightmareInfoFragment"
+              android:label="fragment_nightmare_info" tools:layout="@layout/fragment_nightmare_info"/>
 </navigation>

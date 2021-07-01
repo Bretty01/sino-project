@@ -4,8 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.*
 
 @Dao
-interface ArmorDao
-{
+interface ArmorDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun addArmorSkill(skill: ArmorSupportSkill)
 
@@ -21,10 +20,12 @@ interface ArmorDao
     @Query("SELECT * FROM armor_stats INNER JOIN armor USING(armor_id) WHERE armor_stats.armor_id = :armorLocation")
     fun getSpecificArmor(armorLocation: Int): LiveData<List<StatsRelation>>
 
+
     @Transaction
     @Query("SELECT * FROM armor INNER JOIN armor_support_skill ON armor.story_skill=armor_support_skill.skill_id" +
             " WHERE armor.armor_id=:armorLocation")
     fun getSupportSkill(armorLocation: Int?): LiveData<List<SkillRelation>>
+
 
     @Transaction
     @Query("SELECT * FROM armor INNER JOIN armor_set ON armor.set_skill=armor_set.set_id " +
@@ -36,4 +37,11 @@ interface ArmorDao
             "WHERE armor.armor_id=:armorLocation")
     fun getArmorType(armorLocation: Int?): LiveData<List<TypeRelation>>
 
+    /**
+    @Transaction
+    @Query("SELECT * FROM armor_support_skill INNER JOIN armor ON armor_support_skill.skill_id=armor.story_skill" +
+            " INNER JOIN armor_element ON armor_support_skill.element=armor_element.element_id " +
+            "WHERE armor.armor_id=:armorLocation")
+    fun getSupportSkill(armorLocation: Int?):LiveData<List<ElementRelation>>
+*/
 }
