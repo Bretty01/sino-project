@@ -1,6 +1,8 @@
 package com.example.sino.data.armor
 
 import androidx.lifecycle.LiveData
+import androidx.sqlite.db.SimpleSQLiteQuery
+import androidx.sqlite.db.SupportSQLiteQuery
 
 class ArmorAccess(private val armorDao: ArmorDao)
 {
@@ -11,17 +13,7 @@ class ArmorAccess(private val armorDao: ArmorDao)
         return armorDao.getSpecificArmor(armorLocation)
     }
 
-    fun readArmorSupport(armorLocation: LiveData<Int>): LiveData<List<SkillRelation>> {
-        return armorDao.getSupportSkill(armorLocation.value)
+    fun sortFilterArmor(queryString: SimpleSQLiteQuery) : LiveData<List<StatsRelation>> {
+        return armorDao.sortFilterArmor(queryString)
     }
-
-    fun readArmorSet(armorLocation: LiveData<Int>): LiveData<List<SetRelation>> {
-        return armorDao.getSetSkill(armorLocation.value)
-    }
-
-    fun readArmorType(armorLocation: LiveData<Int>): LiveData<List<TypeRelation>> {
-        return armorDao.getArmorType(armorLocation.value)
-    }
-
-
 }

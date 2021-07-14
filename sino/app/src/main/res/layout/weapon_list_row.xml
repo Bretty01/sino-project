@@ -31,9 +31,8 @@
             android:id="@+id/nameText"
             android:text="Example Name of the Test Kind"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:textStyle="bold"
-            android:layout_marginBottom="80dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -75,4 +74,42 @@
             app:layout_constraintBottom_toBottomOf="@+id/pdefText"
             app:layout_constraintStart_toEndOf="@+id/pdefText"
             android:layout_marginStart="5dp" app:layout_constraintEnd_toEndOf="@+id/nameText"/>
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp" app:srcCompat="@drawable/ic_launcher_foreground"
+            android:id="@+id/wlStoryIcon"
+            app:layout_constraintTop_toBottomOf="@+id/nameText" app:layout_constraintStart_toEndOf="@+id/barrier2"
+            android:visibility="invisible"/>
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp" app:srcCompat="@drawable/ic_launcher_foreground"
+            android:id="@+id/wlColoIcon" app:layout_constraintStart_toStartOf="@+id/patkText"
+            app:layout_constraintTop_toBottomOf="@+id/wlStoryIcon" android:visibility="invisible"/>
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp" app:srcCompat="@drawable/ic_launcher_foreground"
+            android:id="@+id/wlSupportIcon" app:layout_constraintStart_toStartOf="@+id/wlColoIcon"
+            app:layout_constraintTop_toBottomOf="@+id/wlColoIcon" android:visibility="invisible"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/wlStoryText"
+            app:layout_constraintStart_toEndOf="@+id/wlStoryIcon" app:layout_constraintEnd_toEndOf="@+id/nameText"
+            app:layout_constraintTop_toTopOf="@+id/wlStoryIcon"
+            app:layout_constraintBottom_toBottomOf="@+id/wlStoryIcon" app:layout_constraintHorizontal_bias="0.0"
+            android:visibility="invisible"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/wlColoText"
+            app:layout_constraintEnd_toEndOf="@+id/wlStoryText"
+            app:layout_constraintStart_toStartOf="@+id/wlStoryText" app:layout_constraintTop_toTopOf="@+id/wlColoIcon"
+            app:layout_constraintBottom_toBottomOf="@+id/wlColoIcon" android:visibility="invisible"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/wlSupportText"
+            app:layout_constraintEnd_toEndOf="@+id/wlColoText" app:layout_constraintStart_toStartOf="@+id/wlColoText"
+            app:layout_constraintBottom_toBottomOf="@+id/wlSupportIcon"
+            app:layout_constraintTop_toTopOf="@+id/wlSupportIcon" android:visibility="invisible"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

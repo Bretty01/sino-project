@@ -27,9 +27,6 @@ class ArmorInfoFragment : Fragment() {
     //Lists for the armor, names of story skills, names of armor set skills, and names of the armor type/position
     //  In the future I plan to combine all 4 variables with 1 query. I just suck at using Room.
     private var armorList = emptyList<StatsRelation>()
-    private var supportList = emptyList<SkillRelation>()
-    private var setList = emptyList<SetRelation>()
-    private var typeList = emptyList<TypeRelation>()
 
     /**
      * Class: onCreateView
@@ -44,15 +41,6 @@ class ArmorInfoFragment : Fragment() {
         //Reinitialize the same viewModel from ArmorListFragment
         mArmorViewModel = ViewModelProvider(requireActivity()).get(ArmorViewModel::class.java)
         //Read the queries and set the variables for each of the tables
-        mArmorViewModel.readArmorSupport().observe(viewLifecycleOwner) {
-            support -> supportList = support
-        }
-        mArmorViewModel.readArmorSet().observe(viewLifecycleOwner) {
-            set -> setList = set
-        }
-        mArmorViewModel.readArmorType().observe(viewLifecycleOwner) {
-            type -> typeList = type
-        }
         mArmorViewModel.setArmorData().observe(viewLifecycleOwner) {
             //All variables will be set in descending order. There this one will be last one set
             //  Therefore a function setData, will be used for the rest of the functionality.
@@ -87,28 +75,24 @@ class ArmorInfoFragment : Fragment() {
         val imageHolders = arrayOf(binding.armorIcon1, binding.armorIcon2, binding.armorIcon3)
         //Generic int variable to iterate through imageHolders
         var i = 0
-
+        val armorInfo = armorList[0].armor[0]
         //Bind all the text to their respective textViews
-        binding.armorName.text = armorList[0].armor[0].name
-        binding.armorSkillName.text = supportList[0].armorRelation.name
-        binding.armorSkillDescription.text = supportList[0].armorRelation.description
-        binding.armorSetName.text = setList[0].armorRelation.name
-        binding.armorSetDescripton.text = setList[0].armorRelation.description
-        binding.tableArmorPdef.text = "PDEF"
-        binding.tableArmorMdef.text = "MDEF"
-        binding.tableArmorTotal.text = "Total"
-        binding.tableArmorMinLvl.text = "Lvl 1"
+        binding.armorName.text = armorInfo.name
+        binding.armorSkillName.text = armorInfo.skill_name
+        binding.armorSkillDescription.text = armorInfo.skill_description
+        binding.armorSetName.text = armorInfo.set_name
+        binding.armorSetDescripton.text = armorInfo.set_description
         //Bind the images to their respective imageViews
-        displayImage(binding.typeIcon, "misc/icons/" + typeList[0].type.icon, this.context)
+        displayImage(binding.typeIcon, "misc/icons/" + armorInfo.type_icon, this.context)
         for(armor in armorList) {
             val ip = ImagePosition(i)
-            displayImage(imageHolders[i], "armor/images/" + armor.armorStats.icon, this.context)
+            displayImage(imageHolders[i], "armor/images/" + armor.armorStats.stats_icon, this.context)
             imageHolders[i].setOnClickListener {
                 displaySpecificInfo(binding, ip.position)
             }
             i++
         }
-        displayImage(binding.armorSkillIcon, "misc/icons/battle_icon02.png", this.context)
+        displayImage(binding.armorSkillIcon, "misc/icons/battle_icon01.png", this.context)
         displayImage(binding.armorSetIcon, "misc/icons/heading_icon.png", this.context)
         //Call displaySpecificInfo to create the default information
         displaySpecificInfo(binding, 0)

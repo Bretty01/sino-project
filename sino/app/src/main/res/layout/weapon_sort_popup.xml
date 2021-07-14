@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="50dp">
+
+        <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                    android:text="Order By"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2"
+                    android:id="@+id/wfOrderGroup"
+                    app:singleSelection="true"
+                    app:selectionRequired="true" >
+                <Button
+                        android:text="Desc."
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:id="@+id/wsDescBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle" android:tag="DESC"/>
+                <Button
+                        android:text="Asc."
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" android:id="@+id/wsAscBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle" android:tag="ASC"/>
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+            <TextView
+                    android:text="Field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+            />
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wfSortGroup"
+                    app:singleSelection="true"
+                    app:selectionRequired="true">
+                <Button
+                        android:text="Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:id="@+id/wsNameBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle" android:tag="weapons.name"
+                        android:textSize="10sp"/>
+                <Button
+                        android:text="Type"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:id="@+id/wsTypeBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_type.type_name"
+                        android:textSize="10sp"/>
+                <Button
+                        android:text="@string/pAtk"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:id="@+id/wsPatkBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_stats.mlb_patk"
+                        android:textSize="10sp"/>
+                <Button
+                        android:text="@string/mAtk"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:id="@+id/wsMatkBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_stats.mlb_matk"
+                        android:textSize="10sp"/>
+                <Button
+                        android:text="@string/pDef"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:id="@+id/wsPdefBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_stats.mlb_pdef"
+                        android:textSize="10sp"/>
+                <Button
+                        android:text="@string/mDef"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:id="@+id/wsMdefBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_stats.mlb_mdef"
+                        android:textSize="10sp"/>
+                <Button
+                        android:text="@string/total"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:id="@+id/wsTotalBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:tag="(weapon_stats.mlb_patk + weapon_stats.mlb_matk +                         weapon_stats.mlb_pdef + weapon_stats.mlb_mdef)"
+                        android:textSize="10sp"/>
+                <Button
+                        android:text="Total Atk"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:id="@+id/wsAtktotalBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:tag="(weapon_stats.mlb_patk + weapon_stats.mlb_matk)"
+                        android:textSize="10sp"/>
+                <Button
+                        android:text="Total Def"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:id="@+id/wsDeftotalBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:tag="(weapon_stats.mlb_pdef + weapon_stats.mlb_mdef)" android:textSize="10sp"/>
+                <Button
+                        android:text="Story Skill"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:id="@+id/wsStoryBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_story_skill.story_name"
+                        android:textSize="10sp"/>
+                <Button
+                        android:text="Colo Skill"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:id="@+id/wsColoBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_colo_skill.colo_name"
+                        android:textSize="10sp"/>
+                <Button
+                        android:text="Support Skill"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:id="@+id/wsSupportBtn" android:layout_weight="1"
+                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_support_skill.skill_name"
+                        android:textSize="10sp"/>
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+            <Button
+                    android:text="submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/wsSubmitBtn"
+                    style="?attr/materialButtonOutlinedStyle"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

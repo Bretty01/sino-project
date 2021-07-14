@@ -12,11 +12,23 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="weapon" uuid="37081b1b-5f91-487e-80a5-2219e63fbf11">
+    <data-source source="LOCAL" name="armor" uuid="ef9c90d2-eb72-48d0-bfc8-7f25fac01b0a">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Brett\Documents\AndroidStudio\DeviceExplorer\Pixel_4_API_30 [emulator-5554]\data\data\com.example.sino\databases\weapon.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\Brett\IdeaProjects\sino-project\sino\app\src\main\assets\armor\database\armor.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.34.0/sqlite-jdbc-3.34.0.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="armor [2]" uuid="a7eb73d3-305a-4c3c-97b8-ec2d60db84ec">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Brett\Documents\AndroidStudio\DeviceExplorer\Pixel_4_API_30 [emulator-5554]\data\data\com.example.sino\databases\armor.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>

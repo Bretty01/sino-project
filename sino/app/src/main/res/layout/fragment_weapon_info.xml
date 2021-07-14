@@ -7,7 +7,7 @@
                                                    tools:context=".fragments.weapon.WeaponInfoFragment">
 
     <TextView
-            android:text="TextView"
+            android:text="@string/titlePlaceholder"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:id="@+id/weaponName"
@@ -24,30 +24,53 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginStart="10dp"/>
-    <TextView
-            android:text="Element: "
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
-            android:layout_height="20dp" android:id="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/typeIcon" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="10dp" android:layout_marginTop="10dp"/>
-    <ImageView
-            android:src="@drawable/ic_launcher_foreground"
-            android:layout_width="20dp"
-            android:layout_height="20dp" android:id="@+id/elementIcon"
-            app:layout_constraintTop_toTopOf="@+id/textView" app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintBottom_toBottomOf="@+id/textView"/>
+            android:layout_height="0dp" app:layout_constraintTop_toBottomOf="@+id/weaponName"
+            app:layout_constraintStart_toStartOf="parent" android:id="@+id/linearLayout">
+        <TextView
+                android:text="Element: "
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" android:id="@+id/elementText"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="10dp" android:layout_marginStart="10dp" android:layout_marginBottom="10dp"
+        />
+        <ImageView
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_width="20dp"
+                android:layout_height="0dp" android:id="@+id/elementIcon"
+                app:layout_constraintBottom_toBottomOf="@+id/elementText"
+                app:layout_constraintStart_toEndOf="@+id/elementText"
+                app:layout_constraintTop_toTopOf="@+id/elementText"/>
+        <TextView
+                android:text="Cost: "
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" android:id="@+id/costText"
+                app:layout_constraintStart_toEndOf="@+id/elementIcon"
+                app:layout_constraintTop_toTopOf="@+id/elementIcon"
+                app:layout_constraintBottom_toBottomOf="@+id/elementIcon" android:layout_marginStart="15dp"/>
+        <TextView
+                android:layout_width="30dp"
+                android:layout_height="0dp" android:id="@+id/costNumber"
+                android:text="@string/rankPlaceholder"
+                app:layout_constraintStart_toEndOf="@+id/costText" app:layout_constraintTop_toTopOf="@+id/costText"
+                app:layout_constraintBottom_toBottomOf="@+id/costText"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="10dp"
             android:id="@+id/weaponIcon1"
+            tools:src="@tools:sample/avatars"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="10dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView"/>
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
     <ImageView
             android:id="@+id/weaponIcon2"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="10dp"
+            tools:src="@tools:sample/avatars"
             app:layout_constraintStart_toEndOf="@+id/weaponIcon1"
             app:layout_constraintTop_toTopOf="@+id/weaponIcon1"/>
     <ImageView
@@ -55,6 +78,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="10dp"
+            tools:src="@tools:sample/avatars"
             app:layout_constraintStart_toEndOf="@+id/weaponIcon2"
             app:layout_constraintTop_toTopOf="@+id/weaponIcon2"/>
     <TableLayout
@@ -77,37 +101,37 @@
                 android:weightSum="6">
             <TextView
                     android:id="@+id/tableWeaponText"
-                    android:text="TextView"
+                    android:text="@string/rankPlaceholder"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponPatk"
-                    android:text="PATK"
+                    android:text="@string/pAtk"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMatk"
-                    android:text="MATK"
+                    android:text="@string/mAtk"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponPdef"
-                    android:text="PDEF"
+                    android:text="@string/pDef"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMdef"
-                    android:text="MDEF"
+                    android:text="@string/mDef"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponTotal"
-                    android:text="Total"
+                    android:text="@string/total"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
@@ -119,37 +143,37 @@
                 android:weightSum="6">
             <TextView
                     android:id="@+id/tableWeaponMinLvl"
-                    android:text="XXXX"
+                    android:text="@string/levelOne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMinPatk"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMinMatk"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMinPdef"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMinMdef"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMinTotal"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
@@ -161,37 +185,37 @@
                 android:weightSum="6">
             <TextView
                     android:id="@+id/tableWeaponMaxLvl"
-                    android:text="XXXX"
+                    android:text="@string/lvlPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMaxPAtk"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMaxMatk"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMaxPdef"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMaxMdef"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMaxTotal"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
@@ -204,37 +228,37 @@
 
             <TextView
                     android:id="@+id/tableWeaponMlbLvl"
-                    android:text="XXXX"
+                    android:text="@string/lvlPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMlbPatk"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMlbMatk"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMlbPdef"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMlbMdef"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableWeaponMlbTotal"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
@@ -264,7 +288,7 @@
                     app:layout_constraintTop_toTopOf="parent"/>
             <TextView
                     android:id="@+id/weaponStoryName"
-                    android:text="TextView"
+                    android:text="@string/titlePlaceholder"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -274,7 +298,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <TextView
                 android:id="@+id/weaponStoryDescription"
-                android:text="TextView"
+                android:text="@string/descriptionPlaceholder"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"/>
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -290,7 +314,7 @@
                     app:layout_constraintTop_toTopOf="parent"/>
             <TextView
                     android:id="@+id/weaponColoName"
-                    android:text="TextView"
+                    android:text="@string/titlePlaceholder"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -300,7 +324,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <TextView
                 android:id="@+id/weaponColoDescripton"
-                android:text="TextView"
+                android:text="@string/descriptionPlaceholder"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"/>
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -316,7 +340,7 @@
                     app:layout_constraintTop_toTopOf="parent"/>
             <TextView
                     android:id="@+id/weaponSupportName"
-                    android:text="TextView"
+                    android:text="@string/titlePlaceholder"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -326,7 +350,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <TextView
                 android:id="@+id/weaponSupportDescripton"
-                android:text="TextView"
+                android:text="@string/descriptionPlaceholder"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"/>
     </LinearLayout>

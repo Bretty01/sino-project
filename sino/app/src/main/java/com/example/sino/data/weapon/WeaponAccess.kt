@@ -2,6 +2,7 @@ package com.example.sino.data.weapon
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.sqlite.db.SimpleSQLiteQuery
 
 class WeaponAccess(private val weaponDao: WeaponDao) {
 
@@ -10,4 +11,8 @@ class WeaponAccess(private val weaponDao: WeaponDao) {
     }
 
     val readWeaponData: LiveData<List<WeaponStatsRelation>> = weaponDao.getWeaponList()
+
+    fun sortFilterWeapon(queryString: SimpleSQLiteQuery): LiveData<List<WeaponStatsRelation>> {
+        return weaponDao.sortFilterWeapon(queryString)
+    }
 }

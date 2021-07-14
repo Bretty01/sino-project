@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.sqlite.db.SimpleSQLiteQuery
 
 class NightmareViewModel(application: Application) : AndroidViewModel(application) {
     val readAllData: LiveData<List<NightmareRelation>>
@@ -18,5 +19,10 @@ class NightmareViewModel(application: Application) : AndroidViewModel(applicatio
 
     fun setNightmareData() : LiveData<List<NightmareRelation>> {
         return nightmareRepository.getNightmareInfo(nightmareLocation)
+    }
+
+    fun filterNightmare(queryString: String) : LiveData<List<NightmareRelation>> {
+        val query = SimpleSQLiteQuery(queryString)
+        return nightmareRepository.sortFilterNightmare(query)
     }
 }

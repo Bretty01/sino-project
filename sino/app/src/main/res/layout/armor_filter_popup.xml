@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="50dp">
+
+        <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                <TextView
+                        android:text="Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorHeadBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/textView"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                        android:checked="false" android:textOff="Head" android:textOn="Head"
+                        android:tag="armor_type.type_id = 1"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorBodyBtn"
+                        app:layout_constraintTop_toTopOf="@+id/armorHeadBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorHeadBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorHeadBtn" android:textOff="Body"
+                        android:textOn="Body"
+                        android:tag="armor_type.type_id = 2"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorFeetBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorBodyBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorBodyBtn"
+                        app:layout_constraintTop_toTopOf="@+id/armorBodyBtn" android:textOff="Feet"
+                        android:textOn="Feet"
+                        android:tag="armor_type.type_id = 3"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorHandsBtn"
+                        app:layout_constraintTop_toTopOf="@+id/armorFeetBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorFeetBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorFeetBtn" android:layout_marginStart="2dp"
+                        android:textOff="Hands" android:textOn="Hands"
+                        android:tag="armor_type.type_id = 4"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                <TextView
+                        android:text="Element"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView2"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                />
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorMeritBtn"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="5dp" app:layout_constraintTop_toBottomOf="@+id/textView2"
+                        android:textOff="Merit" android:textOn="Merit"
+                        android:tag="armor_support_skill.element = 1"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorFireBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorMeritBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorMeritBtn"
+                        app:layout_constraintTop_toTopOf="@+id/armorMeritBtn" android:textOff="Fire"
+                        android:textOn="Fire"
+                        android:tag="armor_support_skill.element = 2"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorWaterBtn"
+                        app:layout_constraintTop_toTopOf="@+id/armorFireBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorFireBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorFireBtn" android:textOff="Water"
+                        android:textOn="Water"
+                        android:tag="armor_support_skill.element = 3"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorWindBtn"
+                        app:layout_constraintTop_toTopOf="@+id/armorWaterBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorWaterBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorWaterBtn"
+                        android:textOff="Wind" android:textOn="Wind"
+                        android:tag="armor_support_skill.element = 4"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:text="Weapon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView3"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorInstBtn"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textOff="Instr." android:textOn="Instr." android:tag="armor_support_skill.weapon = 1"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorTomeBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorInstBtn"
+                        app:layout_constraintTop_toTopOf="@+id/armorInstBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorInstBtn" android:textOff="Tome"
+                        android:textOn="Tome" android:tag="armor_support_skill.weapon = 2"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorArtifactBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorTomeBtn"
+                        app:layout_constraintTop_toTopOf="@+id/armorTomeBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorTomeBtn" android:textOff="Artifact"
+                        android:textOn="Artifact" android:textSize="12sp"
+                        android:tag="armor_support_skill.weapon = 8"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorStaffBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorArtifactBtn"
+                        app:layout_constraintTop_toTopOf="@+id/armorArtifactBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorArtifactBtn" android:textOff="Staff"
+                        android:textOn="Staff"  android:tag="armor_support_skill.weapon = 7"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorBladeBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/armorInstBtn"
+                        app:layout_constraintStart_toStartOf="@+id/armorInstBtn"
+                        app:layout_constraintEnd_toEndOf="@+id/armorInstBtn" android:textOff="Blade"
+                        android:textOn="Blade"  android:tag="armor_support_skill.weapon = 4"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorHammerBtn"
+                        app:layout_constraintTop_toTopOf="@+id/armorBladeBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorBladeBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorBladeBtn" android:textOff="Hammer"
+                        android:textOn="Hammer"  android:tag="armor_support_skill.weapon = 5"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorRangedBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/armorTomeBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorHammerBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorHammerBtn" android:textOff="Ranged"
+                        android:textOn="Ranged"  android:tag="armor_support_skill.weapon = 3"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorPolearmBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorRangedBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/armorArtifactBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorRangedBtn" android:textOff="Polearm"
+                        android:textOn="Polearm" android:textSize="12sp"  android:tag="armor_support_skill.weapon = 6"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:text="Set Effect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView4"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorBeastBtn"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" android:textOff="Beast"
+                        android:textOn="Beast" android:tag="armor_set.set_id  = 13"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorPlantBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorBeastBtn"
+                        app:layout_constraintTop_toTopOf="@+id/armorBeastBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorBeastBtn" android:textOff="Plant"
+                        android:textOn="Plant"
+                        android:tag="armor_set.set_id  = 12"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wf14Btn"
+                        app:layout_constraintTop_toTopOf="@+id/armorPlantBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorPlantBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorPlantBtn" android:textOff="Bird"
+                        android:textOn="Bird" android:tag="armor_set.set_id  = 11"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorGhostBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/armorBeastBtn"
+                        app:layout_constraintStart_toStartOf="@+id/armorBeastBtn"
+                        app:layout_constraintEnd_toEndOf="@+id/armorBeastBtn" android:textOff="Ghost" android:textOn="Ghost"
+                        android:tag="armor_set.set_id  = 10"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorDragonBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorGhostBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorGhostBtn" android:textOff="Dragon"
+                        android:textOn="Dragon" android:tag="armor_set.set_id  = 9"
+                        app:layout_constraintTop_toTopOf="@+id/armorGhostBtn"/>
+                <ToggleButton
+                        android:text="ToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorOrcBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorDragonBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorDragonBtn" android:textOff="Orc"
+                        android:textOn="Orc" android:tag="armor_set.set_id  = 8"
+                        app:layout_constraintTop_toTopOf="@+id/armorDragonBtn"/>
+                <ToggleButton
+                        android:text="ToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorWispBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/armorGhostBtn"
+                        app:layout_constraintStart_toStartOf="@+id/armorGhostBtn"
+                        app:layout_constraintEnd_toEndOf="@+id/armorGhostBtn" android:textOff="Wisp"
+                        android:textOn="Wisp" android:tag="armor_set.set_id  = 7"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorSnakeBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorWispBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorWispBtn" android:textOff="Snake"
+                        android:textOn="Snake" app:layout_constraintTop_toTopOf="@+id/armorWispBtn"
+                        android:tag="armor_set.set_id  = 14"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorFiendBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wf14Btn"
+                        app:layout_constraintStart_toEndOf="@+id/wf14Btn" android:textOff="Fiend"
+                        android:textOn="Fiend" app:layout_constraintTop_toTopOf="@+id/wf14Btn"
+                        android:tag="armor_set.set_id  = 6"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorHumanBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/armorOrcBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorOrcBtn" android:textOff="Human"
+                        android:textOn="Human" app:layout_constraintVertical_bias="0.0"
+                        app:layout_constraintTop_toTopOf="@+id/armorOrcBtn"
+                        android:tag="armor_set.set_id  = 5"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/armorOtherBtn"
+                        android:textOff="Other"
+                        android:textOn="Other" app:layout_constraintBottom_toBottomOf="@+id/armorSnakeBtn"
+                        app:layout_constraintStart_toEndOf="@+id/armorSnakeBtn"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:layout_constraintTop_toTopOf="@+id/armorSnakeBtn"
+                        android:tag="armor_set.set_id = 1 OR armor_set.set_id = 2 OR armor_set.set_id = 3 OR armor_set.set_id = 4"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                    android:text="submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/armorFilterSubmitBtn"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

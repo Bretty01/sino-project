@@ -8,7 +8,7 @@
 
         tools:context=".fragments.armor.ArmorInfoFragment">
     <TextView
-            android:text="TextView"
+            android:text="@string/titlePlaceholder"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:id="@+id/armorName"
@@ -73,25 +73,25 @@
                 android:weightSum="4">
             <TextView
                     android:id="@+id/tableArmorText"
-                    android:text="TextView"
+                    android:text="@string/rankPlaceholder"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableArmorPdef"
-                    android:text="TextView"
+                    android:text="@string/pDef"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableArmorMdef"
-                    android:text="TextView"
+                    android:text="@string/mDef"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableArmorTotal"
-                    android:text="TextView"
+                    android:text="@string/total"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
@@ -103,25 +103,25 @@
                 android:weightSum="4">
             <TextView
                     android:id="@+id/tableArmorMinLvl"
-                    android:text="TextView"
+                    android:text="@string/levelOne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableArmorMinPdef"
-                    android:text="TextView"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableArmorMinMdef"
-                    android:text="TextView"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableArmorMinTotal"
-                    android:text="TextView"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
@@ -133,25 +133,25 @@
                 android:weightSum="4">
             <TextView
                     android:id="@+id/tableArmorMaxLvl"
-                    android:text="TextView"
+                    android:text="@string/lvlPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableArmorMaxPdef"
-                    android:text="TextView"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableArmorMaxMdef"
-                    android:text="TextView"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableArmorMaxTotal"
-                    android:text="TextView"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
@@ -181,7 +181,7 @@
                     app:layout_constraintTop_toTopOf="parent"/>
             <TextView
                     android:id="@+id/armorSkillName"
-                    android:text="TextView"
+                    android:text="@string/titlePlaceholder"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -191,7 +191,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <TextView
                 android:id="@+id/armorSkillDescription"
-                android:text="TextView"
+                android:text="@string/descriptionPlaceholder"
                 android:layout_width="match_parent"
                 android:layout_height="60dp" />
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -207,7 +207,7 @@
                     app:layout_constraintTop_toTopOf="parent"/>
             <TextView
                     android:id="@+id/armorSetName"
-                    android:text="TextView"
+                    android:text="@string/titlePlaceholder"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -217,7 +217,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <TextView
                 android:id="@+id/armorSetDescripton"
-                android:text="TextView"
+                android:text="@string/descriptionPlaceholder"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"/>
     </LinearLayout>

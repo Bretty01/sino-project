@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="50dp">
+
+        <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                <TextView
+                        android:text="Element"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView2"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                />
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wfFireBtn"
+                        android:textOff="Fire"
+                        android:textOn="Fire"
+                        android:tag="weapons.element = 1" app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wfWaterBtn"
+                        app:layout_constraintTop_toTopOf="@+id/wfFireBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wfFireBtn"
+                        app:layout_constraintStart_toEndOf="@+id/wfFireBtn" android:textOff="Water"
+                        android:textOn="Water"
+                        android:tag="weapons.element = 2"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wfWindBtn"
+                        app:layout_constraintTop_toTopOf="@+id/wfWaterBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wfWaterBtn"
+                        app:layout_constraintStart_toEndOf="@+id/wfWaterBtn"
+                        android:textOff="Wind" android:textOn="Wind"
+                        android:tag="weapons.element = 3"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:text="Weapon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView3"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wfInstBtn"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textOff="Instr." android:textOn="Instr." android:tag="weapons.type = 1"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wfTomeBtn"
+                        app:layout_constraintStart_toEndOf="@+id/wfInstBtn"
+                        app:layout_constraintTop_toTopOf="@+id/wfInstBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wfInstBtn" android:textOff="Tome"
+                        android:textOn="Tome" android:tag="weapons.type = 2"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wfArtifactBtn"
+                        app:layout_constraintStart_toEndOf="@+id/wfTomeBtn"
+                        app:layout_constraintTop_toTopOf="@+id/wfTomeBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wfTomeBtn" android:textOff="Artifact"
+                        android:textOn="Artifact" android:textSize="12sp"
+                        android:tag="weapons.type = 3"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wfStaffBtn"
+                        app:layout_constraintStart_toEndOf="@+id/wfArtifactBtn"
+                        app:layout_constraintTop_toTopOf="@+id/wfArtifactBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wfArtifactBtn" android:textOff="Staff"
+                        android:textOn="Staff" android:tag="weapons.type = 4"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wfBladeBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/wfInstBtn"
+                        app:layout_constraintStart_toStartOf="@+id/wfInstBtn"
+                        app:layout_constraintEnd_toEndOf="@+id/wfInstBtn" android:textOff="Blade"
+                        android:textOn="Blade" android:tag="weapons.type = 5"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wfHammerBtn"
+                        app:layout_constraintTop_toTopOf="@+id/wfBladeBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wfBladeBtn"
+                        app:layout_constraintStart_toEndOf="@+id/wfBladeBtn" android:textOff="Hammer"
+                        android:textOn="Hammer" android:tag="weapons.type = 6"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wfRangedBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/wfTomeBtn"
+                        app:layout_constraintStart_toEndOf="@+id/wfHammerBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wfHammerBtn" android:textOff="Ranged"
+                        android:textOn="Ranged" android:tag="weapons.type = 7"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wfPolearmBtn"
+                        app:layout_constraintStart_toEndOf="@+id/wfRangedBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/wfArtifactBtn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wfRangedBtn" android:textOff="Polearm"
+                        android:textOn="Polearm" android:textSize="12sp" android:tag="weapons.type = 8"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:text="Cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView4"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wf12Btn"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" android:textOff="\u003C 12"
+                        android:textOn="\u003C 12" android:tag="@string/costList"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wf13Btn"
+                        app:layout_constraintStart_toEndOf="@+id/wf12Btn"
+                        app:layout_constraintTop_toTopOf="@+id/wf12Btn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wf12Btn" android:textOff="13"
+                        android:textOn="13"
+                        android:tag="weapons.cost = 13"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wf14Btn"
+                        app:layout_constraintTop_toTopOf="@+id/wf13Btn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wf13Btn"
+                        app:layout_constraintStart_toEndOf="@+id/wf13Btn" android:textOff="14"
+                        android:textOn="14" android:tag="weapons.cost = 14"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wf15Btn"
+                        app:layout_constraintTop_toBottomOf="@+id/wf12Btn"
+                        app:layout_constraintStart_toStartOf="@+id/wf12Btn"
+                        app:layout_constraintEnd_toEndOf="@+id/wf12Btn" android:textOff="15" android:textOn="15"
+                        android:tag="weapons.cost = 15"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wf16Btn"
+                        app:layout_constraintStart_toEndOf="@+id/wf15Btn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wf15Btn" android:textOff="16"
+                        android:textOn="16" android:tag="weapons.cost = 16"
+                        app:layout_constraintTop_toTopOf="@+id/wf15Btn"/>
+                <ToggleButton
+                        android:text="ToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wf17Btn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wf16Btn"
+                        app:layout_constraintStart_toEndOf="@+id/wf16Btn" android:textOff="17"
+                        android:textOn="17" android:tag="weapons.cost = 17"
+                        app:layout_constraintTop_toTopOf="@+id/wf16Btn"/>
+                <ToggleButton
+                        android:text="ToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wf18Btn"
+                        app:layout_constraintTop_toBottomOf="@+id/wf15Btn"
+                        app:layout_constraintStart_toStartOf="@+id/wf15Btn"
+                        app:layout_constraintEnd_toEndOf="@+id/wf15Btn" android:textOff="18"
+                        android:textOn="18" android:tag="weapons.cost = 18"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wf19Btn"
+                        app:layout_constraintStart_toEndOf="@+id/wf18Btn"
+                        app:layout_constraintBottom_toBottomOf="@+id/wf18Btn" android:textOff="19"
+                        android:textOn="19" app:layout_constraintTop_toTopOf="@+id/wf18Btn"
+                        android:tag="weapons.cost = 19"/>
+                <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/wf20Btn"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/wf19Btn" android:textOff="20"
+                        android:textOn="20" app:layout_constraintTop_toTopOf="@+id/wf19Btn"
+                        android:tag="weapons.cost = 20"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                    android:text="submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/wfSubmitBtn"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

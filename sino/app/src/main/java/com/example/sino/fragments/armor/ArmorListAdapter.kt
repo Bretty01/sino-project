@@ -5,7 +5,9 @@ import android.content.res.AssetManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.util.Log
+import android.view.Display
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.findNavController
@@ -23,9 +25,10 @@ import java.io.InputStream
  */
 class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
     //Stores all the armor information to be put on the adapters.
-    private var armorList = emptyList<StatsRelation>()
+    private var armorList : MutableList<StatsRelation> = mutableListOf()
     //The viewModel for the fragment. Used to store the position on the adapter that was clicked.
     private lateinit var mArmorViewModel: ArmorViewModel
+    private var infoDisplay = false
 
     /**
      * Function: onCreateViewHolder
@@ -34,7 +37,7 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
      */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemBinding = ArmorListRowBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return MyViewHolder(itemBinding, parent.context)
+        return MyViewHolder(itemBinding, parent.context, infoDisplay)
     }
 
     /**
@@ -48,7 +51,7 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
         //Adds an onClick listener to the specific position in the adapter
         holder.itemView.setOnClickListener {
             mArmorViewModel.armorLocation.value = currentItem.armorStats.armor_id
-            holder.itemView.findNavController().navigate(R.id.armorInfo)
+            holder.itemView.findNavController().navigate(R.id.armorInfoFragment)
         }
         holder.bind(currentItem)
     }
@@ -68,7 +71,8 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
      * @param armor A list of all the armor items.
      */
     fun setData(armor: List<StatsRelation>) {
-        this.armorList = armor
+        armorList.clear()
+        armorList.addAll(armor)
         notifyDataSetChanged()
     }
 
@@ -82,6 +86,10 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
         mArmorViewModel = model
     }
 
+    fun setInfoDisplay(infoDisplay: Boolean) {
+        this.infoDisplay = infoDisplay
+    }
+
     /**
      * Class: MyViewHolder
      * Purpose: To apply all the information on to the adapter.
@@ -89,7 +97,14 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
      * @param context The current state of the fragment.
      */
     class MyViewHolder(private val itemBinding: ArmorListRowBinding,
-                       private val context: Context) : RecyclerView.ViewHolder(itemBinding.root) {
+                       private val context: Context, private val infoDisplay : Boolean)
+                        : RecyclerView.ViewHolder(itemBinding.root) {
+        private val nameText = itemBinding.nameText
+        private val pdefText = itemBinding.pdefText
+        private val mdefText = itemBinding.mdefText
+        private val alStoryDescription = itemBinding.alStoryDescription
+        private val alSetDescription = itemBinding.alSetDescription
+
         /**
          * Function: bind
          * Purpose: Attaches all the proper information to an individual row in the adapter.
@@ -97,11 +112,37 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
          */
         fun bind(currentItem: StatsRelation) {
             //Set all the textViews to their respective information
-            itemBinding.nameText.text = currentItem.armor[0].name
-            itemBinding.pdefText.text = "PDEF:" + currentItem.armorStats.max_pdef
-            itemBinding.mdefText.text = "MDEF:" + currentItem.armorStats.max_mdef
+            nameText.text = currentItem.armor[0].name
+            pdefText.text = "PDEF:" + currentItem.armorStats.max_pdef
+            mdefText.text = "MDEF:" + currentItem.armorStats.max_mdef
+            alStoryDescription.text = currentItem.armor[0].skill_name
+            alSetDescription.text = currentItem.armor[0].set_name
+
             //Set the icon to be displayed
-            loadImage(currentItem.armorStats.icon, itemBinding.imageView, context)
+            loadImage("armor/images/" + currentItem.armorStats.stats_icon, itemBinding.imageView, context)
+            loadImage("misc/icons/battle_icon02.png", itemBinding.alStoryIcon, context)
+            loadImage("misc/icons/heading_icon.png", itemBinding.alSetIcon, context)
+
+            hideData()
+        }
+
+        private fun hideData(){
+            if(infoDisplay) {
+                pdefText.visibility = View.INVISIBLE
+                mdefText.visibility = View.INVISIBLE
+                alStoryDescription.visibility = View.VISIBLE
+                alSetDescription.visibility = View.VISIBLE
+                itemBinding.alSetIcon.visibility = View.VISIBLE
+                itemBinding.alStoryIcon.visibility = View.VISIBLE
+            }
+            else {
+                pdefText.visibility = View.VISIBLE
+                mdefText.visibility = View.VISIBLE
+                alStoryDescription.visibility = View.INVISIBLE
+                alSetDescription.visibility = View.INVISIBLE
+                itemBinding.alSetIcon.visibility = View.INVISIBLE
+                itemBinding.alStoryIcon.visibility = View.INVISIBLE
+            }
         }
 
         /**
@@ -121,7 +162,7 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
 
             try {
                 //Attempt to grab the image from the directory
-                input = am.open("armor/images/$iconLocation")
+                input = am.open(iconLocation)
                 //Convert the image if the image is successfully grabbed
                 bitmap = BitmapFactory.decodeStream(input)
             }
@@ -132,6 +173,7 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
             //Set the image on the view
             imageHolder.setImageBitmap(bitmap)
         }
+
     }
 
 

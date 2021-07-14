@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 @Database(entities = [ArmorSupportSkill::class, ArmorType::class, ArmorSet::class,
-    Armor::class, ArmorStats::class], version = 1, exportSchema = true)
+    Armor::class, ArmorStats::class], views = [ArmorRelation::class], version = 1, exportSchema = true)
 abstract class ArmorDatabase : RoomDatabase() {
     abstract fun armorDao(): ArmorDao
 

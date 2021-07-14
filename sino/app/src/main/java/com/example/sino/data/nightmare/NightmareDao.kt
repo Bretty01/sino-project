@@ -3,7 +3,9 @@ package com.example.sino.data.nightmare
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Query
+import androidx.room.RawQuery
 import androidx.room.Transaction
+import androidx.sqlite.db.SupportSQLiteQuery
 
 @Dao
 interface NightmareDao {
@@ -20,4 +22,8 @@ interface NightmareDao {
             "INNER JOIN nightmare_colo ON nightmare_stats.colo_skill = nightmare_colo.skill_id " +
             "WHERE nightmare_id = :nightmareLocation")
     fun getSpecificNightmare(nightmareLocation: Int): LiveData<List<NightmareRelation>>
+
+    @RawQuery(observedEntities = [Nightmares::class, NightmareStorySkill::class, NightmareColoSkill::class,
+        NightmareStats::class])
+    fun sortFilterNightmare(queryString: SupportSQLiteQuery): LiveData<List<NightmareRelation>>
 }

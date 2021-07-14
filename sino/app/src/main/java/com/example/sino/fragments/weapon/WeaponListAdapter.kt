@@ -6,6 +6,7 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.findNavController
@@ -18,10 +19,13 @@ import java.io.IOException
 import java.io.InputStream
 
 class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>() {
+
+
     //Stores all the weapon information to be put on the adapters.
     private var weaponList = emptyList<WeaponStatsRelation>()
     //The viewModel for the fragment. Used to store the position on the adapter that was clicked.
     private lateinit var mWeaponViewModel: WeaponViewModel
+    private var infoDisplay: Boolean = false
 
     /**
      * Function: onCreateViewHolder
@@ -30,7 +34,7 @@ class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>()
      */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemBinding = WeaponListRowBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return MyViewHolder(itemBinding, parent.context)
+        return MyViewHolder(itemBinding, parent.context, infoDisplay)
     }
 
     /**
@@ -78,6 +82,10 @@ class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>()
         mWeaponViewModel = model
     }
 
+    fun hideInfo(infoDisplay:Boolean) {
+        this.infoDisplay = infoDisplay
+    }
+
     /**
      * Class: MyViewHolder
      * Purpose: To apply all the information on to the adapter.
@@ -85,8 +93,17 @@ class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>()
      * @param context The current state of the fragment.
      */
     class MyViewHolder(private val itemBinding: WeaponListRowBinding,
-                       private val context: Context
-    ) : RecyclerView.ViewHolder(itemBinding.root) {
+                       private val context: Context, private val infoDisplay: Boolean)
+        : RecyclerView.ViewHolder(itemBinding.root) {
+        private val nameText = itemBinding.nameText
+        private val patkText = itemBinding.patkText
+        private val matkText = itemBinding.matkText
+        private val pdefText = itemBinding.pdefText
+        private val mdefText = itemBinding.mdefText
+        private val wlStoryText = itemBinding.wlStoryText
+        private val wlColoText = itemBinding.wlColoText
+        private val wlSupportText = itemBinding.wlSupportText
+
         /**
          * Function: bind
          * Purpose: Attaches all the proper information to an individual row in the adapter.
@@ -94,13 +111,48 @@ class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>()
          */
         fun bind(currentItem: WeaponStatsRelation) {
             //Set all the textViews to their respective information
-            itemBinding.nameText.text = currentItem.weapon[0].name
-            itemBinding.patkText.text = "PATK: " + currentItem.weaponStats.mlb_patk
-            itemBinding.matkText.text = "MATK: " + currentItem.weaponStats.mlb_matk
-            itemBinding.pdefText.text = "PDEF:" + currentItem.weaponStats.mlb_pdef
-            itemBinding.mdefText.text = "MDEF:" + currentItem.weaponStats.mlb_mdef
+            nameText.text = currentItem.weapon[0].name
+            patkText.text = "PATK: " + currentItem.weaponStats.mlb_patk
+            matkText.text = "MATK: " + currentItem.weaponStats.mlb_matk
+            pdefText.text = "PDEF:" + currentItem.weaponStats.mlb_pdef
+            mdefText.text = "MDEF:" + currentItem.weaponStats.mlb_mdef
+            wlStoryText.text = currentItem.weapon[0].story_name
+            wlColoText.text = currentItem.weapon[0].colo_name
+            wlSupportText.text = currentItem.weapon[0].support_name
             //Set the icon to be displayed
-            loadImage(currentItem.weaponStats.stats_icon, itemBinding.imageView, context)
+            loadImage("weapons/images/" + currentItem.weaponStats.stats_icon, itemBinding.imageView, context)
+            loadImage("misc/icons/battle_icon01.png", itemBinding.wlStoryIcon, context)
+            loadImage("misc/icons/battle_icon03.png", itemBinding.wlColoIcon, context)
+            loadImage("misc/icons/battle_icon04.png", itemBinding.wlSupportIcon, context)
+
+            hideData()
+        }
+
+        private fun hideData() {
+            if(infoDisplay) {
+                patkText.visibility = View.INVISIBLE
+                matkText.visibility = View.INVISIBLE
+                pdefText.visibility = View.INVISIBLE
+                mdefText.visibility = View.INVISIBLE
+                wlStoryText.visibility = View.VISIBLE
+                wlColoText.visibility = View.VISIBLE
+                wlSupportText.visibility = View.VISIBLE
+                itemBinding.wlColoIcon.visibility = View.VISIBLE
+                itemBinding.wlStoryIcon.visibility = View.VISIBLE
+                itemBinding.wlSupportIcon.visibility = View.VISIBLE
+            }
+            else {
+                patkText.visibility = View.VISIBLE
+                matkText.visibility = View.VISIBLE
+                pdefText.visibility = View.VISIBLE
+                mdefText.visibility = View.VISIBLE
+                wlStoryText.visibility = View.INVISIBLE
+                wlColoText.visibility = View.INVISIBLE
+                wlSupportText.visibility = View.INVISIBLE
+                itemBinding.wlColoIcon.visibility = View.INVISIBLE
+                itemBinding.wlStoryIcon.visibility = View.INVISIBLE
+                itemBinding.wlSupportIcon.visibility = View.INVISIBLE
+            }
         }
 
         /**
@@ -120,7 +172,7 @@ class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>()
 
             try {
                 //Attempt to grab the image from the directory
-                input = am.open("weapons/images/$iconLocation")
+                input = am.open(iconLocation)
                 //Convert the image if the image is successfully grabbed
                 bitmap = BitmapFactory.decodeStream(input)
             }

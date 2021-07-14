@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/weaponListFragment"
+            android:icon="@drawable/ic_weapon"
+            android:contentDescription="@string/weapon"
+            android:title="@string/weapon" />
+    <item
+            android:id="@+id/armorListFragment"
+            android:icon="@drawable/ic_armor"
+            android:contentDescription="@string/armor"
+            android:title="@string/armor" />
+    <item
+            android:id="@+id/nightmareListFragment"
+            android:icon="@drawable/ic_nightmare"
+            android:contentDescription="@string/nightmare"
+            android:title="@string/nightmare" />
+</menu>

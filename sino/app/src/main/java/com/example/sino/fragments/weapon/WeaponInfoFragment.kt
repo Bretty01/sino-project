@@ -74,10 +74,11 @@ class WeaponInfoFragment : Fragment() {
 
         //Bind all the text to their respective textViews
         binding.weaponName.text = infoLocation.name
+        binding.costNumber.text = infoLocation.cost.toString()
         binding.weaponStoryName.text = infoLocation.story_name
-        binding.weaponStoryDescription.text = infoLocation.story_description
+        binding.weaponStoryDescription.text = infoLocation.story_description + "\nSP: " + infoLocation.sp_cost
         binding.weaponColoName.text = infoLocation.colo_name
-        binding.weaponColoDescripton.text = infoLocation.colo_description
+        binding.weaponColoDescripton.text = infoLocation.colo_description + "\nSP: " + infoLocation.sp_cost
         binding.weaponSupportName.text = infoLocation.support_name
         binding.weaponSupportDescripton.text = infoLocation.support_description
         binding.tableWeaponPdef.text = "PDEF"

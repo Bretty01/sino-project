@@ -1,4 +1,57 @@
 <resources>
-    <string name="app_name">sino</string>
+    <string name="app_name">SinDB</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weapon">Weapons</string>
+    <string name="armor">Armor</string>
+    <string name="nightmare">Nightmares</string>
+    <string name="levelOne">Lvl 1</string>
+    <string name="pAtk">PATK</string>
+    <string name="mAtk">MATK</string>
+    <string name="pDef">PDEF</string>
+    <string name="mDef">MDEF</string>
+    <string name="total">TOTAL</string>
+    <string name="titlePlaceholder">pretium viverra suspendisse potenti nullam ac tortor</string>
+    <string name="numberPlaceholder">XXXX</string>
+    <string name="descriptionPlaceholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla
+        at volutpat diam ut venenatis tellus.</string>
+    <string name="rankPlaceholder">XX</string>
+    <string name="lvlPlaceholder">Lvl XXX</string>
+    <string name="buffList">nightmare_colo.skill_id = 16 OR nightmare_colo.skill_id = 17 OR nightmare_colo.skill_id = 18
+        OR nightmare_colo.skill_id = 34 OR nightmare_colo.skill_id = 42 OR nightmare_colo.skill_id = 43 OR
+        nightmare_colo.skill_id = 46 OR nightmare_colo.skill_id = 82 OR nightmare_colo.skill_id = 83 OR
+        nightmare_colo.skill_id = 90 OR nightmare_colo.skill_id = 91 OR nightmare_colo.skill_id = 93 OR
+        nightmare_colo.skill_id = 116 OR nightmare_colo.skill_id = 117 OR nightmare_colo.skill_id = 118 OR
+        nightmare_colo.skill_id = 120</string>
+    <string name="debuffList">nightmare_colo.skill_id = 6 OR nightmare_colo.skill_id = 7 OR
+        nightmare_colo.skill_id = 8 OR nightmare_colo.skill_id = 10 OR nightmare_colo.skill_id = 11 OR
+        nightmare_colo.skill_id = 12 OR nightmare_colo.skill_id = 14 OR nightmare_colo.skill_id = 30 OR
+        nightmare_colo.skill_id = 32 OR nightmare_colo.skill_id = 44 OR nightmare_colo.skill_id = 51 OR
+        nightmare_colo.skill_id = 52 OR nightmare_colo.skill_id = 68 OR nightmare_colo.skill_id = 70 OR
+        nightmare_colo.skill_id = 84 OR nightmare_colo.skill_id = 86</string>
+    <string name="spList">nightmare_colo.skill_id = 39 OR nightmare_colo.skill_id = 40 OR
+        nightmare_colo.skill_id = 58 OR nightmare_colo.skill_id = 59 OR nightmare_colo.skill_id = 60 OR
+        nightmare_colo.skill_id = 62 OR nightmare_colo.skill_id = 63 OR nightmare_colo.skill_id = 65 OR
+        nightmare_colo.skill_id = 66 OR nightmare_colo.skill_id = 67 OR nightmare_colo.skill_id = 78 OR
+        nightmare_colo.skill_id = 106 OR nightmare_colo.skill_id = 107 OR nightmare_colo.skill_id = 108 OR
+        nightmare_colo.skill_id = 110 OR nightmare_colo.skill_id = 111 OR nightmare_colo.skill_id = 132 OR
+        nightmare_colo.skill_id = 133 OR nightmare_colo.skill_id = 134 OR nightmare_colo.skill_id = 136 OR
+        nightmare_colo.skill_id = 137</string>
+    <string name="incskillsList">nightmare_colo.skill_id = 2 OR nightmare_colo.skill_id = 3 OR
+        nightmare_colo.skill_id = 4 OR nightmare_colo.skill_id = 20 OR nightmare_colo.skill_id = 21 OR
+        nightmare_colo.skill_id = 22 OR nightmare_colo.skill_id = 48 OR nightmare_colo.skill_id = 49 OR
+        nightmare_colo.skill_id = 54 OR nightmare_colo.skill_id = 55 OR nightmare_colo.skill_id = 56 OR
+        nightmare_colo.skill_id = 101 OR nightmare_colo.skill_id = 103 OR nightmare_colo.skill_id = 104</string>
+    <string name="decskillsList">nightmare_colo.skill_id = 24 OR nightmare_colo.skill_id = 25 OR
+        nightmare_colo.skill_id = 35 OR nightmare_colo.skill_id = 36 OR nightmare_colo.skill_id = 37 OR
+        nightmare_colo.skill_id = 72 OR nightmare_colo.skill_id = 73 OR nightmare_colo.skill_id = 75 OR
+        nightmare_colo.skill_id = 76 OR nightmare_colo.skill_id = 80 OR nightmare_colo.skill_id = 95 OR
+        nightmare_colo.skill_id = 96 OR nightmare_colo.skill_id = 122 OR nightmare_colo.skill_id = 123 OR
+        nightmare_colo.skill_id = 124 OR nightmare_colo.skill_id = 127 OR nightmare_colo.skill_id = 130</string>
+    <string name="rateList">nightmare_colo.skill_id = 139 OR nightmare_colo.skill_id = 140 OR
+        nightmare_colo.skill_id = 112 OR nightmare_colo.skill_id = 113 OR nightmare_colo.skill_id = 114</string>
+    <string name="disadvList">nightmare_colo.skill_id = 27 OR nightmare_colo.skill_id = 28 OR
+        nightmare_colo.skill_id = 29</string>
+    <string name="costList">weapons.cost = 8 OR weapons.cost = 9 OR weapons.cost = 10 OR weapons.cost = 11 OR
+        weapons.cost = 12</string>
 </resources>

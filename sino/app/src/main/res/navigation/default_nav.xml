@@ -3,14 +3,15 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/default_nav"
-            app:startDestination="@id/nightmareListFragment">
-    <fragment android:id="@+id/listFragment"
+            app:startDestination="@id/weaponListFragment">
+    <fragment android:id="@+id/armorListFragment"
               android:name="com.example.sino.fragments.armor.ArmorListFragment"
               android:label="List"
               tools:layout="@layout/fragment_armor_list">
-        <action android:id="@+id/action_listFragment_to_armorInfo" app:destination="@id/armorInfo"/>
+        <action android:id="@+id/action_listFragment_to_armorInfo" app:destination="@id/armorInfoFragment"/>
+        <action android:id="@+id/action_listFragment_to_weaponListFragment" app:destination="@id/weaponListFragment"/>
     </fragment>
-    <fragment android:id="@+id/armorInfo"
+    <fragment android:id="@+id/armorInfoFragment"
               android:name="com.example.sino.fragments.armor.ArmorInfoFragment"
               android:label="fragment_armor_info"
               tools:layout="@layout/fragment_armor_info"/>
@@ -25,6 +26,7 @@
               android:label="fragment_nightmare_list" tools:layout="@layout/fragment_nightmare_list">
         <action android:id="@+id/action_nightmareListFragment_to_nightmareInfoFragment"
                 app:destination="@id/nightmareInfoFragment"/>
+        <action android:id="@+id/action_nightmareListFragment_to_listFragment" app:destination="@id/armorListFragment"/>
     </fragment>
     <fragment android:id="@+id/nightmareInfoFragment" android:name="com.example.sino.fragments.nightmare.NightmareInfoFragment"
               android:label="fragment_nightmare_info" tools:layout="@layout/fragment_nightmare_info"/>

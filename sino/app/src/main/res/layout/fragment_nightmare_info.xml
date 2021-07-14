@@ -7,7 +7,7 @@
              tools:context=".fragments.nightmare.NightmareInfoFragment">
 
     <TextView
-            android:text="TextView"
+            android:text="@string/titlePlaceholder"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:id="@+id/nightmareName"
@@ -28,6 +28,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="10dp"
+            tools:src="@tools:sample/avatars"
             android:id="@+id/nightmareIcon1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nightmareName" android:layout_marginTop="10dp"/>
@@ -36,6 +37,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="10dp"
+            tools:src="@tools:sample/avatars"
             app:layout_constraintStart_toEndOf="@+id/nightmareIcon1"
             app:layout_constraintTop_toTopOf="@+id/nightmareIcon1"/>
     <TableLayout
@@ -58,37 +60,37 @@
                 android:weightSum="6">
             <TextView
                     android:id="@+id/tableNightmareText"
-                    android:text="TextView"
+                    android:text="@string/rankPlaceholder"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmarePatk"
-                    android:text="PATK"
+                    android:text="@string/pAtk"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMatk"
-                    android:text="MATK"
+                    android:text="@string/mAtk"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmarePdef"
-                    android:text="PDEF"
+                    android:text="@string/pDef"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMdef"
-                    android:text="MDEF"
+                    android:text="@string/mDef"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareTotal"
-                    android:text="Total"
+                    android:text="@string/total"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
@@ -100,37 +102,37 @@
                 android:weightSum="6">
             <TextView
                     android:id="@+id/tableNightmareMinLvl"
-                    android:text="XXXX"
+                    android:text="@string/levelOne"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMinPatk"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMinMatk"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMinPdef"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMinMdef"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMinTotal"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
@@ -142,37 +144,37 @@
                 android:weightSum="6">
             <TextView
                     android:id="@+id/tableNightmareMaxLvl"
-                    android:text="XXXX"
+                    android:text="@string/lvlPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMaxPAtk"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMaxMatk"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMaxPdef"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMaxMdef"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMaxTotal"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
@@ -185,37 +187,37 @@
 
             <TextView
                     android:id="@+id/tableNightmareMlbLvl"
-                    android:text="XXXX"
+                    android:text="@string/lvlPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMlbPatk"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMlbMatk"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMlbPdef"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMlbMdef"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
             <TextView
                     android:id="@+id/tableNightmareMlbTotal"
-                    android:text="XXXX"
+                    android:text="@string/numberPlaceholder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"/>
@@ -245,7 +247,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
         <TextView
                 android:id="@+id/nightmareStoryName"
-                android:text="TextView"
+                android:text="@string/titlePlaceholder"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -255,7 +257,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
     <TextView
             android:id="@+id/nightmareStoryDescription"
-            android:text="TextView"
+            android:text="@string/descriptionPlaceholder"
             android:layout_width="match_parent"
             android:layout_height="80dp"/>
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -271,7 +273,7 @@
                 app:layout_constraintTop_toTopOf="parent"/>
         <TextView
                 android:id="@+id/nightmareColoName"
-                android:text="TextView"
+                android:text="@string/titlePlaceholder"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -281,7 +283,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
     <TextView
             android:id="@+id/nightmareColoDescripton"
-            android:text="TextView"
+            android:text="@string/descriptionPlaceholder"
             android:layout_width="match_parent"
             android:layout_height="80dp"/>
     </LinearLayout>

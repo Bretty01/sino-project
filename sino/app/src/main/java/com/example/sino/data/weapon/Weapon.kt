@@ -99,7 +99,7 @@ data class WeaponStatsRelation(
     val weapon: List<WeaponTypeRelation>,
 )
 
-@DatabaseView("SELECT weapons.weapon_id, weapons.type, weapons.name, " +
+@DatabaseView("SELECT weapons.weapon_id, weapons.type, weapons.name, weapons.cost, " +
         "weapon_type.type_icon, weapon_story_skill.story_name, weapon_story_skill.story_description, " +
         "weapon_story_skill.sp_cost, weapon_colo_skill.colo_name, weapon_colo_skill.colo_description, " +
         "weapon_colo_skill.colo_sp, weapon_support_skill.support_name, weapon_support_skill.support_description, " +
@@ -113,6 +113,7 @@ data class WeaponTypeRelation(
     val weapon_id: Int,
     val type: Int,
     val name: String,
+    val cost: Int,
     val type_icon: String,
     val story_name: String,
     val story_description: String,
