@@ -1,94 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-
     <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" app:cardCornerRadius="25dp" app:cardElevation="50dp">
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="50dp">
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
             <TextView
                     android:text="Colosseum Skill"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/textView7"
-                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtColoSkill"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
             <ToggleButton
                     android:layout_width="100dp"
-                    android:layout_height="wrap_content" android:id="@+id/nfBuffBtn"
-                    app:layout_constraintTop_toBottomOf="@+id/textView7" app:layout_constraintStart_toStartOf="parent"
-                    android:textOff="Buff" android:textOn="Buff"
-                    android:tag="@string/buffList"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnBuff"
+                    android:textOff="Buff"
+                    android:textOn="Buff"
+                    android:tag="@string/buffList"
+                    app:layout_constraintTop_toBottomOf="@+id/txtColoSkill"
+                    app:layout_constraintStart_toStartOf="parent"/>
             <ToggleButton
                     android:layout_width="100dp"
-                    android:layout_height="wrap_content" android:id="@+id/nfDebuffBtn"
-                    app:layout_constraintTop_toTopOf="@+id/nfBuffBtn"
-                    app:layout_constraintBottom_toBottomOf="@+id/nfBuffBtn" android:textOff="Debuff"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnDebuff"
+                    android:textOff="Debuff"
                     android:textOn="Debuff"
-                    app:layout_constraintStart_toStartOf="@+id/nfDecskillBtn" android:tag="@string/debuffList"/>
+                    android:tag="@string/debuffList"
+                    app:layout_constraintTop_toTopOf="@+id/btnBuff"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnBuff"
+                    app:layout_constraintStart_toStartOf="@+id/btnDecSkill" />
             <ToggleButton
                     android:layout_width="100dp"
-                    android:layout_height="wrap_content" android:id="@+id/nfSpBtn"
-                    app:layout_constraintStart_toEndOf="@+id/nfDebuffBtn"
-                    app:layout_constraintTop_toTopOf="@+id/nfDebuffBtn"
-                    app:layout_constraintBottom_toBottomOf="@+id/nfDebuffBtn" android:textOff="SP" android:textOn="SP"
-                    android:tag="@string/spList"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSp"
+                    android:textOff="SP"
+                    android:textOn="SP"
+                    android:tag="@string/spList"
+                    app:layout_constraintStart_toEndOf="@+id/btnDebuff"
+                    app:layout_constraintTop_toTopOf="@+id/btnDebuff"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnDebuff"/>
             <ToggleButton
                     android:text="ToggleButton"
                     android:layout_width="100dp"
-                    android:layout_height="wrap_content" android:id="@+id/nfIncskillBtn"
-                    app:layout_constraintTop_toBottomOf="@+id/nfBuffBtn"
-                    app:layout_constraintStart_toStartOf="@+id/nfBuffBtn"
-                    android:textOff="Inc.Skills" android:tag="@string/incskillsList"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnIncSkill"
+                    android:textOff="Inc.Skills"
+                    android:tag="@string/incskillsList"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBuff"
+                    app:layout_constraintStart_toStartOf="@+id/btnBuff"/>
             <ToggleButton
                     android:layout_width="100dp"
-                    android:layout_height="wrap_content" android:id="@+id/nfDecskillBtn"
-                    app:layout_constraintStart_toEndOf="@+id/nfIncskillBtn"
-                    app:layout_constraintTop_toBottomOf="@+id/nfBuffBtn"
-                    app:layout_constraintBottom_toBottomOf="@+id/nfIncskillBtn" android:textOff="Dec.Skills"
-                    android:textOn="Dec.Skills" android:tag="@string/decskillsList"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnDecSkill"
+                    android:textOff="Dec.Skills"
+                    android:textOn="Dec.Skills"
+                    android:tag="@string/decskillsList"
+                    app:layout_constraintStart_toEndOf="@+id/btnIncSkill"
+                    app:layout_constraintTop_toBottomOf="@+id/btnBuff"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnIncSkill"/>
             <ToggleButton
                     android:layout_width="100dp"
-                    android:layout_height="wrap_content" android:id="@+id/nfDisadvBtn"
-                    app:layout_constraintTop_toBottomOf="@+id/nfIncskillBtn"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnDisadv"
                     android:textOff="Disadv."
-                    app:layout_constraintStart_toStartOf="@+id/nfIncskillBtn"
-                    app:layout_constraintEnd_toEndOf="@+id/nfIncskillBtn"
-                    android:tag="@string/disadvList" android:textOn="Disadv."/>
+                    android:tag="@string/disadvList"
+                    android:textOn="Disadv."
+                    app:layout_constraintTop_toBottomOf="@+id/btnIncSkill"
+                    app:layout_constraintStart_toStartOf="@+id/btnIncSkill"
+                    app:layout_constraintEnd_toEndOf="@+id/btnIncSkill"/>
             <TextView
                     android:text="Colosseum SP"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/textView9"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtColoSp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/nfDisadvBtn"/>
+                    app:layout_constraintTop_toBottomOf="@+id/btnDisadv"/>
             <ToggleButton
                     android:layout_width="80dp"
-                    android:layout_height="wrap_content" android:id="@+id/nf0spBtn"
-                    app:layout_constraintTop_toBottomOf="@+id/textView9" app:layout_constraintStart_toStartOf="parent"
-                    android:textOff="0SP" android:textOn="0SP" android:tag="nightmares.summon_cost = 0"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn0"
+                    android:textOff="0SP"
+                    android:textOn="0SP"
+                    android:tag="nightmares.summon_cost = 0"
+                    app:layout_constraintTop_toBottomOf="@+id/txtColoSp"
+                    app:layout_constraintStart_toStartOf="parent"/>
             <ToggleButton
                     android:layout_width="80dp"
-                    android:layout_height="wrap_content" android:id="@+id/nf200spBtn"
-                    app:layout_constraintTop_toTopOf="@+id/nf0spBtn"
-                    app:layout_constraintBottom_toBottomOf="@+id/nf0spBtn"
-                    app:layout_constraintStart_toEndOf="@+id/nf0spBtn" android:textOff="200SP" android:textOn="200SP"
-                    android:tag="nightmares.summon_cost = 1"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn200"
+                    android:textOff="200SP"
+                    android:textOn="200SP"
+                    android:tag="nightmares.summon_cost = 1"
+                    app:layout_constraintTop_toTopOf="@+id/btn0"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn0"
+                    app:layout_constraintStart_toEndOf="@+id/btn0"/>
             <Button
                     android:text="Submit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/nfSubmitBtn"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSubmit"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/nf200spBtn"/>
+                    app:layout_constraintTop_toBottomOf="@+id/btn200"/>
             <ToggleButton
                     android:layout_width="100dp"
-                    android:layout_height="wrap_content" android:id="@+id/nfRateBtn"
-                    app:layout_constraintStart_toEndOf="@+id/nfDecskillBtn"
-                    app:layout_constraintBottom_toBottomOf="@+id/nfDecskillBtn"
-                    app:layout_constraintTop_toTopOf="@+id/nfDecskillBtn" android:textOff="Rate" android:textOn="Rate"
-                    android:tag="@string/rateList"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnRate"
+                    android:textOff="Rate"
+                    android:textOn="Rate"
+                    android:tag="@string/rateList"
+                    app:layout_constraintStart_toEndOf="@+id/btnDecSkill"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnDecSkill"
+                    app:layout_constraintTop_toTopOf="@+id/btnDecSkill" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>

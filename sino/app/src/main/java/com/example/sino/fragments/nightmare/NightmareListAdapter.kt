@@ -1,29 +1,25 @@
 package com.example.sino.fragments.nightmare
 
 import android.content.Context
-import android.content.res.AssetManager
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import androidx.compose.runtime.sourceInformation
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sino.R
 import com.example.sino.data.nightmare.NightmareRelation
 import com.example.sino.data.nightmare.NightmareViewModel
 import com.example.sino.databinding.NightmareListRowBinding
-import java.io.IOException
-import java.io.InputStream
+import com.example.sino.utilities.ImageHelper
 
 class NightmareListAdapter : RecyclerView.Adapter<NightmareListAdapter.MyViewHolder>() {
     //Stores all the weapon information to be put on the adapters.
     private var nightmareList = emptyList<NightmareRelation>()
+
     //The viewModel for the fragment. Used to store the position on the adapter that was clicked.
     private lateinit var mNightmareViewModel: NightmareViewModel
+
+    //Boolean variable to determine which information to display.
     private var infoDisplay = false
 
     /**
@@ -64,10 +60,10 @@ class NightmareListAdapter : RecyclerView.Adapter<NightmareListAdapter.MyViewHol
     /**
      * Function: setData
      * Purpose: Sets all the weapon items from the query to be listed on the adapter.
-     * @param weapon A list of all the weapon items.
+     * @param nightmare A list of all the weapon items.
      */
-    fun setData(weapon: List<NightmareRelation>) {
-        this.nightmareList = weapon
+    fun setData(nightmare: List<NightmareRelation>) {
+        this.nightmareList = nightmare
         notifyDataSetChanged()
     }
 
@@ -76,12 +72,16 @@ class NightmareListAdapter : RecyclerView.Adapter<NightmareListAdapter.MyViewHol
      * Purpose: To grab the viewModel from the fragment to be used on the adapter.
      * @param model A reference to the viewModel.
      */
-    fun setViewModel(model: NightmareViewModel)
-    {
+    fun setViewModel(model: NightmareViewModel) {
         mNightmareViewModel = model
     }
 
-    fun hideInfo(infoDisplay: Boolean) {
+    /**
+     * Function: setInfoDisplay
+     * Purpose: To set the infoDisplay variable, which is used to display certain information on the adapter.
+     * @param infoDisplay The value to be set.
+     */
+    fun setInfoDisplay(infoDisplay: Boolean) {
         this.infoDisplay = infoDisplay
     }
 
@@ -91,16 +91,17 @@ class NightmareListAdapter : RecyclerView.Adapter<NightmareListAdapter.MyViewHol
      * @param itemBinding The view for a specific row in the adapter.
      * @param context The current state of the fragment.
      */
-    class MyViewHolder(private val itemBinding: NightmareListRowBinding,
-                       private val context: Context, private val infoDisplay: Boolean
+    class MyViewHolder(
+        private val itemBinding: NightmareListRowBinding, private val context: Context, private val infoDisplay: Boolean
     ) : RecyclerView.ViewHolder(itemBinding.root) {
-        private val nameText = itemBinding.nameText
-        private val patkText = itemBinding.patkText
-        private val matkText = itemBinding.matkText
-        private val pdefText = itemBinding.pdefText
-        private val mdefText = itemBinding.mdefText
-        private val storyDescription = itemBinding.nlStoryDescription
-        private val coloDescription = itemBinding.nlColoDescription
+        //The text boxes of the values to be displayed
+        private val nameText = itemBinding.txtName
+        private val patkText = itemBinding.txtPatk
+        private val matkText = itemBinding.txtMatk
+        private val pdefText = itemBinding.txtPdef
+        private val mdefText = itemBinding.txtMdef
+        private val storyDescription = itemBinding.txtStoryDescription
+        private val coloDescription = itemBinding.txtColoDescription
 
         /**
          * Function: bind
@@ -108,6 +109,7 @@ class NightmareListAdapter : RecyclerView.Adapter<NightmareListAdapter.MyViewHol
          * @param currentItem A list of information to be displayed.
          */
         fun bind(currentItem: NightmareRelation) {
+            val helper = ImageHelper(context)
             //Set all the textViews to their respective information
             nameText.text = currentItem.name
             patkText.text = "PATK: " + currentItem.mlb_patk
@@ -117,65 +119,35 @@ class NightmareListAdapter : RecyclerView.Adapter<NightmareListAdapter.MyViewHol
             storyDescription.text = currentItem.story_name
             coloDescription.text = currentItem.colo_name
             //Set the icon to be displayed
-            loadImage("nightmares/images/" + currentItem.stats_icon, itemBinding.imageView, context)
-            loadImage("misc/icons/battle_icon01.png", itemBinding.nlStoryIcon, context)
-            loadImage("misc/icons/battle_icon03.png", itemBinding.nlColoIcon, context)
+            helper.loadImage(itemBinding.imgNightmareIcon, "nightmares/images/" + currentItem.stats_icon)
+            helper.loadImage(itemBinding.imgStoryIcon, "misc/icons/battle_icon01.png")
+            helper.loadImage(itemBinding.imgColoIcon, "misc/icons/battle_icon03.png")
+            //Call hideData to determine which text is to be displayed on the screen
             hideData()
         }
 
         private fun hideData() {
-            if(infoDisplay) {
+            //If the passed in variable infoDisplay is true, stat information is visible and skill information is
+            //  invisible. The inverse happens if infoDisplay is false
+            if (infoDisplay) {
                 patkText.visibility = View.INVISIBLE
                 matkText.visibility = View.INVISIBLE
                 pdefText.visibility = View.INVISIBLE
                 mdefText.visibility = View.INVISIBLE
                 storyDescription.visibility = View.VISIBLE
                 coloDescription.visibility = View.VISIBLE
-                itemBinding.nlColoIcon.visibility = View.VISIBLE
-                itemBinding.nlStoryIcon.visibility = View.VISIBLE
-            }
-            else {
+                itemBinding.imgColoIcon.visibility = View.VISIBLE
+                itemBinding.imgStoryIcon.visibility = View.VISIBLE
+            } else {
                 patkText.visibility = View.VISIBLE
                 matkText.visibility = View.VISIBLE
                 pdefText.visibility = View.VISIBLE
                 mdefText.visibility = View.VISIBLE
                 storyDescription.visibility = View.INVISIBLE
                 coloDescription.visibility = View.INVISIBLE
-                itemBinding.nlColoIcon.visibility = View.INVISIBLE
-                itemBinding.nlStoryIcon.visibility = View.INVISIBLE
+                itemBinding.imgColoIcon.visibility = View.INVISIBLE
+                itemBinding.imgStoryIcon.visibility = View.INVISIBLE
             }
-        }
-
-        /**
-         *  Function: loadImage
-         *  Purpose: Grabs an image, converts the image to bitmap, and attaches the image.
-         *  @param iconLocation The name of the asset
-         *  @param imageHolder The imageView to bind the image to
-         *  @param context The current state of the fragment
-         */
-        private fun loadImage(iconLocation: String, imageHolder: ImageView, context: Context) {
-            //Manage the assets in the assets directory
-            val am : AssetManager = context.assets
-            //Holds the image to be decoded
-            val input : InputStream
-            //Holds the decoded bitmap image. Defaults to null until image is converted
-            var bitmap : Bitmap? = null
-
-            try {
-                //Attempt to grab the image from the directory
-                input = am.open(iconLocation)
-                //Convert the image if the image is successfully grabbed
-                bitmap = BitmapFactory.decodeStream(input)
-            }
-            catch(e: IOException) {
-                //Log the icon name if it didn't properly implement
-                Log.v("ERRORDATA", "image was not implemented: $iconLocation")
-            }
-            //Set the image on the view
-            imageHolder.setImageBitmap(bitmap)
         }
     }
-
-
-
 }

@@ -8,35 +8,30 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="armorInfo">
+                  <entry key="armorInfoFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-2052" />
-                            <option name="y" value="-906" />
+                            <option name="x" value="-1930" />
+                            <option name="y" value="-1158" />
                           </Point>
                         </option>
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="listFragment">
+                  <entry key="armorListFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-2054" />
-                            <option name="y" value="-1259" />
+                            <option name="x" value="-1960" />
+                            <option name="y" value="-1734" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
                             <entry key="action_listFragment_to_armorInfo">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_listFragment_to_nightmareListFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -68,8 +63,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-2306" />
-                            <option name="y" value="-1254" />
+                            <option name="x" value="-2366" />
+                            <option name="y" value="-1732" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -94,8 +89,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1814" />
-                            <option name="y" value="-878" />
+                            <option name="x" value="-1484" />
+                            <option name="y" value="-1174" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -106,17 +101,12 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1825" />
-                            <option name="y" value="-1246" />
+                            <option name="x" value="-1477" />
+                            <option name="y" value="-1726" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_weaponListFragment_to_listFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
                             <entry key="action_weaponListFragment_to_weaponInfoFragment">
                               <value>
                                 <LayoutPositions />

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
               android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
@@ -8,7 +9,6 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="25dp"
             app:cardElevation="50dp">
-
         <LinearLayout
                 android:padding="10dp"
                 android:layout_width="match_parent"
@@ -17,7 +17,8 @@
             <TextView
                     android:text="Order By"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/textView6"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6"/>
             <com.google.android.material.button.MaterialButtonToggleGroup
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -29,20 +30,25 @@
                 <Button
                         android:text="Desc."
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content" android:id="@+id/nfDescBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="DESC"/>
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnDesc"
+                        android:layout_weight="1"
+                        android:tag="DESC"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="Asc."
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content" android:id="@+id/nfAscBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="ASC"/>
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnAsc"
+                        android:layout_weight="1"
+                        android:tag="ASC"
+                        style="?attr/materialButtonOutlinedStyle"/>
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <TextView
                     android:text="Field"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView5"
-            />
+                    android:id="@+id/txtField"/>
             <com.google.android.material.button.MaterialButtonToggleGroup
                     android:orientation="vertical"
                     android:layout_width="match_parent"
@@ -53,83 +59,118 @@
                 <Button
                         android:text="Name"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/nsNameBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="nightmares.name"
+                        android:layout_height="30dp"
+                        android:id="@+id/btnName"
+                        android:layout_weight="1"
+                        android:tag="nightmares.name"
+                        style="?attr/materialButtonOutlinedStyle"
                         android:textSize="10sp"/>
                 <Button
                         android:text="@string/pAtk"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/nsPatkBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="nightmare_stats.mlb_patk"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnPatk"
+                        android:layout_weight="1"
+                        android:tag="nightmare_stats.mlb_patk"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="@string/mAtk"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/nsMatkBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="nightmare_stats.mlb_matk"
+                        android:layout_height="30dp"
+                        android:id="@+id/btnMatk"
+                        android:layout_weight="1"
+                        android:tag="nightmare_stats.mlb_matk"
+                        style="?attr/materialButtonOutlinedStyle"
                         android:textSize="10sp"/>
                 <Button
                         android:text="@string/pDef"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/nsPdefBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="nightmare_stats.mlb_pdef"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnPdef"
+                        android:layout_weight="1"
+                        android:tag="nightmare_stats.mlb_pdef"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="@string/mDef"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/nsMdefBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="nightmare_stats.mlb_mdef"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnMdef"
+                        android:layout_weight="1"
+                        android:tag="nightmare_stats.mlb_mdef"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="@string/total"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/nsTotalBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_height="30dp"
+                        android:id="@+id/btnTotal"
+                        android:layout_weight="1"
                         android:tag="(nightmare_stats.mlb_patk + nightmare_stats.mlb_matk +
                         nightmare_stats.mlb_pdef + nightmare_stats.mlb_mdef)"
-                         android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="Total Atk"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/nsAtktotalBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_height="30dp"
+                        android:id="@+id/btnAtkTotal"
+                        android:layout_weight="1"
                         android:tag="(nightmare_stats.mlb_patk + nightmare_stats.mlb_matk)"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="Total Def"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/nsDeftotalBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle"
-                        android:tag="(nightmare_stats.mlb_pdef + nightmare_stats.mlb_mdef)" android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnDefTotal"
+                        android:layout_weight="1"
+                        android:tag="(nightmare_stats.mlb_pdef + nightmare_stats.mlb_mdef)"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="Story"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/nsStoryBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="nightmare_story.story_name"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnStory"
+                        android:layout_weight="1"
+                        android:tag="nightmare_story.story_name"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="Colo"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/nsColoBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="nightmare_colo.colo_name"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnColo"
+                        android:layout_weight="1"
+                        android:tag="nightmare_colo.colo_name"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle" />
                 <Button
                         android:text="Prep"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/nsPrepBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="nightmare_colo.colo_preparation"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnPreparation"
+                        android:layout_weight="1"
+                        android:tag="nightmare_colo.colo_preparation"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="Duration"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/nsDurationBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="nightmare_colo.colo_duration"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnDuration"
+                        android:layout_weight="1"
+                        android:tag="nightmare_colo.colo_duration"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <Button
                     android:text="submit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/nsSubmitBtn"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSubmit"
                     style="?attr/materialButtonOutlinedStyle"/>
         </LinearLayout>
 

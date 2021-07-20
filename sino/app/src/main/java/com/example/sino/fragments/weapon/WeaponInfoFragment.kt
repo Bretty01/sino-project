@@ -1,22 +1,15 @@
 package com.example.sino.fragments.weapon
 
-import android.content.Context
-import android.content.res.AssetManager
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.sino.data.weapon.WeaponStatsRelation
 import com.example.sino.data.weapon.WeaponViewModel
 import com.example.sino.databinding.FragmentWeaponInfoBinding
-import java.io.IOException
-import java.io.InputStream
+import com.example.sino.utilities.ImageHelper
 
 class WeaponInfoFragment : Fragment() {
     //The viewModel for all the weapon information
@@ -65,42 +58,37 @@ class WeaponInfoFragment : Fragment() {
      * @param binding The Fragment to bind all the information to
      */
     private fun displayGeneralInfo(binding: FragmentWeaponInfoBinding) {
+        val helper = ImageHelper(this.context)
         //An array of icon holders. Needed in an array to dynamically add images based on the amount of images
         //  there are.
-        val imageHolders = arrayOf(binding.weaponIcon1, binding.weaponIcon2, binding.weaponIcon3)
+        val imageHolders = arrayOf(binding.imgWeaponIcon1, binding.imgWeaponIcon2, binding.imgWeaponIcon3)
         //Generic int variable to iterate through imageHolders
         var i = 0
         var infoLocation = weaponList[0].weapon[0]
 
         //Bind all the text to their respective textViews
-        binding.weaponName.text = infoLocation.name
+        binding.txtName.text = infoLocation.name
         binding.costNumber.text = infoLocation.cost.toString()
-        binding.weaponStoryName.text = infoLocation.story_name
-        binding.weaponStoryDescription.text = infoLocation.story_description + "\nSP: " + infoLocation.sp_cost
-        binding.weaponColoName.text = infoLocation.colo_name
-        binding.weaponColoDescripton.text = infoLocation.colo_description + "\nSP: " + infoLocation.sp_cost
-        binding.weaponSupportName.text = infoLocation.support_name
-        binding.weaponSupportDescripton.text = infoLocation.support_description
-        binding.tableWeaponPdef.text = "PDEF"
-        binding.tableWeaponMdef.text = "MDEF"
-        binding.tableWeaponTotal.text = "Total"
-        binding.tableWeaponMinLvl.text = "Lvl 1"
+        binding.txtStoryName.text = infoLocation.story_name
+        binding.txtStoryDescription.text = infoLocation.story_description + "\nSP: " + infoLocation.sp_cost
+        binding.txtColoName.text = infoLocation.colo_name
+        binding.txtColoDescripton.text = infoLocation.colo_description + "\nSP: " + infoLocation.sp_cost
+        binding.txtSupportName.text = infoLocation.support_name
+        binding.txtSupportDescripton.text = infoLocation.support_description
         //Bind the images to their respective imageViews
-        displayImage(binding.typeIcon, "misc/icons/" + infoLocation.type_icon, this.context)
-        displayImage(binding.elementIcon, "misc/icons/" + infoLocation.element_icon, this.context)
+        helper.loadImage(binding.imgWeaponType, "misc/icons/" + infoLocation.type_icon)
+        helper.loadImage(binding.imgElement, "misc/icons/" + infoLocation.element_icon)
         for(weapon in weaponList) {
             val ip = ImagePosition(i)
-            displayImage(imageHolders[i], "weapons/images/" +
-                    weaponList[i].weaponStats.stats_icon, this.context)
+            helper.loadImage(imageHolders[i], "weapons/images/" + weaponList[i].weaponStats.stats_icon)
             imageHolders[i].setOnClickListener {
                 displaySpecificInfo(binding, ip.position)
             }
             i++
         }
-
-        displayImage(binding.weaponStoryIcon, "misc/icons/battle_icon01.png", this.context)
-        displayImage(binding.weaponColoIcon, "misc/icons/battle_icon03.png", this.context)
-        displayImage(binding.weaponSupportIcon, "misc/icons/battle_icon04.png", this.context)
+        helper.loadImage(binding.imgStoryIcon, "misc/icons/battle_icon01.png")
+        helper.loadImage(binding.imgColoIcon, "misc/icons/battle_icon03.png")
+        helper.loadImage(binding.imgSupportIcon, "misc/icons/battle_icon04.png")
 
         //Call displaySpecificInfo to create the default information
         displaySpecificInfo(binding, 0)
@@ -117,25 +105,24 @@ class WeaponInfoFragment : Fragment() {
         val weaponStats = weaponList[position].weaponStats
 
         //Bind all the text to their respective views
-        binding.tableWeaponText.text = weaponStats.stats_rank
-        binding.tableWeaponMinPdef.text = weaponStats.min_pdef.toString()
-        binding.tableWeaponMinMdef.text = weaponStats.min_mdef.toString()
-        binding.tableWeaponMinPatk.text = weaponStats.min_patk.toString()
-        binding.tableWeaponMinMatk.text = weaponStats.min_matk.toString()
-        binding.tableWeaponMaxPdef.text = weaponStats.max_pdef.toString()
-        binding.tableWeaponMaxMdef.text = weaponStats.max_mdef.toString()
-        binding.tableWeaponMaxPAtk.text = weaponStats.max_patk.toString()
-        binding.tableWeaponMaxMatk.text = weaponStats.max_matk.toString()
-        binding.tableWeaponMlbPatk.text = weaponStats.mlb_patk.toString()
-        binding.tableWeaponMlbMatk.text = weaponStats.mlb_matk.toString()
-        binding.tableWeaponMlbPdef.text = weaponStats.mlb_pdef.toString()
-        binding.tableWeaponMlbMdef.text = weaponStats.mlb_mdef.toString()
-
-        binding.tableWeaponMinTotal.text = (weaponStats.min_pdef + weaponStats.min_mdef +
+        binding.txtRank.text = weaponStats.stats_rank
+        binding.txtMinPdef.text = weaponStats.min_pdef.toString()
+        binding.txtMinMdef.text = weaponStats.min_mdef.toString()
+        binding.txtMinPatk.text = weaponStats.min_patk.toString()
+        binding.txtMinMatk.text = weaponStats.min_matk.toString()
+        binding.txtMaxPdef.text = weaponStats.max_pdef.toString()
+        binding.txtMaxMdef.text = weaponStats.max_mdef.toString()
+        binding.txtMaxPatk.text = weaponStats.max_patk.toString()
+        binding.txtMaxMatk.text = weaponStats.max_matk.toString()
+        binding.txtMlbPatk.text = weaponStats.mlb_patk.toString()
+        binding.txtMlbMatk.text = weaponStats.mlb_matk.toString()
+        binding.txtMlbPdef.text = weaponStats.mlb_pdef.toString()
+        binding.txtMlbMdef.text = weaponStats.mlb_mdef.toString()
+        binding.txtMinTotal.text = (weaponStats.min_pdef + weaponStats.min_mdef +
                 weaponStats.min_matk + weaponStats.min_patk).toString()
-        binding.tableWeaponMaxTotal.text = (weaponStats.max_pdef + weaponStats.max_mdef +
+        binding.txtMaxTotal.text = (weaponStats.max_pdef + weaponStats.max_mdef +
                 weaponStats.max_matk + weaponStats.max_patk).toString()
-        binding.tableWeaponMlbTotal.text = (weaponStats.mlb_pdef + weaponStats.mlb_mdef +
+        binding.txtMlbTotal.text = (weaponStats.mlb_pdef + weaponStats.mlb_mdef +
                 weaponStats.mlb_matk + weaponStats.mlb_patk).toString()
         //Call displayMaxLvl to display to resolve a dynamic solution
         displayMaxLvl(weaponStats.stats_rank, binding)
@@ -149,8 +136,8 @@ class WeaponInfoFragment : Fragment() {
      */
     private fun displayMaxLvl(rank: String, binding: FragmentWeaponInfoBinding) {
         //Used to shorten down the amount of code to be written down
-        val maxLvl = binding.tableWeaponMaxLvl
-        val mlbLvl = binding.tableWeaponMlbLvl
+        val maxLvl = binding.txtMaxLvl
+        val mlbLvl = binding.txtMlbLvl
 
         //Switch statement to determine what text to display
         when(rank) {
@@ -172,35 +159,6 @@ class WeaponInfoFragment : Fragment() {
                 mlbLvl.text = "Lvl 120"
             }
         }
-    }
-
-    /**
-     * Function: displayImage
-     * Purpose: Grabs an image, converts the image to bitmap, and attaches the image.
-     * @param iconLocation The location of the asset
-     * @param imageHolder The imageView to bind the image to
-     * @param context The current state of the fragment
-     */
-    private fun displayImage(imageHolder: ImageView, iconLocation: String, context: Context?) {
-        //Manage the assets in the assets directory
-        val am : AssetManager = context!!.assets
-        //Holds the image to be decoded
-        val input : InputStream
-        //Holds the decoded bitmap image. Defaults to null until image is converted
-        var bitmap : Bitmap? = null
-
-        try {
-            //Attempt to grab the image from the directory
-            input = am.open(iconLocation)
-            //Convert the image if the image is successfully grabbed
-            bitmap = BitmapFactory.decodeStream(input)
-        }
-        catch(e: IOException) {
-            //Log the icon name if it didn't properly implement
-            Log.v("error", "No image was implemented $iconLocation")
-        }
-        //Set the image on the view
-        imageHolder.setImageBitmap(bitmap)
     }
 
     /**

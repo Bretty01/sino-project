@@ -72,18 +72,18 @@ class ArmorInfoFragment : Fragment() {
     private fun displayGeneralInfo(binding: FragmentArmorInfoBinding) {
         //An array of icon holders. Needed in an array to dynamically add images based on the amount of images
         //  there are.
-        val imageHolders = arrayOf(binding.armorIcon1, binding.armorIcon2, binding.armorIcon3)
+        val imageHolders = arrayOf(binding.imgArmorIcon1, binding.imgArmorIcon2, binding.imgArmorIcon3)
         //Generic int variable to iterate through imageHolders
         var i = 0
         val armorInfo = armorList[0].armor[0]
         //Bind all the text to their respective textViews
-        binding.armorName.text = armorInfo.name
-        binding.armorSkillName.text = armorInfo.skill_name
-        binding.armorSkillDescription.text = armorInfo.skill_description
-        binding.armorSetName.text = armorInfo.set_name
-        binding.armorSetDescripton.text = armorInfo.set_description
+        binding.txtName.text = armorInfo.name
+        binding.txtSkillName.text = armorInfo.skill_name
+        binding.txtSkillDescription.text = armorInfo.skill_description
+        binding.txtSetName.text = armorInfo.set_name
+        binding.txtSetDescription.text = armorInfo.set_description
         //Bind the images to their respective imageViews
-        displayImage(binding.typeIcon, "misc/icons/" + armorInfo.type_icon, this.context)
+        displayImage(binding.imgWeaponType, "misc/icons/" + armorInfo.type_icon, this.context)
         for(armor in armorList) {
             val ip = ImagePosition(i)
             displayImage(imageHolders[i], "armor/images/" + armor.armorStats.stats_icon, this.context)
@@ -92,8 +92,8 @@ class ArmorInfoFragment : Fragment() {
             }
             i++
         }
-        displayImage(binding.armorSkillIcon, "misc/icons/battle_icon01.png", this.context)
-        displayImage(binding.armorSetIcon, "misc/icons/heading_icon.png", this.context)
+        displayImage(binding.imgArmorSkill, "misc/icons/battle_icon01.png", this.context)
+        displayImage(binding.imgArmorSet, "misc/icons/heading_icon.png", this.context)
         //Call displaySpecificInfo to create the default information
         displaySpecificInfo(binding, 0)
     }
@@ -109,13 +109,13 @@ class ArmorInfoFragment : Fragment() {
         val armorStats = armorList[position].armorStats
 
         //Bind all the text to their respective views
-        binding.tableArmorText.text = armorStats.rank
-        binding.tableArmorMinPdef.text = armorStats.min_pdef.toString()
-        binding.tableArmorMinMdef.text = armorStats.min_mdef.toString()
-        binding.tableArmorMaxPdef.text = armorStats.max_pdef.toString()
-        binding.tableArmorMaxMdef.text = armorStats.max_mdef.toString()
-        binding.tableArmorMinTotal.text = (armorStats.min_pdef + armorStats.min_mdef).toString()
-        binding.tableArmorMaxTotal.text = (armorStats.max_pdef + armorStats.max_mdef).toString()
+        binding.txtRank.text = armorStats.rank
+        binding.txtMinPdef.text = armorStats.min_pdef.toString()
+        binding.txtMinMdef.text = armorStats.min_mdef.toString()
+        binding.txtMaxPdef.text = armorStats.max_pdef.toString()
+        binding.txtMaxMdef.text = armorStats.max_mdef.toString()
+        binding.txtMinTotal.text = (armorStats.min_pdef + armorStats.min_mdef).toString()
+        binding.txtMaxTotal.text = (armorStats.max_pdef + armorStats.max_mdef).toString()
         //Call displayMaxLvl to display to resolve a dynamic solution
         displayMaxLvl(armorStats.rank, binding)
     }
@@ -128,7 +128,7 @@ class ArmorInfoFragment : Fragment() {
      */
     private fun displayMaxLvl(rank: String, binding: FragmentArmorInfoBinding) {
         //Used to shorten down the amount of code to be written down
-        val lvl = binding.tableArmorMaxLvl
+        val lvl = binding.txtMaxLvl
 
         //Switch statement to determine what text to display
         when(rank) {

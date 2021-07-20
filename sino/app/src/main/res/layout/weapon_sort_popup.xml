@@ -17,118 +17,156 @@
             <TextView
                     android:text="Order By"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content" android:id="@+id/txtOrder"/>
             <com.google.android.material.button.MaterialButtonToggleGroup
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:weightSum="2"
-                    android:id="@+id/wfOrderGroup"
+                    android:id="@+id/groupOrder"
                     app:singleSelection="true"
                     app:selectionRequired="true" >
                 <Button
                         android:text="Desc."
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content" android:id="@+id/wsDescBtn" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/btnDesc" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="DESC"/>
                 <Button
                         android:text="Asc."
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content" android:id="@+id/wsAscBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="ASC"/>
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnAsc"
+                        android:layout_weight="1"
+                        android:tag="ASC"
+                        style="?attr/materialButtonOutlinedStyle"/>
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <TextView
                     android:text="Field"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView5"
+                    android:id="@+id/txtField"
             />
             <com.google.android.material.button.MaterialButtonToggleGroup
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/wfSortGroup"
+                    android:id="@+id/groupField"
                     app:singleSelection="true"
                     app:selectionRequired="true">
                 <Button
                         android:text="Name"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/wsNameBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="weapons.name"
+                        android:layout_height="30dp"
+                        android:id="@+id/btnName"
+                        android:layout_weight="1"
+                        android:tag="weapons.name"
+                        style="?attr/materialButtonOutlinedStyle"
                         android:textSize="10sp"/>
                 <Button
                         android:text="Type"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/wsTypeBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_type.type_name"
+                        android:layout_height="30dp"
+                        android:id="@+id/btnType"
+                        android:layout_weight="1"
+                        android:tag="weapon_type.type_name"
+                        style="?attr/materialButtonOutlinedStyle"
                         android:textSize="10sp"/>
                 <Button
                         android:text="@string/pAtk"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/wsPatkBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_stats.mlb_patk"
+                        android:layout_height="30dp"
+                        android:id="@+id/btnPatk"
+                        android:layout_weight="1"
+                        android:tag="weapon_stats.mlb_patk"
+                        style="?attr/materialButtonOutlinedStyle"
                         android:textSize="10sp"/>
                 <Button
                         android:text="@string/mAtk"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/wsMatkBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_stats.mlb_matk"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnMatk"
+                        android:layout_weight="1"
+                        android:tag="weapon_stats.mlb_matk"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="@string/pDef"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/wsPdefBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_stats.mlb_pdef"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnPdef"
+                        android:layout_weight="1"
+                        android:tag="weapon_stats.mlb_pdef"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="@string/mDef"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/wsMdefBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_stats.mlb_mdef"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnMdef"
+                        android:layout_weight="1"
+                        android:tag="weapon_stats.mlb_mdef"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="@string/total"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/wsTotalBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_height="30dp"
+                        android:id="@+id/btnTotal"
+                        android:layout_weight="1"
                         android:tag="(weapon_stats.mlb_patk + weapon_stats.mlb_matk +                         weapon_stats.mlb_pdef + weapon_stats.mlb_mdef)"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="Total Atk"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/wsAtktotalBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_height="30dp"
+                        android:id="@+id/btnAtkTotal"
+                        android:layout_weight="1"
                         android:tag="(weapon_stats.mlb_patk + weapon_stats.mlb_matk)"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="Total Def"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/wsDeftotalBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle"
-                        android:tag="(weapon_stats.mlb_pdef + weapon_stats.mlb_mdef)" android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnDefTotal"
+                        android:layout_weight="1"
+                        android:tag="(weapon_stats.mlb_pdef + weapon_stats.mlb_mdef)"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle"/>
                 <Button
                         android:text="Story Skill"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/wsStoryBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_story_skill.story_name"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnStory"
+                        android:layout_weight="1"
+                        android:tag="weapon_story_skill.story_name"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle" />
                 <Button
                         android:text="Colo Skill"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/wsColoBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_colo_skill.colo_name"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnColo"
+                        android:layout_weight="1"
+                        android:tag="weapon_colo_skill.colo_name"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle" />
                 <Button
                         android:text="Support Skill"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp" android:id="@+id/wsSupportBtn" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="weapon_support_skill.skill_name"
-                        android:textSize="10sp"/>
+                        android:layout_height="30dp"
+                        android:id="@+id/btnSupport"
+                        android:layout_weight="1"
+                        android:tag="weapon_support_skill.skill_name"
+                        android:textSize="10sp"
+                        style="?attr/materialButtonOutlinedStyle" />
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <Button
-                    android:text="submit"
+                    android:text="Submit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/wsSubmitBtn"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSubmit"
                     style="?attr/materialButtonOutlinedStyle"/>
         </LinearLayout>
 

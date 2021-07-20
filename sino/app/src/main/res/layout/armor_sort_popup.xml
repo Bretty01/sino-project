@@ -17,80 +17,80 @@
             <TextView
                     android:text="Order By"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/textView6"/>
+                    android:layout_height="wrap_content" android:id="@+id/txtOrder"/>
             <com.google.android.material.button.MaterialButtonToggleGroup
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:weightSum="2"
-                    android:id="@+id/armorOrderGroup"
+                    android:id="@+id/groupOrder"
                     app:singleSelection="true"
                     app:selectionRequired="true" >
                 <Button
                         android:text="Desc."
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content" android:id="@+id/armorDescBtn" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/btnDesc" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="DESC"/>
                 <Button
                         android:text="Asc."
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content" android:id="@+id/armorAscBtn" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/btnAsc" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="ASC"/>
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <TextView
                     android:text="Field"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView5"
+                    android:id="@+id/txtField"
             />
             <com.google.android.material.button.MaterialButtonToggleGroup
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/armorSortGroup"
+                    android:id="@+id/groupField"
                     app:singleSelection="true"
                     app:selectionRequired="true">
                 <Button
                         android:text="Name"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/armorNameBtn" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/btnName" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="armor.name"/>
                 <Button
                         android:text="Set"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/armorSetBtn" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/btnSet" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="armor_set.set_name"/>
                 <Button
                         android:text="@string/pDef"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/armorPdefBtn" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/btnPdef" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="armor_stats.max_pdef"/>
                 <Button
                         android:text="@string/mDef"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/armorMdefBtn" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/btnMdef" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="armor_stats.max_mdef"/>
                 <Button
                         android:text="@string/total"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/armorTotalBtn" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/btnTotal" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle"
                         android:tag="(armor_stats.max_pdef + armor_stats.max_mdef)"/>
                 <Button
                         android:text="Type"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/armorTypeBtn" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/btnType" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="armor_type.type_name"/>
                 <Button
                         android:text="Story"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/armorStoryBtn" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/btnStory" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="armor_support_skill.skill_name"/>
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <Button
                     android:text="submit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/armorSortSubmitBtn"/>
+                    android:layout_height="wrap_content" android:id="@+id/btnSubmit"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

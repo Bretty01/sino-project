@@ -1,22 +1,15 @@
 package com.example.sino.fragments.nightmare
 
-import android.content.Context
-import android.content.res.AssetManager
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.lifecycle.ViewModelProvider
 import com.example.sino.data.nightmare.NightmareRelation
 import com.example.sino.data.nightmare.NightmareViewModel
 import com.example.sino.databinding.FragmentNightmareInfoBinding
-import java.io.IOException
-import java.io.InputStream
+import com.example.sino.utilities.ImageHelper
 
 class NightmareInfoFragment : Fragment() {
     //The viewModel for all the weapon information
@@ -65,33 +58,32 @@ class NightmareInfoFragment : Fragment() {
      * @param binding The Fragment to bind all the information to
      */
     private fun displayGeneralInfo(binding: FragmentNightmareInfoBinding) {
+        val helper = ImageHelper(this.context)
         //An array of icon holders. Needed in an array to dynamically add images based on the amount of images
         //  there are.
-        val imageHolders = arrayOf(binding.nightmareIcon1, binding.nightmareIcon2)
+        val imageHolders = arrayOf(binding.imgNightmareIcon1, binding.imgNightmareIcon2)
         //Generic int variable to iterate through imageHolders
         var i = 0
-        var infoLocation = nightmareList[0]
+        val infoLocation = nightmareList[0]
 
         //Bind all the text to their respective textViews
-        binding.nightmareName.text = infoLocation.name
-        binding.nightmareStoryName.text = infoLocation.story_name
-        binding.nightmareStoryDescription.text = infoLocation.story_description
-        binding.nightmareColoName.text = infoLocation.colo_name
-        binding.nightmareColoDescripton.text = infoLocation.colo_description
+        binding.txtName.text = infoLocation.name
+        binding.txtStoryName.text = infoLocation.story_name
+        binding.txtStoryDescription.text = infoLocation.story_description
+        binding.txtColoName.text = infoLocation.colo_name
+        binding.txtColoDescription.text = infoLocation.colo_description
         //Bind the images to their respective imageViews
-        displayImage(binding.typeIcon, "misc/icons/icon_013.png", this.context)
+        helper.loadImage(binding.imgNightmareType, "misc/icons/icon_013.png")
         for(weapon in nightmareList) {
             val ip = ImagePosition(i)
-            displayImage(imageHolders[i], "nightmares/images/" +
-                    nightmareList[i].stats_icon, this.context)
+            helper.loadImage(imageHolders[i], "nightmares/images/" + nightmareList[i].stats_icon)
             imageHolders[i].setOnClickListener {
                 displaySpecificInfo(binding, ip.position)
             }
             i++
         }
-
-        displayImage(binding.nightmareStoryIcon, "misc/icons/battle_icon01.png", this.context)
-        displayImage(binding.nightmareColoIcon, "misc/icons/battle_icon03.png", this.context)
+        helper.loadImage(binding.imgStoryIcon, "misc/icons/battle_icon01.png")
+        helper.loadImage(binding.imgColoIcon, "misc/icons/battle_icon03.png")
 
         //Call displaySpecificInfo to create the default information
         displaySpecificInfo(binding, 0)
@@ -108,25 +100,25 @@ class NightmareInfoFragment : Fragment() {
         val nightmareStats = nightmareList[position]
 
         //Bind all the text to their respective views
-        binding.tableNightmareText.text = nightmareStats.stats_rank
-        binding.tableNightmareMinPdef.text = nightmareStats.min_pdef.toString()
-        binding.tableNightmareMinMdef.text = nightmareStats.min_mdef.toString()
-        binding.tableNightmareMinPatk.text = nightmareStats.min_patk.toString()
-        binding.tableNightmareMinMatk.text = nightmareStats.min_matk.toString()
-        binding.tableNightmareMaxPdef.text = nightmareStats.max_pdef.toString()
-        binding.tableNightmareMaxMdef.text = nightmareStats.max_mdef.toString()
-        binding.tableNightmareMaxPAtk.text = nightmareStats.max_patk.toString()
-        binding.tableNightmareMaxMatk.text = nightmareStats.max_matk.toString()
-        binding.tableNightmareMlbPatk.text = nightmareStats.mlb_patk.toString()
-        binding.tableNightmareMlbMatk.text = nightmareStats.mlb_matk.toString()
-        binding.tableNightmareMlbPdef.text = nightmareStats.mlb_pdef.toString()
-        binding.tableNightmareMlbMdef.text = nightmareStats.mlb_mdef.toString()
+        binding.txtRank.text = nightmareStats.stats_rank
+        binding.txtMinPdef.text = nightmareStats.min_pdef.toString()
+        binding.txtMinMdef.text = nightmareStats.min_mdef.toString()
+        binding.txtMinPatk.text = nightmareStats.min_patk.toString()
+        binding.txtMinMatk.text = nightmareStats.min_matk.toString()
+        binding.txtMaxPdef.text = nightmareStats.max_pdef.toString()
+        binding.txtMaxMdef.text = nightmareStats.max_mdef.toString()
+        binding.txtMaxPatk.text = nightmareStats.max_patk.toString()
+        binding.txtMaxMatk.text = nightmareStats.max_matk.toString()
+        binding.txtMlbPatk.text = nightmareStats.mlb_patk.toString()
+        binding.txtMlbMatk.text = nightmareStats.mlb_matk.toString()
+        binding.txtMlbPdef.text = nightmareStats.mlb_pdef.toString()
+        binding.txtMlbMdef.text = nightmareStats.mlb_mdef.toString()
 
-        binding.tableNightmareMinTotal.text = (nightmareStats.min_pdef + nightmareStats.min_mdef +
+        binding.txtMinTotal.text = (nightmareStats.min_pdef + nightmareStats.min_mdef +
                 nightmareStats.min_matk + nightmareStats.min_patk).toString()
-        binding.tableNightmareMaxTotal.text = (nightmareStats.max_pdef + nightmareStats.max_mdef +
+        binding.txtMaxTotal.text = (nightmareStats.max_pdef + nightmareStats.max_mdef +
                 nightmareStats.max_matk + nightmareStats.max_patk).toString()
-        binding.tableNightmareMlbTotal.text = (nightmareStats.mlb_pdef + nightmareStats.mlb_mdef +
+        binding.txtMlbTotal.text = (nightmareStats.mlb_pdef + nightmareStats.mlb_mdef +
                 nightmareStats.mlb_matk + nightmareStats.mlb_patk).toString()
         //Call displayMaxLvl to display to resolve a dynamic solution
         displayMaxLvl(nightmareStats.stats_rank, binding)
@@ -140,8 +132,8 @@ class NightmareInfoFragment : Fragment() {
      */
     private fun displayMaxLvl(rank: String, binding: FragmentNightmareInfoBinding) {
         //Used to shorten down the amount of code to be written down
-        val maxLvl = binding.tableNightmareMaxLvl
-        val mlbLvl = binding.tableNightmareMlbLvl
+        val maxLvl = binding.txtMaxLvl
+        val mlbLvl = binding.txtMlbLvl
 
         //Switch statement to determine what text to display
         when(rank) {
@@ -163,35 +155,6 @@ class NightmareInfoFragment : Fragment() {
                 mlbLvl.text = "Lvl 120"
             }
         }
-    }
-
-    /**
-     * Function: displayImage
-     * Purpose: Grabs an image, converts the image to bitmap, and attaches the image.
-     * @param iconLocation The location of the asset
-     * @param imageHolder The imageView to bind the image to
-     * @param context The current state of the fragment
-     */
-    private fun displayImage(imageHolder: ImageView, iconLocation: String, context: Context?) {
-        //Manage the assets in the assets directory
-        val am : AssetManager = context!!.assets
-        //Holds the image to be decoded
-        val input : InputStream
-        //Holds the decoded bitmap image. Defaults to null until image is converted
-        var bitmap : Bitmap? = null
-
-        try {
-            //Attempt to grab the image from the directory
-            input = am.open(iconLocation)
-            //Convert the image if the image is successfully grabbed
-            bitmap = BitmapFactory.decodeStream(input)
-        }
-        catch(e: IOException) {
-            //Log the icon name if it didn't properly implement
-            Log.v("error", "No image was implemented $iconLocation")
-        }
-        //Set the image on the view
-        imageHolder.setImageBitmap(bitmap)
     }
 
     /**

@@ -1,22 +1,16 @@
 package com.example.sino.fragments.weapon
 
 import android.content.Context
-import android.content.res.AssetManager
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sino.R
 import com.example.sino.data.weapon.WeaponStatsRelation
 import com.example.sino.data.weapon.WeaponViewModel
 import com.example.sino.databinding.WeaponListRowBinding
-import java.io.IOException
-import java.io.InputStream
+import com.example.sino.utilities.ImageHelper
 
 class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>() {
 
@@ -25,6 +19,7 @@ class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>()
     private var weaponList = emptyList<WeaponStatsRelation>()
     //The viewModel for the fragment. Used to store the position on the adapter that was clicked.
     private lateinit var mWeaponViewModel: WeaponViewModel
+    //Boolean variable to determine which information to display.
     private var infoDisplay: Boolean = false
 
     /**
@@ -82,7 +77,12 @@ class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>()
         mWeaponViewModel = model
     }
 
-    fun hideInfo(infoDisplay:Boolean) {
+    /**
+     * Function: setInfoDisplay
+     * Purpose: To set the infoDisplay variable, which is used to display certain information on the adapter.
+     * @param infoDisplay The value to be set.
+     */
+    fun setInfoDisplay(infoDisplay:Boolean) {
         this.infoDisplay = infoDisplay
     }
 
@@ -91,18 +91,20 @@ class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>()
      * Purpose: To apply all the information on to the adapter.
      * @param itemBinding The view for a specific row in the adapter.
      * @param context The current state of the fragment.
+     * @param infoDisplay Used to determine which text to be displayed.
      */
     class MyViewHolder(private val itemBinding: WeaponListRowBinding,
                        private val context: Context, private val infoDisplay: Boolean)
         : RecyclerView.ViewHolder(itemBinding.root) {
-        private val nameText = itemBinding.nameText
-        private val patkText = itemBinding.patkText
-        private val matkText = itemBinding.matkText
-        private val pdefText = itemBinding.pdefText
-        private val mdefText = itemBinding.mdefText
-        private val wlStoryText = itemBinding.wlStoryText
-        private val wlColoText = itemBinding.wlColoText
-        private val wlSupportText = itemBinding.wlSupportText
+        //Set all the textViews to their respective information
+        private val nameText = itemBinding.txtName
+        private val patkText = itemBinding.txtPatk
+        private val matkText = itemBinding.txtMatk
+        private val pdefText = itemBinding.txtPdef
+        private val mdefText = itemBinding.txtMdef
+        private val wlStoryText = itemBinding.txtStory
+        private val wlColoText = itemBinding.txtColo
+        private val wlSupportText = itemBinding.txtSupport
 
         /**
          * Function: bind
@@ -110,6 +112,7 @@ class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>()
          * @param currentItem A list of information to be displayed.
          */
         fun bind(currentItem: WeaponStatsRelation) {
+            val handler = ImageHelper(context)
             //Set all the textViews to their respective information
             nameText.text = currentItem.weapon[0].name
             patkText.text = "PATK: " + currentItem.weaponStats.mlb_patk
@@ -120,15 +123,21 @@ class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>()
             wlColoText.text = currentItem.weapon[0].colo_name
             wlSupportText.text = currentItem.weapon[0].support_name
             //Set the icon to be displayed
-            loadImage("weapons/images/" + currentItem.weaponStats.stats_icon, itemBinding.imageView, context)
-            loadImage("misc/icons/battle_icon01.png", itemBinding.wlStoryIcon, context)
-            loadImage("misc/icons/battle_icon03.png", itemBinding.wlColoIcon, context)
-            loadImage("misc/icons/battle_icon04.png", itemBinding.wlSupportIcon, context)
-
+            handler.loadImage(itemBinding.imgWeaponIcon,"weapons/images/" + currentItem.weaponStats.stats_icon)
+            handler.loadImage(itemBinding.imgStoryIcon, "misc/icons/battle_icon01.png")
+            handler.loadImage(itemBinding.imgColoIcon, "misc/icons/battle_icon03.png")
+            handler.loadImage(itemBinding.imgSupportIcon, "misc/icons/battle_icon04.png")
+            //Call hideData to determine which text is to be displayed on the screen
             hideData()
         }
 
+        /**
+         * Function: hideData
+         * Purpose: Determines which TextViews and ImageViews are hidden and which are to be visible.
+         */
         private fun hideData() {
+            //If the passed in variable infoDisplay is true, stat information is visible and skill information is
+            //  invisible. The inverse happens if infoDisplay is false
             if(infoDisplay) {
                 patkText.visibility = View.INVISIBLE
                 matkText.visibility = View.INVISIBLE
@@ -137,9 +146,9 @@ class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>()
                 wlStoryText.visibility = View.VISIBLE
                 wlColoText.visibility = View.VISIBLE
                 wlSupportText.visibility = View.VISIBLE
-                itemBinding.wlColoIcon.visibility = View.VISIBLE
-                itemBinding.wlStoryIcon.visibility = View.VISIBLE
-                itemBinding.wlSupportIcon.visibility = View.VISIBLE
+                itemBinding.imgColoIcon.visibility = View.VISIBLE
+                itemBinding.imgStoryIcon.visibility = View.VISIBLE
+                itemBinding.imgSupportIcon.visibility = View.VISIBLE
             }
             else {
                 patkText.visibility = View.VISIBLE
@@ -149,40 +158,12 @@ class WeaponListAdapter : RecyclerView.Adapter<WeaponListAdapter.MyViewHolder>()
                 wlStoryText.visibility = View.INVISIBLE
                 wlColoText.visibility = View.INVISIBLE
                 wlSupportText.visibility = View.INVISIBLE
-                itemBinding.wlColoIcon.visibility = View.INVISIBLE
-                itemBinding.wlStoryIcon.visibility = View.INVISIBLE
-                itemBinding.wlSupportIcon.visibility = View.INVISIBLE
+                itemBinding.imgColoIcon.visibility = View.INVISIBLE
+                itemBinding.imgStoryIcon.visibility = View.INVISIBLE
+                itemBinding.imgSupportIcon.visibility = View.INVISIBLE
             }
         }
 
-        /**
-         *  Function: loadImage
-         *  Purpose: Grabs an image, converts the image to bitmap, and attaches the image.
-         *  @param iconLocation The name of the asset
-         *  @param imageHolder The imageView to bind the image to
-         *  @param context The current state of the fragment
-         */
-        private fun loadImage(iconLocation: String, imageHolder: ImageView, context: Context) {
-            //Manage the assets in the assets directory
-            val am : AssetManager = context.assets
-            //Holds the image to be decoded
-            val input : InputStream
-            //Holds the decoded bitmap image. Defaults to null until image is converted
-            var bitmap : Bitmap? = null
-
-            try {
-                //Attempt to grab the image from the directory
-                input = am.open(iconLocation)
-                //Convert the image if the image is successfully grabbed
-                bitmap = BitmapFactory.decodeStream(input)
-            }
-            catch(e: IOException) {
-                //Log the icon name if it didn't properly implement
-                Log.v("ERRORDATA", "image was not implemented: $iconLocation")
-            }
-            //Set the image on the view
-            imageHolder.setImageBitmap(bitmap)
-        }
     }
 
 

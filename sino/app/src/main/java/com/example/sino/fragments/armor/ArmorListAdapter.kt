@@ -5,7 +5,6 @@ import android.content.res.AssetManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.util.Log
-import android.view.Display
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,6 +27,7 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
     private var armorList : MutableList<StatsRelation> = mutableListOf()
     //The viewModel for the fragment. Used to store the position on the adapter that was clicked.
     private lateinit var mArmorViewModel: ArmorViewModel
+    //Boolean variable to determine which information to display.
     private var infoDisplay = false
 
     /**
@@ -86,6 +86,11 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
         mArmorViewModel = model
     }
 
+    /**
+     * Function: setInfoDisplay
+     * Purpose: To set the infoDisplay variable, which is used to display certain information on the adapter.
+     * @param infoDisplay The value to be set.
+     */
     fun setInfoDisplay(infoDisplay: Boolean) {
         this.infoDisplay = infoDisplay
     }
@@ -95,15 +100,17 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
      * Purpose: To apply all the information on to the adapter.
      * @param itemBinding The view for a specific row in the adapter.
      * @param context The current state of the fragment.
+     * @param infoDisplay Used to determine which text to be displayed.
      */
     class MyViewHolder(private val itemBinding: ArmorListRowBinding,
                        private val context: Context, private val infoDisplay : Boolean)
                         : RecyclerView.ViewHolder(itemBinding.root) {
-        private val nameText = itemBinding.nameText
-        private val pdefText = itemBinding.pdefText
-        private val mdefText = itemBinding.mdefText
-        private val alStoryDescription = itemBinding.alStoryDescription
-        private val alSetDescription = itemBinding.alSetDescription
+        //The text boxes of the values to be displayed
+        private val nameText = itemBinding.txtArmorName
+        private val pdefText = itemBinding.txtPdef
+        private val mdefText = itemBinding.txtMdef
+        private val alStoryDescription = itemBinding.txtStoryDescription
+        private val alSetDescription = itemBinding.txtSetDescription
 
         /**
          * Function: bind
@@ -117,31 +124,36 @@ class ArmorListAdapter : RecyclerView.Adapter<ArmorListAdapter.MyViewHolder>() {
             mdefText.text = "MDEF:" + currentItem.armorStats.max_mdef
             alStoryDescription.text = currentItem.armor[0].skill_name
             alSetDescription.text = currentItem.armor[0].set_name
-
-            //Set the icon to be displayed
-            loadImage("armor/images/" + currentItem.armorStats.stats_icon, itemBinding.imageView, context)
-            loadImage("misc/icons/battle_icon02.png", itemBinding.alStoryIcon, context)
-            loadImage("misc/icons/heading_icon.png", itemBinding.alSetIcon, context)
-
+            //Set the icons to be displayed
+            loadImage("armor/images/" + currentItem.armorStats.stats_icon, itemBinding.imgArmorIcon, context)
+            loadImage("misc/icons/battle_icon02.png", itemBinding.imgStoryIcon, context)
+            loadImage("misc/icons/heading_icon.png", itemBinding.imgSetIcon, context)
+            //Call hideData to determine which text is to be displayed on the screen
             hideData()
         }
 
+        /**
+         * Function: hideData
+         * Purpose: Determines which TextViews and ImageViews are hidden and which are to be visible.
+         */
         private fun hideData(){
+            //If the passed in variable infoDisplay is true, stat information is visible and skill information is
+            //  invisible. The inverse happens if infoDisplay is false
             if(infoDisplay) {
                 pdefText.visibility = View.INVISIBLE
                 mdefText.visibility = View.INVISIBLE
                 alStoryDescription.visibility = View.VISIBLE
                 alSetDescription.visibility = View.VISIBLE
-                itemBinding.alSetIcon.visibility = View.VISIBLE
-                itemBinding.alStoryIcon.visibility = View.VISIBLE
+                itemBinding.imgSetIcon.visibility = View.VISIBLE
+                itemBinding.imgStoryIcon.visibility = View.VISIBLE
             }
             else {
                 pdefText.visibility = View.VISIBLE
                 mdefText.visibility = View.VISIBLE
                 alStoryDescription.visibility = View.INVISIBLE
                 alSetDescription.visibility = View.INVISIBLE
-                itemBinding.alSetIcon.visibility = View.INVISIBLE
-                itemBinding.alStoryIcon.visibility = View.INVISIBLE
+                itemBinding.imgSetIcon.visibility = View.INVISIBLE
+                itemBinding.imgStoryIcon.visibility = View.INVISIBLE
             }
         }
 
