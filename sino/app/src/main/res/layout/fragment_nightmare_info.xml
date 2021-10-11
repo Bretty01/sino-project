@@ -5,7 +5,8 @@
              xmlns:app="http://schemas.android.com/apk/res-auto"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".fragments.nightmare.NightmareInfoFragment">
+             tools:context=".fragments.nightmare.NightmareInfoFragment"
+             android:paddingTop="10dp">
 
     <TextView
             android:text="@string/titlePlaceholder"
@@ -16,7 +17,8 @@
             android:layout_marginEnd="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imgNightmareType"/>
+            app:layout_constraintStart_toEndOf="@+id/imgNightmareType"
+            style="@style/Theme.Sino.Title"/>
     <ImageView
             android:src="@drawable/ic_launcher_foreground"
             android:layout_width="30dp"
@@ -58,7 +60,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:weightSum="6">
+                android:weightSum="6"
+                android:theme="@style/Theme.Sino.table">
             <TextView
                     android:id="@+id/txtRank"
                     android:text="@string/rankPlaceholder"
@@ -254,16 +257,18 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imgStoryIcon"/>
+                app:layout_constraintStart_toEndOf="@+id/imgStoryIcon"
+                style="@style/Theme.Sino.skillTitle"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
     <TextView
             android:id="@+id/txtStoryDescription"
             android:text="@string/descriptionPlaceholder"
             android:layout_width="match_parent"
-            android:layout_height="80dp"/>
+            android:layout_height="wrap_content"/>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp">
+            android:layout_height="30dp"
+            style="@style/Theme.Sino.skillMargin">
         <ImageView
                 android:id="@+id/imgColoIcon"
                 android:src="@drawable/ic_launcher_foreground"
@@ -280,12 +285,13 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imgColoIcon"/>
+                app:layout_constraintStart_toEndOf="@+id/imgColoIcon"
+                style="@style/Theme.Sino.skillTitle"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
     <TextView
             android:id="@+id/txtColoDescription"
             android:text="@string/descriptionPlaceholder"
             android:layout_width="match_parent"
-            android:layout_height="80dp"/>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

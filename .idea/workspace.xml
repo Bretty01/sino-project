@@ -14,9 +14,6 @@
       </data-source>
     </data-sources>
   </component>
-  <component name="AndroidGradleBuildConfiguration">
-    <option name="SYNC_PROJECT_BEFORE_BUILD" value="true" />
-  </component>
   <component name="AndroidLayouts">
     <shared>
       <config />
@@ -49,8 +46,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bab1024d-baa9-422a-abb9-449f9370bd0f" name="Default Changelist" comment="Code cleanup">
+    <list default="true" id="bab1024d-baa9-422a-abb9-449f9370bd0f" name="Default Changelist" comment="Added bottom navigation and sort/filter functionality for all tabs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/armor_list_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/armor_list_row.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_armor_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_armor_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_nightmare_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_nightmare_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_weapon_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_weapon_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_filter_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_filter_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_list_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_list_row.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_filter_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_filter_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_list_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_list_row.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +67,7 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/jtagle/.android/avd/Pixel_4_API_31.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/sino/app">
       <ProjectState />
@@ -118,6 +125,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/717e9a7689433ba20ddcc64faa48d165/constraintlayout-2.0.4/res/values/values.xml" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1sivWN3DO37o7cQTmkOdCnsJSAP" />
   <component name="ProjectViewState">
@@ -190,6 +200,7 @@
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="specific_activity" />
@@ -222,6 +233,7 @@
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -461,7 +473,8 @@
     <MESSAGE value="Armor database and pages implemented." />
     <MESSAGE value="Added weapon and nightmare pages." />
     <MESSAGE value="Code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code cleanup" />
+    <MESSAGE value="Added bottom navigation and sort/filter functionality for all tabs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added bottom navigation and sort/filter functionality for all tabs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,7 +5,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".fragments.armor.ArmorInfoFragment">
+        tools:context=".fragments.armor.ArmorInfoFragment"
+        android:paddingTop="10dp">
     <TextView
             android:text="@string/titlePlaceholder"
             android:layout_width="0dp"
@@ -15,11 +16,12 @@
             android:layout_marginEnd="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imgWeaponType"/>
+            app:layout_constraintStart_toEndOf="@+id/imgWeaponType"
+            style="@style/Theme.Sino.Title"/>
     <ImageView
             android:src="@drawable/ic_launcher_foreground"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:id="@+id/imgWeaponType"
             android:layout_marginStart="10dp"
             android:contentDescription="Weapon Icon"
@@ -28,13 +30,13 @@
     <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
             android:id="@+id/imgArmorIcon1"
             android:contentDescription="Image Icon"
             tools:src="@tools:sample/avatars"
-            app:layout_constraintTop_toBottomOf="@+id/imgWeaponType"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/txtName"
+            app:layout_constraintStart_toStartOf="parent"/>
     <ImageView
             android:id="@+id/imgArmorIcon2"
             android:layout_width="80dp"
@@ -58,9 +60,9 @@
     <TableLayout
             android:id="@+id/tableLayout"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="90dp"
             android:weightSum="3"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +74,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:weightSum="4">
+                android:weightSum="4"
+                android:theme="@style/Theme.Sino.table">
             <TextView
                     android:id="@+id/txtRank"
                     android:text="@string/rankPlaceholder"
@@ -163,7 +166,7 @@
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             app:layout_constraintTop_toBottomOf="@+id/tableLayout"
@@ -172,11 +175,11 @@
             app:layout_constraintEnd_toEndOf="parent" >
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp">
+                android:layout_height="30dp">
             <ImageView
                     android:id="@+id/imgArmorSkill"
                     android:src="@drawable/ic_launcher_foreground"
-                    android:layout_width="40dp"
+                    android:layout_width="30dp"
                     android:layout_height="match_parent"
                     android:contentDescription="Icon"
                     app:layout_constraintStart_toStartOf="parent"
@@ -190,20 +193,22 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imgArmorSkill"/>
+                    app:layout_constraintStart_toEndOf="@+id/imgArmorSkill"
+                    style="@style/Theme.Sino.skillTitle"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
         <TextView
                 android:id="@+id/txtSkillDescription"
                 android:text="@string/descriptionPlaceholder"
                 android:layout_width="match_parent"
-                android:layout_height="60dp" />
+                android:layout_height="wrap_content" />
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp">
+                android:layout_height="30dp"
+                style="@style/Theme.Sino.skillMargin">
             <ImageView
                     android:id="@+id/imgArmorSet"
                     android:src="@drawable/ic_launcher_foreground"
-                    android:layout_width="40dp"
+                    android:layout_width="30dp"
                     android:layout_height="match_parent"
                     android:contentDescription="Icon"
                     app:layout_constraintStart_toStartOf="parent"
@@ -217,12 +222,13 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imgArmorSet"/>
+                    app:layout_constraintStart_toEndOf="@+id/imgArmorSet"
+                    style="@style/Theme.Sino.skillTitle"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
         <TextView
                 android:id="@+id/txtSetDescription"
                 android:text="@string/descriptionPlaceholder"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"/>
+                android:layout_height="wrap_content"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
