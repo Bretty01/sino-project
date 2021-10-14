@@ -48,16 +48,14 @@
   <component name="ChangeListManager">
     <list default="true" id="bab1024d-baa9-422a-abb9-449f9370bd0f" name="Default Changelist" comment="Added bottom navigation and sort/filter functionality for all tabs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/armor_list_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/armor_list_row.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/armor_filter_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/armor_filter_popup.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_armor_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_armor_info.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_nightmare_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_nightmare_info.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_weapon_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_weapon_info.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_filter_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_filter_popup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_list_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_list_row.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_filter_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_filter_popup.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_list_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_list_row.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -434,7 +432,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626809667252</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added bottom navigation and sort/filter functionality for all tabs">
+      <created>1633931194275</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1633931194275</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added bottom navigation and sort/filter functionality for all tabs">
+      <created>1633931681833</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1633931681833</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

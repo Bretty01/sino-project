@@ -31,7 +31,8 @@
                     android:textOn="Buff"
                     android:tag="@string/buffList"
                     app:layout_constraintTop_toBottomOf="@+id/txtColoSkill"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:theme="@style/Theme.Sino.button"/>
             <ToggleButton
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
@@ -41,7 +42,8 @@
                     android:tag="@string/debuffList"
                     app:layout_constraintTop_toTopOf="@+id/btnBuff"
                     app:layout_constraintBottom_toBottomOf="@+id/btnBuff"
-                    app:layout_constraintStart_toStartOf="@+id/btnDecSkill" />
+                    app:layout_constraintStart_toStartOf="@+id/btnDecSkill"
+                    android:theme="@style/Theme.Sino.button"/>
             <ToggleButton
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
@@ -51,7 +53,8 @@
                     android:tag="@string/spList"
                     app:layout_constraintStart_toEndOf="@+id/btnDebuff"
                     app:layout_constraintTop_toTopOf="@+id/btnDebuff"
-                    app:layout_constraintBottom_toBottomOf="@+id/btnDebuff"/>
+                    app:layout_constraintBottom_toBottomOf="@+id/btnDebuff"
+                    android:theme="@style/Theme.Sino.button"/>
             <ToggleButton
                     android:text="ToggleButton"
                     android:layout_width="100dp"
@@ -61,7 +64,8 @@
                     android:textOn="Inc.Skills"
                     android:tag="@string/incskillsList"
                     app:layout_constraintTop_toBottomOf="@+id/btnBuff"
-                    app:layout_constraintStart_toStartOf="@+id/btnBuff"/>
+                    app:layout_constraintStart_toStartOf="@+id/btnBuff"
+                    android:theme="@style/Theme.Sino.button"/>
             <ToggleButton
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
@@ -71,7 +75,8 @@
                     android:tag="@string/decskillsList"
                     app:layout_constraintStart_toEndOf="@+id/btnIncSkill"
                     app:layout_constraintTop_toBottomOf="@+id/btnBuff"
-                    app:layout_constraintBottom_toBottomOf="@+id/btnIncSkill"/>
+                    app:layout_constraintBottom_toBottomOf="@+id/btnIncSkill"
+                    android:theme="@style/Theme.Sino.button"/>
             <ToggleButton
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
@@ -81,7 +86,8 @@
                     android:textOn="Disadv."
                     app:layout_constraintTop_toBottomOf="@+id/btnIncSkill"
                     app:layout_constraintStart_toStartOf="@+id/btnIncSkill"
-                    app:layout_constraintEnd_toEndOf="@+id/btnIncSkill"/>
+                    app:layout_constraintEnd_toEndOf="@+id/btnIncSkill"
+                    android:theme="@style/Theme.Sino.button"/>
             <TextView
                     android:text="Colosseum SP"
                     android:layout_width="wrap_content"
@@ -97,7 +103,8 @@
                     android:textOn="0SP"
                     android:tag="nightmares.summon_cost = 0"
                     app:layout_constraintTop_toBottomOf="@+id/txtColoSp"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:theme="@style/Theme.Sino.button"/>
             <ToggleButton
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
@@ -107,7 +114,8 @@
                     android:tag="nightmares.summon_cost = 1"
                     app:layout_constraintTop_toTopOf="@+id/btn0"
                     app:layout_constraintBottom_toBottomOf="@+id/btn0"
-                    app:layout_constraintStart_toEndOf="@+id/btn0"/>
+                    app:layout_constraintStart_toEndOf="@+id/btn0"
+                    android:theme="@style/Theme.Sino.button"/>
             <Button
                     android:text="Submit"
                     android:layout_width="match_parent"
@@ -124,7 +132,8 @@
                     android:tag="@string/rateList"
                     app:layout_constraintStart_toEndOf="@+id/btnDecSkill"
                     app:layout_constraintBottom_toBottomOf="@+id/btnDecSkill"
-                    app:layout_constraintTop_toTopOf="@+id/btnDecSkill" />
+                    app:layout_constraintTop_toTopOf="@+id/btnDecSkill"
+                    android:theme="@style/Theme.Sino.button"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>

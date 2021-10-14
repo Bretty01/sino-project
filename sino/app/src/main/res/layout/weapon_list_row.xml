@@ -113,7 +113,8 @@
             app:layout_constraintEnd_toEndOf="@+id/txtName"
             app:layout_constraintTop_toTopOf="@+id/imgStoryIcon"
             app:layout_constraintBottom_toBottomOf="@+id/imgStoryIcon"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginStart="5dp"/>
     <TextView
             android:text="TextView"
             android:layout_width="0dp"

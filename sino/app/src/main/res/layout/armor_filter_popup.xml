@@ -34,7 +34,8 @@
                         app:layout_constraintTop_toBottomOf="@+id/txtType"
                         app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
                         android:checked="false" android:textOff="Head" android:textOn="Head"
-                        android:tag="armor_type.type_id = 1"/>
+                        android:tag="armor_type.type_id = 1"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnBody"
@@ -42,7 +43,8 @@
                         app:layout_constraintStart_toEndOf="@+id/btnHead"
                         app:layout_constraintBottom_toBottomOf="@+id/btnHead" android:textOff="Body"
                         android:textOn="Body"
-                        android:tag="armor_type.type_id = 2"/>
+                        android:tag="armor_type.type_id = 2"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnFeet"
@@ -50,7 +52,8 @@
                         app:layout_constraintBottom_toBottomOf="@+id/btnBody"
                         app:layout_constraintTop_toTopOf="@+id/btnBody" android:textOff="Feet"
                         android:textOn="Feet"
-                        android:tag="armor_type.type_id = 3"/>
+                        android:tag="armor_type.type_id = 3"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnHand"
@@ -58,7 +61,8 @@
                         app:layout_constraintBottom_toBottomOf="@+id/btnFeet"
                         app:layout_constraintStart_toEndOf="@+id/btnFeet" android:layout_marginStart="2dp"
                         android:textOff="Hands" android:textOn="Hands"
-                        android:tag="armor_type.type_id = 4"/>
+                        android:tag="armor_type.type_id = 4"
+                        android:theme="@style/Theme.Sino.button"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -76,7 +80,8 @@
                         app:layout_constraintStart_toStartOf="parent"
                         android:layout_marginTop="5dp" app:layout_constraintTop_toBottomOf="@+id/txtElement"
                         android:textOff="Merit" android:textOn="Merit"
-                        android:tag="armor_support_skill.element = 1"/>
+                        android:tag="armor_support_skill.element = 1"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnFire"
@@ -84,7 +89,8 @@
                         app:layout_constraintBottom_toBottomOf="@+id/btnMerit"
                         app:layout_constraintTop_toTopOf="@+id/btnMerit" android:textOff="Fire"
                         android:textOn="Fire"
-                        android:tag="armor_support_skill.element = 2"/>
+                        android:tag="armor_support_skill.element = 2"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnWater"
@@ -92,7 +98,8 @@
                         app:layout_constraintBottom_toBottomOf="@+id/btnFire"
                         app:layout_constraintStart_toEndOf="@+id/btnFire" android:textOff="Water"
                         android:textOn="Water"
-                        android:tag="armor_support_skill.element = 3"/>
+                        android:tag="armor_support_skill.element = 3"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnWind"
@@ -100,7 +107,8 @@
                         app:layout_constraintBottom_toBottomOf="@+id/btnWater"
                         app:layout_constraintStart_toEndOf="@+id/btnWater"
                         android:textOff="Wind" android:textOn="Wind"
-                        android:tag="armor_support_skill.element = 4"/>
+                        android:tag="armor_support_skill.element = 4"
+                        android:theme="@style/Theme.Sino.button"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -116,14 +124,17 @@
                         android:layout_height="wrap_content" android:id="@+id/btnInstrument"
                         app:layout_constraintStart_toStartOf="parent"
                         android:textOff="Instr." android:textOn="Instr." android:tag="armor_support_skill.weapon = 1"
-                        app:layout_constraintTop_toBottomOf="@+id/txtWeapon"/>
+                        app:layout_constraintTop_toBottomOf="@+id/txtWeapon"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnTome"
                         app:layout_constraintStart_toEndOf="@+id/btnInstrument"
                         app:layout_constraintTop_toTopOf="@+id/btnInstrument"
                         app:layout_constraintBottom_toBottomOf="@+id/btnInstrument" android:textOff="Tome"
-                        android:textOn="Tome" android:tag="armor_support_skill.weapon = 2"/>
+                        android:textOn="Tome"
+                        android:tag="armor_support_skill.weapon = 2"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnArtifact"
@@ -131,42 +142,53 @@
                         app:layout_constraintTop_toTopOf="@+id/btnTome"
                         app:layout_constraintBottom_toBottomOf="@+id/btnTome" android:textOff="Artifact"
                         android:textOn="Artifact" android:textSize="12sp"
-                        android:tag="armor_support_skill.weapon = 8"/>
+                        android:tag="armor_support_skill.weapon = 8"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnStaff"
                         app:layout_constraintStart_toEndOf="@+id/btnArtifact"
                         app:layout_constraintTop_toTopOf="@+id/btnArtifact"
                         app:layout_constraintBottom_toBottomOf="@+id/btnArtifact" android:textOff="Staff"
-                        android:textOn="Staff" android:tag="armor_support_skill.weapon = 7"/>
+                        android:textOn="Staff"
+                        android:tag="armor_support_skill.weapon = 7"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnBlade"
                         app:layout_constraintTop_toBottomOf="@+id/btnInstrument"
                         app:layout_constraintStart_toStartOf="@+id/btnInstrument"
                         app:layout_constraintEnd_toEndOf="@+id/btnInstrument" android:textOff="Blade"
-                        android:textOn="Blade" android:tag="armor_support_skill.weapon = 4"/>
+                        android:textOn="Blade"
+                        android:tag="armor_support_skill.weapon = 4"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnHammer"
                         app:layout_constraintTop_toTopOf="@+id/btnBlade"
                         app:layout_constraintBottom_toBottomOf="@+id/btnBlade"
                         app:layout_constraintStart_toEndOf="@+id/btnBlade" android:textOff="Hammer"
-                        android:textOn="Hammer" android:tag="armor_support_skill.weapon = 5"/>
+                        android:textOn="Hammer"
+                        android:tag="armor_support_skill.weapon = 5"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnRanged"
                         app:layout_constraintTop_toBottomOf="@+id/btnTome"
                         app:layout_constraintStart_toEndOf="@+id/btnHammer"
                         app:layout_constraintBottom_toBottomOf="@+id/btnHammer" android:textOff="Ranged"
-                        android:textOn="Ranged" android:tag="armor_support_skill.weapon = 3"/>
+                        android:textOn="Ranged"
+                        android:tag="armor_support_skill.weapon = 3"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnPolearm"
                         app:layout_constraintStart_toEndOf="@+id/btnRanged"
                         app:layout_constraintTop_toBottomOf="@+id/btnArtifact"
                         app:layout_constraintBottom_toBottomOf="@+id/btnRanged" android:textOff="Polearm"
-                        android:textOn="Polearm" android:textSize="12sp" android:tag="armor_support_skill.weapon = 6"/>
+                        android:textOn="Polearm" android:textSize="12sp"
+                        android:tag="armor_support_skill.weapon = 6"
+                        android:theme="@style/Theme.Sino.button"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -182,7 +204,8 @@
                         android:layout_height="wrap_content" android:id="@+id/btnBeast"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/txtSet" android:textOff="Beast"
-                        android:textOn="Beast" android:tag="armor_set.set_id  = 13"/>
+                        android:textOn="Beast" android:tag="armor_set.set_id  = 13"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnPlant"
@@ -190,28 +213,32 @@
                         app:layout_constraintTop_toTopOf="@+id/btnBeast"
                         app:layout_constraintBottom_toBottomOf="@+id/btnBeast" android:textOff="Plant"
                         android:textOn="Plant"
-                        android:tag="armor_set.set_id  = 12"/>
+                        android:tag="armor_set.set_id  = 12"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnBird"
                         app:layout_constraintTop_toTopOf="@+id/btnPlant"
                         app:layout_constraintBottom_toBottomOf="@+id/btnPlant"
                         app:layout_constraintStart_toEndOf="@+id/btnPlant" android:textOff="Bird"
-                        android:textOn="Bird" android:tag="armor_set.set_id  = 11"/>
+                        android:textOn="Bird" android:tag="armor_set.set_id  = 11"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnGhost"
                         app:layout_constraintTop_toBottomOf="@+id/btnBeast"
                         app:layout_constraintStart_toStartOf="@+id/btnBeast"
                         app:layout_constraintEnd_toEndOf="@+id/btnBeast" android:textOff="Ghost" android:textOn="Ghost"
-                        android:tag="armor_set.set_id  = 10"/>
+                        android:tag="armor_set.set_id  = 10"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnDragon"
                         app:layout_constraintStart_toEndOf="@+id/btnGhost"
                         app:layout_constraintBottom_toBottomOf="@+id/btnGhost" android:textOff="Dragon"
                         android:textOn="Dragon" android:tag="armor_set.set_id  = 9"
-                        app:layout_constraintTop_toTopOf="@+id/btnGhost"/>
+                        app:layout_constraintTop_toTopOf="@+id/btnGhost"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:text="ToggleButton"
                         android:layout_width="wrap_content"
@@ -219,7 +246,8 @@
                         app:layout_constraintBottom_toBottomOf="@+id/btnDragon"
                         app:layout_constraintStart_toEndOf="@+id/btnDragon" android:textOff="Orc"
                         android:textOn="Orc" android:tag="armor_set.set_id  = 8"
-                        app:layout_constraintTop_toTopOf="@+id/btnDragon"/>
+                        app:layout_constraintTop_toTopOf="@+id/btnDragon"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:text="ToggleButton"
                         android:layout_width="wrap_content"
@@ -227,21 +255,24 @@
                         app:layout_constraintTop_toBottomOf="@+id/btnGhost"
                         app:layout_constraintStart_toStartOf="@+id/btnGhost"
                         app:layout_constraintEnd_toEndOf="@+id/btnGhost" android:textOff="Wisp"
-                        android:textOn="Wisp" android:tag="armor_set.set_id  = 7"/>
+                        android:textOn="Wisp" android:tag="armor_set.set_id  = 7"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnSnake"
                         app:layout_constraintStart_toEndOf="@+id/btnWisp"
                         app:layout_constraintBottom_toBottomOf="@+id/btnWisp" android:textOff="Snake"
                         android:textOn="Snake" app:layout_constraintTop_toTopOf="@+id/btnWisp"
-                        android:tag="armor_set.set_id  = 14"/>
+                        android:tag="armor_set.set_id  = 14"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnFiend"
                         app:layout_constraintBottom_toBottomOf="@+id/btnBird"
                         app:layout_constraintStart_toEndOf="@+id/btnBird" android:textOff="Fiend"
                         android:textOn="Fiend" app:layout_constraintTop_toTopOf="@+id/btnBird"
-                        android:tag="armor_set.set_id  = 6"/>
+                        android:tag="armor_set.set_id  = 6"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnHuman"
@@ -249,7 +280,8 @@
                         app:layout_constraintStart_toEndOf="@+id/btnOrc" android:textOff="Human"
                         android:textOn="Human" app:layout_constraintVertical_bias="0.0"
                         app:layout_constraintTop_toTopOf="@+id/btnOrc"
-                        android:tag="armor_set.set_id  = 5"/>
+                        android:tag="armor_set.set_id  = 5"
+                        android:theme="@style/Theme.Sino.button"/>
                 <ToggleButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/btnOther"
@@ -258,7 +290,8 @@
                         app:layout_constraintStart_toEndOf="@+id/btnSnake"
                         app:layout_constraintVertical_bias="0.0"
                         app:layout_constraintTop_toTopOf="@+id/btnSnake"
-                        android:tag="armor_set.set_id = 1 OR armor_set.set_id = 2 OR armor_set.set_id = 3 OR armor_set.set_id = 4"/>
+                        android:tag="armor_set.set_id = 1 OR armor_set.set_id = 2 OR armor_set.set_id = 3 OR armor_set.set_id = 4"
+                        android:theme="@style/Theme.Sino.button"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <Button
                     android:text="submit"
