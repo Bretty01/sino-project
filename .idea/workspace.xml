@@ -48,14 +48,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bab1024d-baa9-422a-abb9-449f9370bd0f" name="Default Changelist" comment="Added bottom navigation and sort/filter functionality for all tabs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/armor_filter_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/armor_filter_popup.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_armor_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_armor_info.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_nightmare_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_nightmare_info.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_weapon_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_weapon_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_filter_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_filter_popup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_list_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_list_row.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +100,8 @@
         <option value="Kotlin Interface" />
         <option value="resourceFile" />
         <option value="Class" />
-        <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -135,8 +132,8 @@
   <component name="PropertiesComponent">
     <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$" />
     <property name="DatabaseDriversLRU" value="sqlite" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_4_API_30" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-07-06T17:46:40.659887400Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="VirtualDevicePath@/Users/jtagle/.android/avd/Pixel_4_API_31.avd" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-10-25T00:46:06.102288Z" />
     <property name="ResourceManagerPrefKey.ResourceType" value="NAVIGATION" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -163,7 +160,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -446,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633931681833</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added bottom navigation and sort/filter functionality for all tabs">
+      <created>1634170843634</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1634170843634</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
