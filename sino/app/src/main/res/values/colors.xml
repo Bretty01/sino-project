@@ -11,4 +11,6 @@
     <color name="dark_teal">#FF2B8487</color>
     <color name="deep_grey">#FF202121</color>
     <color name="light_teal">#FF86C7CF</color>
+    <color name="topaz">#FF0F6F85</color>
+    <color name="deep_topaz">#FF253134</color>
 </resources>

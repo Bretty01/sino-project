@@ -7,14 +7,13 @@
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/dark_teal</item>
-        <item name="colorSecondaryVariant">@color/deep_grey</item>
+        <item name="colorSecondaryVariant">@color/deep_topaz</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="android:colorForeground">@color/dark_teal</item>
         <item name="colorSurface">@color/dark_teal</item>
-        <item name="colorOnSurface">@color/white</item>
     </style>
 
     <!-- Style for fragment title -->
@@ -23,7 +22,7 @@
         <item name="fontFamily">sans-serif-condensed</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/white</item>
+
     </style>
 
     <!-- Style for list title -->
@@ -72,6 +71,10 @@
 
     <style name="Theme.Sino.tint">
         <item name="android:tint">@color/white</item>
+    </style>
+
+    <style name="Theme.Sino.Menu">
+        <item name="android:textColor">@color/white</item>
     </style>
 
 </resources>
