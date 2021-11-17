@@ -15,7 +15,7 @@
         <item name="android:colorForeground">@color/topaz</item>
         <item name="colorSurface">@color/topaz</item>
         <item name="colorOnSurface">@color/white</item>
-        <item name="android:panelColorBackground">@color/deep_topaz</item>
+        <item name="popupMenuBackground">@color/deep_topaz</item>
     </style>
 
     <!-- Style for fragment title -->
@@ -73,7 +73,7 @@
     </style>
 
     <style name="Theme.Sino.tint">
-        <item name="android:tint">@color/white</item>
+        <item name="android:tint">@color/topaz</item>
     </style>
 
     <style name="Theme.Sino.Menu">
@@ -81,8 +81,8 @@
     </style>
 
     <style name="Theme.Sino.Skills">
-        <item name="android:background">@color/deep_topaz</item>
-        <item name="cornerRadius">15dp</item>
+        <item name="background">@color/deep_topaz</item>
+        <item name="android:background">@drawable/skills_outline</item>
     </style>
 
     <style name="Theme.Sino.Stats">
