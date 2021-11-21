@@ -305,7 +305,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            style="@style/Theme.Sino.skillMargin">
+            android:layout_marginTop="10dp">
         <ImageView
                 android:id="@+id/imgColoIcon"
                 android:src="@drawable/ic_launcher_foreground"

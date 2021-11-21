@@ -12,30 +12,24 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="colorSurface">@color/topaz</item>
-        <item name="android:colorBackgroundFloating">@color/deep_topaz</item>
+        <item name="colorSurface">@color/topaz</item> <!-- Menu background colour -->
+        <item name="android:colorBackgroundFloating">@color/deep_topaz</item> <!--Popup background colour -->
         <item name="colorOnSurface">@color/menu_icon_color</item>
     </style>
-
     <!-- Style for fragment title -->
-
     <style name="Theme.Sino.Title">
         <item name="fontFamily">sans-serif-condensed</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/white</item>
     </style>
-
     <!-- Style for list title -->
-
     <style name="Theme.Sino.listTitle">
         <item name="fontFamily">sans-serif-condensed</item>
         <item name="android:textSize">17sp</item>
         <item name="android:textStyle">bold</item>
     </style>
-
     <!-- Style for skill title -->
-
     <style name="Theme.Sino.skillTitle">
         <item name="android:paddingTop">5dp</item>
         <item name="android:paddingLeft">5dp</item>
@@ -43,36 +37,30 @@
         <item name="fontFamily">sans-serif-condensed</item>
         <item name="android:textSize">15sp</item>
     </style>
-
     <!-- Style for buttons -->
-
     <style name="Theme.Sino.button">
         <item name="android:buttonStyleToggle">@style/Widget.AppCompat.Button.Colored</item>
         <item name="android:buttonCornerRadius">15dp</item>
         <item name="android:backgroundTint">@color/button_background_colour</item>
     </style>
-
+    <!-- Style for first row of stat table -->
     <style name="Theme.Sino.table">
         <item name="android:textStyle">bold</item>
     </style>
-
+    <!-- Style for element and cost -->
     <style name="Theme.Sino.element">
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">18sp</item>
     </style>
-
-    <style name="Theme.Sino.skillMargin">
-        <item name="android:layout_marginTop">10dp</item>
-    </style>
-
+    <!-- Style for icon tint in dark mode -->
     <style name="Theme.Sino.tint">
         <item name="android:tint">@color/topaz</item>
     </style>
-
+    <!-- Style for menu round background -->
     <style name="Theme.Sino.Menu">
         <item name="android:background">@drawable/menu_outline</item>
     </style>
-
+    <!-- Style for skills round background -->
     <style name="Theme.Sino.Skills">
         <item name="android:background">@drawable/skills_outline</item>
     </style>
