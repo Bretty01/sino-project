@@ -14,7 +14,10 @@
         <!-- Customize your theme here. -->
         <item name="colorSurface">@color/topaz</item> <!-- Menu background colour -->
         <item name="android:colorBackgroundFloating">@color/deep_topaz</item> <!--Popup background colour -->
-        <item name="colorOnSurface">@color/menu_icon_color</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="itemIconTint">@color/menu_icon_color</item>
+        <item name="itemTextColor">@color/menu_icon_color</item>
+        <item name="itemBackground">@drawable/menu_selected_background</item>
     </style>
     <!-- Style for fragment title -->
     <style name="Theme.Sino.Title">

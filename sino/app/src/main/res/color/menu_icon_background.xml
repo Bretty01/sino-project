@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:state_selected="true"
-          android:color="@color/darkSlateGrey"/>
-    <item android:color="@color/white"/>
+          android:color="@color/deep_topaz"/>
+    <item android:color="@color/topaz"/>
 
 </selector>
