@@ -48,8 +48,23 @@
   <component name="ChangeListManager">
     <list default="true" id="bab1024d-baa9-422a-abb9-449f9370bd0f" name="Default Changelist" comment="Added bottom navigation and sort/filter functionality for all tabs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/color/menu_icon_color.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/color/menu_icon_color.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/color/button_background_colour.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/color/button_background_colour_dark.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/color/menu_icon_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/color/menu_icon_background_dark.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/color/menu_icon_color.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/color/menu_icon_color_dark.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/drawable-hdpi/menu_outline.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/drawable-hdpi/menu_outline_dark.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/drawable-hdpi/menu_selected_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/drawable-hdpi/menu_selected_background_dark.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/drawable-hdpi/round_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/drawable-hdpi/round_background_dark.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/drawable-hdpi/skills_outline.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/drawable-hdpi/skills_outline_dark.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/armor_sort_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/armor_sort_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_armor_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_armor_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_nightmare_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_nightmare_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_weapon_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/fragment_weapon_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_sort_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/nightmare_sort_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_filter_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_filter_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_sort_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/layout/weapon_sort_popup.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sino/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sino/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +177,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/sino/app/src/main/res/drawable-hdpi" />
+      <recent name="$PROJECT_DIR$/sino/app/src/main/res/color" />
       <recent name="C:\Users\Brett\IdeaProjects\sino-project\sino\app\src\main\res\drawable" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -483,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637536414813</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added bottom navigation and sort/filter functionality for all tabs">
+      <created>1637546842770</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1637546842770</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

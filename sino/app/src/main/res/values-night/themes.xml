@@ -12,12 +12,11 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="colorSurface">@color/topaz</item> <!-- Menu background colour -->
         <item name="android:colorBackgroundFloating">@color/deep_topaz</item> <!--Popup background colour -->
         <item name="android:textColor">@color/white</item>
-        <item name="itemIconTint">@color/menu_icon_color</item>
-        <item name="itemTextColor">@color/menu_icon_color</item>
-        <item name="itemBackground">@drawable/menu_selected_background</item>
+        <item name="itemIconTint">@color/menu_icon_color_dark</item>
+        <item name="itemTextColor">@color/menu_icon_color_dark</item>
+        <item name="itemBackground">@drawable/menu_selected_background_dark</item>
     </style>
     <!-- Style for fragment title -->
     <style name="Theme.Sino.Title">
@@ -44,7 +43,7 @@
     <style name="Theme.Sino.button">
         <item name="android:buttonStyleToggle">@style/Widget.AppCompat.Button.Colored</item>
         <item name="android:buttonCornerRadius">15dp</item>
-        <item name="android:backgroundTint">@color/button_background_colour</item>
+        <item name="android:backgroundTint">@color/button_background_colour_dark</item>
     </style>
     <!-- Style for first row of stat table -->
     <style name="Theme.Sino.table">
@@ -57,15 +56,15 @@
     </style>
     <!-- Style for icon tint in dark mode -->
     <style name="Theme.Sino.tint">
-        <item name="android:tint">@color/topaz</item>
+        <item name="android:tint">@color/light_teal</item>
     </style>
     <!-- Style for menu round background -->
     <style name="Theme.Sino.Menu">
-        <item name="android:background">@drawable/menu_outline</item>
+        <item name="android:background">@drawable/menu_outline_dark</item>
     </style>
     <!-- Style for skills round background -->
     <style name="Theme.Sino.Skills">
-        <item name="android:background">@drawable/skills_outline</item>
+        <item name="android:background">@drawable/skills_outline_dark</item>
     </style>
 
 </resources>
