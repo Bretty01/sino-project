@@ -17,6 +17,7 @@
         <item name="itemIconTint">@color/menu_icon_color_dark</item>
         <item name="itemTextColor">@color/menu_icon_color_dark</item>
         <item name="itemBackground">@drawable/menu_selected_background_dark</item>
+        <item name="android:textColor">@color/button_text_color</item>
     </style>
     <!-- Style for fragment title -->
     <style name="Theme.Sino.Title">

@@ -122,7 +122,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/btnSubmit"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btn200"/>
+                    app:layout_constraintTop_toBottomOf="@+id/btn200"
+                    style="?attr/materialButtonOutlinedStyle" app:strokeWidth="1dp" app:strokeColor="@color/topaz"/>
             <ToggleButton
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"

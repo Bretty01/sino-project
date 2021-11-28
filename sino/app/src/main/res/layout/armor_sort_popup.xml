@@ -25,19 +25,22 @@
                     android:weightSum="2"
                     android:id="@+id/groupOrder"
                     app:singleSelection="true"
-                    app:selectionRequired="true" >
+                    app:selectionRequired="true">
                 <Button
                         android:text="Desc."
                         android:layout_width="0dp"
                         android:layout_height="wrap_content" android:id="@+id/btnDesc" android:layout_weight="1"
-                        style="?attr/materialButtonOutlinedStyle" android:tag="DESC"
-                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"/>
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:tag="DESC"
+                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="Asc."
                         android:layout_width="0dp"
                         android:layout_height="wrap_content" android:id="@+id/btnAsc" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="ASC"
-                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <TextView
                     android:text="Field"
@@ -57,49 +60,57 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/btnName" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="armor.name"
-                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="Set"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/btnSet" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="armor_set.set_name"
-                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="@string/pDef"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/btnPdef" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="armor_stats.max_pdef"
-                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="@string/mDef"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/btnMdef" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="armor_stats.max_mdef"
-                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="@string/total"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/btnTotal" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle"
                         android:tag="(armor_stats.max_pdef + armor_stats.max_mdef)"
-                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="Type"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/btnType" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="armor_type.type_name"
-                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="Story"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/btnStory" android:layout_weight="1"
                         style="?attr/materialButtonOutlinedStyle" android:tag="armor_support_skill.skill_name"
-                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour_dark" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <Button
                     android:text="submit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/btnSubmit"/>
+                    android:layout_height="wrap_content" android:id="@+id/btnSubmit"
+                    style="?attr/materialButtonOutlinedStyle" app:strokeWidth="1dp" app:strokeColor="@color/topaz"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

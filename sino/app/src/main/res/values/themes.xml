@@ -13,11 +13,10 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="android:colorBackgroundFloating">@color/light_teal</item> <!--Popup background colour -->
-        <item name="android:textColor">@color/black</item>
         <item name="itemIconTint">@color/menu_icon_color</item>
         <item name="itemTextColor">@color/menu_icon_color</item>
         <item name="itemBackground">@drawable/menu_selected_background</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorSecondary">@color/button_text_color</item>
     </style>
     <!-- Style for fragment title -->
     <style name="Theme.Sino.Title">
@@ -42,9 +41,9 @@
     <!-- Style for buttons -->
     <style name="Theme.Sino.button">
         <item name="android:buttonStyleToggle">@style/Widget.AppCompat.Button.Colored</item>
-        <item name="android:buttonCornerRadius">15dp</item>
+        <item name="android:buttonCornerRadius">5dp</item>
         <item name="android:backgroundTint">@color/button_background_colour</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/button_text_color</item>
     </style>
     <!-- Style for first row of stat table -->
     <style name="Theme.Sino.table">

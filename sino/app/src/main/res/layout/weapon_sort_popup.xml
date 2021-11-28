@@ -32,7 +32,8 @@
                         android:layout_height="wrap_content" android:id="@+id/btnDesc" android:layout_weight="1"
                         android:tag="DESC"
                         style="?attr/materialButtonOutlinedStyle"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="Asc."
                         android:layout_width="0dp"
@@ -41,7 +42,8 @@
                         android:layout_weight="1"
                         android:tag="ASC"
                         style="?attr/materialButtonOutlinedStyle"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <TextView
                     android:text="Field"
@@ -63,9 +65,10 @@
                         android:id="@+id/btnName"
                         android:layout_weight="1"
                         android:tag="weapons.name"
-                        style="?attr/materialButtonOutlinedStyle"
                         android:textSize="10sp"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="Type"
                         android:layout_width="match_parent"
@@ -74,8 +77,9 @@
                         android:layout_weight="1"
                         android:tag="weapon_type.type_name"
                         style="?attr/materialButtonOutlinedStyle"
-                        android:textSize="10sp"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"
+                        android:textSize="10sp"/>
                 <Button
                         android:text="@string/pAtk"
                         android:layout_width="match_parent"
@@ -83,9 +87,10 @@
                         android:id="@+id/btnPatk"
                         android:layout_weight="1"
                         android:tag="weapon_stats.mlb_patk"
-                        style="?attr/materialButtonOutlinedStyle"
                         android:textSize="10sp"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="@string/mAtk"
                         android:layout_width="match_parent"
@@ -95,7 +100,8 @@
                         android:tag="weapon_stats.mlb_matk"
                         android:textSize="10sp"
                         style="?attr/materialButtonOutlinedStyle"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="@string/pDef"
                         android:layout_width="match_parent"
@@ -105,7 +111,8 @@
                         android:tag="weapon_stats.mlb_pdef"
                         android:textSize="10sp"
                         style="?attr/materialButtonOutlinedStyle"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="@string/mDef"
                         android:layout_width="match_parent"
@@ -115,7 +122,8 @@
                         android:tag="weapon_stats.mlb_mdef"
                         android:textSize="10sp"
                         style="?attr/materialButtonOutlinedStyle"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="@string/total"
                         android:layout_width="match_parent"
@@ -125,7 +133,8 @@
                         android:tag="(weapon_stats.mlb_patk + weapon_stats.mlb_matk +                         weapon_stats.mlb_pdef + weapon_stats.mlb_mdef)"
                         android:textSize="10sp"
                         style="?attr/materialButtonOutlinedStyle"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="Total Atk"
                         android:layout_width="match_parent"
@@ -135,7 +144,8 @@
                         android:tag="(weapon_stats.mlb_patk + weapon_stats.mlb_matk)"
                         android:textSize="10sp"
                         style="?attr/materialButtonOutlinedStyle"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="Total Def"
                         android:layout_width="match_parent"
@@ -145,7 +155,8 @@
                         android:tag="(weapon_stats.mlb_pdef + weapon_stats.mlb_mdef)"
                         android:textSize="10sp"
                         style="?attr/materialButtonOutlinedStyle"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="Story Skill"
                         android:layout_width="match_parent"
@@ -155,7 +166,8 @@
                         android:tag="weapon_story_skill.story_name"
                         android:textSize="10sp"
                         style="?attr/materialButtonOutlinedStyle"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="Colo Skill"
                         android:layout_width="match_parent"
@@ -165,7 +177,8 @@
                         android:tag="weapon_colo_skill.colo_name"
                         android:textSize="10sp"
                         style="?attr/materialButtonOutlinedStyle"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
                 <Button
                         android:text="Support Skill"
                         android:layout_width="match_parent"
@@ -175,14 +188,15 @@
                         android:tag="weapon_support_skill.skill_name"
                         android:textSize="10sp"
                         style="?attr/materialButtonOutlinedStyle"
-                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"/>
+                        android:backgroundTint="@color/button_background_colour" app:strokeWidth="1dp"
+                        android:textColor="@color/button_text_color"/>
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <Button
                     android:text="Submit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/btnSubmit"
-                    style="?attr/materialButtonOutlinedStyle"/>
+                    style="?attr/materialButtonOutlinedStyle" app:strokeWidth="1dp" app:strokeColor="@color/topaz"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
