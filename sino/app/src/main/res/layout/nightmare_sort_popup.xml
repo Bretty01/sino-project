@@ -34,7 +34,7 @@
                         android:id="@+id/btnDesc"
                         android:layout_weight="1"
                         android:tag="DESC"
-                        style="?attr/materialButtonOutlinedStyle"/>
+                        style="@style/Theme.Sino.sortButton"/>
                 <Button
                         android:text="Asc."
                         android:layout_width="0dp"
@@ -42,7 +42,7 @@
                         android:id="@+id/btnAsc"
                         android:layout_weight="1"
                         android:tag="ASC"
-                        style="?attr/materialButtonOutlinedStyle"/>
+                        style="@style/Theme.Sino.sortButton"/>
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <TextView
                     android:text="Field"
@@ -63,7 +63,7 @@
                         android:id="@+id/btnName"
                         android:layout_weight="1"
                         android:tag="nightmares.name"
-                        style="?attr/materialButtonOutlinedStyle"
+                        style="@style/Theme.Sino.sortButton"
                         android:textSize="10sp"/>
                 <Button
                         android:text="@string/pAtk"
@@ -73,7 +73,7 @@
                         android:layout_weight="1"
                         android:tag="nightmare_stats.mlb_patk"
                         android:textSize="10sp"
-                        style="?attr/materialButtonOutlinedStyle"/>
+                        style="@style/Theme.Sino.sortButton"/>
                 <Button
                         android:text="@string/mAtk"
                         android:layout_width="match_parent"
@@ -81,7 +81,7 @@
                         android:id="@+id/btnMatk"
                         android:layout_weight="1"
                         android:tag="nightmare_stats.mlb_matk"
-                        style="?attr/materialButtonOutlinedStyle"
+                        style="@style/Theme.Sino.sortButton"
                         android:textSize="10sp"/>
                 <Button
                         android:text="@string/pDef"
@@ -91,7 +91,7 @@
                         android:layout_weight="1"
                         android:tag="nightmare_stats.mlb_pdef"
                         android:textSize="10sp"
-                        style="?attr/materialButtonOutlinedStyle"/>
+                        style="@style/Theme.Sino.sortButton"/>
                 <Button
                         android:text="@string/mDef"
                         android:layout_width="match_parent"
@@ -100,7 +100,7 @@
                         android:layout_weight="1"
                         android:tag="nightmare_stats.mlb_mdef"
                         android:textSize="10sp"
-                        style="?attr/materialButtonOutlinedStyle"/>
+                        style="@style/Theme.Sino.sortButton"/>
                 <Button
                         android:text="@string/total"
                         android:layout_width="match_parent"
@@ -110,7 +110,7 @@
                         android:tag="(nightmare_stats.mlb_patk + nightmare_stats.mlb_matk +
                         nightmare_stats.mlb_pdef + nightmare_stats.mlb_mdef)"
                         android:textSize="10sp"
-                        style="?attr/materialButtonOutlinedStyle"/>
+                        style="@style/Theme.Sino.sortButton"/>
                 <Button
                         android:text="Total Atk"
                         android:layout_width="match_parent"
@@ -119,7 +119,7 @@
                         android:layout_weight="1"
                         android:tag="(nightmare_stats.mlb_patk + nightmare_stats.mlb_matk)"
                         android:textSize="10sp"
-                        style="?attr/materialButtonOutlinedStyle"/>
+                        style="@style/Theme.Sino.sortButton"/>
                 <Button
                         android:text="Total Def"
                         android:layout_width="match_parent"
@@ -128,7 +128,7 @@
                         android:layout_weight="1"
                         android:tag="(nightmare_stats.mlb_pdef + nightmare_stats.mlb_mdef)"
                         android:textSize="10sp"
-                        style="?attr/materialButtonOutlinedStyle"/>
+                        style="@style/Theme.Sino.sortButton"/>
                 <Button
                         android:text="Story"
                         android:layout_width="match_parent"
@@ -137,7 +137,7 @@
                         android:layout_weight="1"
                         android:tag="nightmare_story.story_name"
                         android:textSize="10sp"
-                        style="?attr/materialButtonOutlinedStyle"/>
+                        style="@style/Theme.Sino.sortButton"/>
                 <Button
                         android:text="Colo"
                         android:layout_width="match_parent"
@@ -146,7 +146,7 @@
                         android:layout_weight="1"
                         android:tag="nightmare_colo.colo_name"
                         android:textSize="10sp"
-                        style="?attr/materialButtonOutlinedStyle"/>
+                        style="@style/Theme.Sino.sortButton"/>
                 <Button
                         android:text="Prep"
                         android:layout_width="match_parent"
@@ -155,7 +155,7 @@
                         android:layout_weight="1"
                         android:tag="nightmare_colo.colo_preparation"
                         android:textSize="10sp"
-                        style="?attr/materialButtonOutlinedStyle"/>
+                        style="@style/Theme.Sino.sortButton"/>
                 <Button
                         android:text="Duration"
                         android:layout_width="match_parent"
@@ -164,7 +164,7 @@
                         android:layout_weight="1"
                         android:tag="nightmare_colo.colo_duration"
                         android:textSize="10sp"
-                        style="?attr/materialButtonOutlinedStyle"/>
+                        style="@style/Theme.Sino.sortButton"/>
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <Button
                     android:text="submit"

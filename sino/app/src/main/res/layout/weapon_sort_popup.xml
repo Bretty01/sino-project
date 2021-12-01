@@ -117,6 +117,7 @@
                         android:tag="(weapon_stats.mlb_patk + weapon_stats.mlb_matk +                         weapon_stats.mlb_pdef + weapon_stats.mlb_mdef)"
                         android:textSize="10sp"
                         style="@style/Theme.Sino.sortButton"/>
+
                 <Button
                         android:text="Total Atk"
                         android:layout_width="match_parent"
@@ -162,6 +163,7 @@
                         android:tag="weapon_support_skill.skill_name"
                         android:textSize="10sp"
                         style="@style/Theme.Sino.sortButton"/>
+
             </com.google.android.material.button.MaterialButtonToggleGroup>
             <Button
                     android:text="Submit"
