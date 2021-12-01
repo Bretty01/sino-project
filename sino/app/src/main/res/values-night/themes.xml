@@ -17,7 +17,6 @@
         <item name="itemIconTint">@color/menu_icon_color_dark</item>
         <item name="itemTextColor">@color/menu_icon_color_dark</item>
         <item name="itemBackground">@drawable/menu_selected_background_dark</item>
-        <item name="android:textColor">@color/button_text_color</item>
     </style>
     <!-- Style for fragment title -->
     <style name="Theme.Sino.Title">
@@ -67,5 +66,20 @@
     <style name="Theme.Sino.Skills">
         <item name="android:background">@drawable/skills_outline_dark</item>
     </style>
-
+    <style name="Theme.Sino.Stats">
+        <item name="android:background">@drawable/skills_outline_dark</item>
+    </style>
+    <style name="Theme.Sino.sortButton">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:backgroundTint">@color/button_background_colour_dark</item>
+        <item name="strokeWidth">@dimen/cardview_compat_inset_shadow</item>
+        <item name="strokeColor">@color/button_stroke</item>
+    </style>
+    <style name="Theme.Sino.itemBackground">
+        <item name="android:background">@drawable/item_background_dark</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
 </resources>

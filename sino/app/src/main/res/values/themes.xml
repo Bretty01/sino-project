@@ -16,13 +16,13 @@
         <item name="itemIconTint">@color/menu_icon_color</item>
         <item name="itemTextColor">@color/menu_icon_color</item>
         <item name="itemBackground">@drawable/menu_selected_background</item>
-        <item name="android:textColorSecondary">@color/button_text_color</item>
     </style>
     <!-- Style for fragment title -->
     <style name="Theme.Sino.Title">
         <item name="fontFamily">sans-serif-condensed</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
     </style>
     <!-- Style for list title -->
     <style name="Theme.Sino.listTitle">
@@ -41,7 +41,7 @@
     <!-- Style for buttons -->
     <style name="Theme.Sino.button">
         <item name="android:buttonStyleToggle">@style/Widget.AppCompat.Button.Colored</item>
-        <item name="android:buttonCornerRadius">5dp</item>
+        <item name="android:buttonCornerRadius">10dp</item>
         <item name="android:backgroundTint">@color/button_background_colour</item>
         <item name="android:textColor">@color/button_text_color</item>
     </style>
@@ -62,5 +62,24 @@
     <!-- Style for skills round background -->
     <style name="Theme.Sino.Skills">
         <item name="android:background">@drawable/skills_outline</item>
+    </style>
+    <style name="Theme.Sino.tint">
+        <item name="android:tint">@color/light_teal</item>
+    </style>
+    <style name="Theme.Sino.Stats">
+        <item name="android:background">@drawable/skills_outline</item>
+    </style>
+    <style name="Theme.Sino.sortButton">
+        <item name="android:backgroundTint">@color/button_background_colour</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="strokeWidth">@dimen/cardview_compat_inset_shadow</item>
+        <item name="strokeColor">@color/button_stroke</item>
+    </style>
+    <style name="Theme.Sino.itemBackground">
+        <item name="android:background">@drawable/item_background</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
     </style>
 </resources>

@@ -14,10 +14,4 @@
     <color name="light_teal">#FF97c1c4</color>
     <color name="topaz">#FF0F6F85</color>
     <color name="deep_topaz">#FF253134</color>
-    <!--Colours for Light mode-->
-    <color name="peach">#FFfa9366</color>
-    <color name="light_peach">#FFf7cfbc</color>
-    <color name="dark_peach">#FFc75a24</color>
-    <color name="medium_peach">#FFeba988</color>
-    <color name="dark_brown">#FF543323</color>
 </resources>
